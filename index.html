@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jesus Words Project</title>
+
+  <!-- Core styles -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/dark-mode.css">
+  <link rel="stylesheet" href="css/accessibility.css">
+</head>
+<body>
+  <!-- =========================
+       HEADER
+       ========================= -->
+  <header>
+    <h1>Jesus Words Project</h1>
+
+    <!-- Navigation Tabs -->
+    <nav>
+  <button class="tab-button" data-section="home">Home</button>
+  <button class="tab-button" data-section="sermon">Sermon on the Mount</button>
+  <button class="tab-button" data-section="parables">Parables</button>
+  <button class="tab-button" data-section="sayings">Sayings</button>
+  <button class="tab-button" data-section="search">Search</button>
+</nav>
+
+  </header>
+
+  <!-- =========================
+       MAIN CONTENT
+       ========================= -->
+  <main>
+    <!-- Dynamic verse cards will load here -->
+    <section id="content-area"></section>
+  </main>
+
+  <!-- =========================
+       SEARCH
+       ========================= -->
+  <section id="search-panel">
+    <input type="text" id="search-input" placeholder="Search Jesus’ words...">
+    <div id="search-results"></div>
+    <div id="home" class="tab-content">Home content here</div>
+    <div id="sermon" class="tab-content">Sermon on the Mount content here</div>
+    <div id="parables" class="tab-content">Parables content here</div>
+    <div id="sayings" class="tab-content">Sayings content here</div>
+    <div id="search" class="tab-content">Search content here</div>
+  </section>
+
+  <!-- =========================
+       ACCESSIBILITY MENU
+       ========================= -->
+  <button id="accessibility-toggle" class="acc-gear" aria-label="Accessibility Options">
+    <img src="assets/icons/accessicon2.svg" alt="accessibility icon"/>
+  </button>
+  
+  <div id="accessibility-menu" hidden>
+    <h2>Accessibility Options</h2>
+    <ul>
+      <!-- Options will be injected by JS -->
+    </ul>
+  </div>
+
+  <!-- Dark mode toggle -->
+  <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="Toggle dark mode">
+    <span class="icon-wrap">
+      <img class="icon-sun" src="assets/icons/sun.svg" alt="sun icon"/>
+      <img class="icon-moon" src="assets/icons/moon.svg" alt="moon icon"/>
+    </span>
+  </button>
+
+  <!-- =========================
+       FOOTER
+       ========================= -->
+  <footer>
+    <p>&copy; 2025 Jesus Words Project</p>
+  </footer>
+
+  <!-- =========================
+       SCRIPTS
+       ========================= -->
+  <script src="js/main.js"></script>
+<script src="js/accessibility.js"></script>
+<script src="js/dark-mode.js"></script>
+<script src="js/notes.js"></script>
+<script src="js/search.js"></script>
+
+  <!-- Dark mode overlay effect -->
+  <div class="overlay" data-enabled="false"></div>
+</body>
+</html>

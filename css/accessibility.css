@@ -1,0 +1,143 @@
+/* =========================
+   ACCESSIBILITY MENU POPUP
+   ========================= */
+#accessibility-menu {
+    position: fixed;
+    /* Position will be set dynamically by JavaScript */
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--card-shadow-hover);
+    padding: 1rem;
+    min-width: 220px;
+    max-width: 280px;
+    z-index: 10001;
+    transform: scale(0.95);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.2s ease;
+    backdrop-filter: blur(10px);
+}
+
+#accessibility-menu:not([hidden]) {
+    transform: scale(1);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#accessibility-menu h2 {
+    margin: 0 0 1rem 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-color);
+    text-align: left;
+}
+
+#accessibility-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#accessibility-menu li {
+    margin: 0;
+}
+
+#accessibility-menu button {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: transparent;
+    color: var(--text-color);
+    font-size: 0.9rem;
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#accessibility-menu button:hover {
+    background: var(--card-bg);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transform: translateY(-1px);
+}
+
+#accessibility-menu button:active {
+    transform: translateY(0);
+}
+
+/* Active states for accessibility options */
+.high-contrast #accessibility-menu button[data-option="high-contrast"],
+.large-text #accessibility-menu button[data-option="large-text"],
+.reduce-motion #accessibility-menu button[data-option="reduce-motion"],
+.simplified-view #accessibility-menu button[data-option="simplified-view"] {
+    background: var(--text-color);
+    color: var(--bg-color);
+    border-color: var(--text-color);
+}
+
+/* Accessibility option implementations */
+.high-contrast {
+    filter: contrast(150%) saturate(200%);
+}
+
+.large-text {
+    font-size: 120% !important;
+}
+
+.large-text * {
+    font-size: inherit !important;
+}
+
+.reduce-motion * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+}
+
+.simplified-view .content-card:hover {
+    transform: none !important;
+    box-shadow: var(--card-shadow) !important;
+}
+
+.simplified-view .overlay {
+    display: none !important;
+}
+
+/* Click outside to close functionality */
+.accessibility-menu-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10000;
+    pointer-events: none;
+}
+
+#accessibility-menu:not([hidden]) ~ .accessibility-menu-backdrop {
+    pointer-events: auto;
+}
+
+/* =========================
+   RESPONSIVE SIZING
+   ========================= */
+@media (max-width: 768px) {
+    #accessibility-menu {
+        min-width: 200px;
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    #accessibility-menu {
+        min-width: 180px;
+        max-width: calc(100vw - 20px);
+    }
+}
