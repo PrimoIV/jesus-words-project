@@ -104,3 +104,46 @@ Works in all modern browsers that support:
 ## License
 
 This project is for educational and spiritual purposes. Scripture content is in the public domain.
+
+## Full Directory Structure
+
+```
+jesus.words/
+├── index.html
+├── README.md
+├── css/
+│   ├── styles.css
+│   ├── dark-mode.css
+│   └── accessibility.css
+├── js/
+│   ├── main.js
+│   ├── search.js
+│   ├── dark-mode.js
+│   ├── accessibility.js
+│   └── notes.js
+├── data/
+│   ├── hart.json
+│   ├── home.json
+│   ├── lamsa.json
+│   ├── nrsv.json
+│   ├── parables.json
+│   ├── sayings.json
+│   └── sermon.json
+├── assets/
+│   ├── icons/
+│   │   ├── accessibilityicon.svg
+│   │   ├── accessicon2.svg
+│   │   ├── moon.svg
+│   │   └── sun.svg
+│   ├── images/   # (currently empty)
+│   └── fonts/    # (currently empty)
+└── .git/         # (if using git)
+```
+
+- All JSON data files for translations and content are in `data/`.
+- All scripts are in `js/`.
+- All stylesheets are in `css/`.
+- All icons are in `assets/icons/`.
+- Images and fonts folders are present for future use.
+
+---
