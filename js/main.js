@@ -311,7 +311,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Escape HTML for safe rendering
   function escapeHTML(str) {
-    return (str || '').replace(/[&<>"']/g, function(m) {
+    if (typeof str !== 'string') str = String(str);
+    return str.replace(/[&<>"']/g, function(m) {
       return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'})[m];
     });
   }
@@ -444,6 +445,21 @@ document.addEventListener('DOMContentLoaded', () => {
     return { nrsv: outN, lamsa: outL, hart: outH };
   }
   // Helper: wrap word in red-letter if in redLetterRanges
+
+  // Render layered commentary for a verse (NRSV, Lamsa, Hart)
+  function renderLayeredCommentary(nComment, lComment, hComment) {
+    // If all are empty or missing, show a message
+    if (!(nComment || lComment || hComment)) {
+      return '<div class="no-commentary">No commentary available for this verse.</div>';
+    }
+    return `
+      <div class="commentary-columns">
+        ${nComment ? `<div class="commentary-col"><b>NRSV Commentary</b><div>${escapeHTML(nComment)}</div></div>` : ''}
+        ${lComment ? `<div class="commentary-col"><b>Lamsa Commentary</b><div>${escapeHTML(lComment)}</div></div>` : ''}
+        ${hComment ? `<div class="commentary-col"><b>Hart Commentary</b><div>${escapeHTML(hComment)}</div></div>` : ''}
+      </div>
+    `;
+  }
   function wrapRedLetter(word, idx, arr, ranges) {
     if (!ranges || !ranges.length) return escapeHTML(word);
     // Calculate char offset for this word
@@ -456,6 +472,21 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
     return escapeHTML(word);
+  }
+
+  // Render layered commentary for a verse (NRSV, Lamsa, Hart)
+  function renderLayeredCommentary(nComment, lComment, hComment) {
+    // If all are empty or missing, show a message
+    if (!(nComment || lComment || hComment)) {
+      return '<div class="no-commentary">No commentary available for this verse.</div>';
+    }
+    return `
+      <div class="commentary-columns">
+        ${nComment ? `<div class="commentary-col"><b>NRSV Commentary</b><div>${escapeHTML(nComment)}</div></div>` : ''}
+        ${lComment ? `<div class="commentary-col"><b>Lamsa Commentary</b><div>${escapeHTML(lComment)}</div></div>` : ''}
+        ${hComment ? `<div class="commentary-col"><b>Hart Commentary</b><div>${escapeHTML(hComment)}</div></div>` : ''}
+      </div>
+    `;
   }
 
   // Set up click listeners for tab buttons
