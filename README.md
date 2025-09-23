@@ -7,7 +7,8 @@ A web application for exploring and studying the direct words of Jesus Christ as
 - **Organized Content**: Browse teachings by category (Sermon on the Mount, Parables, Sayings)
 - **Search Functionality**: Search across all content for specific words or phrases
 - **Dark Mode**: Toggle between light and dark themes
-- **Accessibility Options**: Multiple accessibility features including high contrast, large text, and reduced motion
+- **Accessibility Options**: Popup menu with High Contrast, Large Text, Reduce Motion, and Simplified View. All options can be combined and persist across reloads.
+- **Notes/Annotations**: Add, edit, and save notes for each section/verse. Notes are saved in your browser and persist across reloads.
 - **Responsive Design**: Works on desktop and mobile devices
 
 ## File Structure
@@ -24,7 +25,7 @@ jesus.words/
 │   ├── search.js          # Search functionality
 │   ├── dark-mode.js       # Dark mode toggle
 │   ├── accessibility.js   # Accessibility menu
-│   └── notes.js           # Notes functionality (placeholder)
+│   └── notes.js           # Notes functionality (per section/verse)
 ├── data/
 │   ├── home.json          # Home page content
 │   ├── sermon.json        # Sermon on the Mount content
@@ -63,10 +64,11 @@ php -S localhost:8000
 
 ## Usage
 
-- **Navigation**: Click the tab buttons to switch between different content sections
-- **Search**: Type in the search box to find content across all sections
-- **Dark Mode**: Click the sun/moon toggle button (bottom left)
-- **Accessibility**: Click the gear icon (bottom left) to access accessibility options
+- **Navigation**: Click the tab buttons to switch between Home, Sermon, Parables, and Sayings. Content loads dynamically.
+- **Search**: Type in the search box to find content across all sections. Results show the source section.
+- **Dark Mode**: Click the sun/moon toggle button (bottom left) for a smooth animated transition. Your preference is saved.
+- **Accessibility**: Click the gear icon (bottom left) for a popup menu. Enable High Contrast, Large Text, Reduce Motion, or Simplified View. All options can be combined and persist.
+- **Notes**: Add notes to any section or verse using the "My Notes" area in each card. Notes are saved in your browser.
 
 ## Development
 
@@ -95,7 +97,6 @@ Works in all modern browsers that support:
 
 - [ ] Add more comprehensive content to JSON files
 - [ ] Implement verse references and cross-references
-- [ ] Add note-taking functionality
 - [ ] Include multiple Bible translations
 - [ ] Add print-friendly styling
 - [ ] Implement offline functionality with service workers

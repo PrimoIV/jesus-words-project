@@ -1,0 +1,5 @@
+/* Highlight differences in dark mode: more visible yellow */
+.highlight-differences .diff {
+	background-color: #facc15;
+	color: #1e293b;
+}

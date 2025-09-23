@@ -2,16 +2,25 @@
   "title": "Welcome to the Jesus Words Project",
   "sections": [
     {
-      "heading": "About This Project",
-      "text": "This collection focuses on the direct words of Jesus Christ as recorded in the Gospels. Here you can explore His teachings, parables, and sayings in an organized and searchable format."
+      "verse": "Hello!",
+      "nrsv": "This collection focuses on the direct words of Jesus Christ as recorded in the Gospels. Here you can explore His teachings, parables, and sayings in an organized and searchable format.",
+      "lamsa": "This collection focuses on the direct words of Jesus Christ as recorded in the Gospels. Here you can explore His teachings, parables, and sayings in an organized and searchable format.",
+      "hart": "This collection focuses on the direct words of Jesus Christ as recorded in the Gospels. Here you can explore His teachings, parables, and sayings in an organized and searchable format.",
+      "commentary": "So glad you're here! Use the tabs to explore Jesus' teachings in three translations. Search, toggle dark mode, and use accessibility features as needed. All content is from the canonical Gospels, focusing on the red letter words."
     },
     {
-      "heading": "How to Use",
-      "text": "Navigate through the tabs above to explore different categories of Jesus' teachings. Use the search function to find specific words or phrases. Toggle dark mode and accessibility options as needed."
+      "verse": "How To",
+      "nrsv": "Navigate through the tabs above to explore different categories of Jesus' teachings. Use the search function to find specific words or phrases. Toggle dark mode and accessibility options as needed.",
+      "lamsa": "Navigate through the tabs above to explore different categories of Jesus' teachings. Use the search function to find specific words or phrases. Toggle dark mode and accessibility options as needed.",
+      "hart": "Navigate through the tabs above to explore different categories of Jesus' teachings. Use the search function to find specific words or phrases. Toggle dark mode and accessibility options as needed.",
+      "commentary": "Instructions for use. All features are designed for accessibility and ease of study."
     },
     {
-      "heading": "Scripture Focus",
-      "text": "All content is drawn from the canonical Gospels of Matthew, Mark, Luke, and John, with emphasis on the red letter words - the direct quotes attributed to Jesus."
+      "verse": "Scripture Focus",
+      "nrsv": "All content is drawn from the canonical Gospels of Matthew, Mark, Luke, and John, with emphasis on the red letter words - the direct quotes attributed to Jesus.",
+      "lamsa": "All content is drawn from the canonical Gospels of Matthew, Mark, Luke, and John, with emphasis on the red letter words - the direct quotes attributed to Jesus.",
+      "hart": "All content is drawn from the canonical Gospels of Matthew, Mark, Luke, and John, with emphasis on the red letter words - the direct quotes attributed to Jesus.",
+      "commentary": "Scripture focus: direct words of Jesus, presented for study and reflection."
     }
   ]
 }

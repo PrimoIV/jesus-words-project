@@ -2,16 +2,25 @@
   "title": "Sermon on the Mount",
   "sections": [
     {
-      "heading": "Introduction",
-      "text": "Jesus went up on a mountainside and began to teach His disciples..."
+      "verse": "Matthew 5:3",
+      "nrsv": "Blessed are the poor in spirit, for theirs is the kingdom of heaven.",
+      "lamsa": "Blessed are the poor in spirit, for the kingdom of heaven is theirs.",
+      "hart": "How blessed are those who know their need of God; the kingdom of Heaven is theirs.",
+      "commentary": "<ul><li><b>Spirit</b> here refers to humility and openness to God.</li><li><i>Esoteric:</i> The 'poor' are those who have emptied themselves of ego.</li></ul>"
     },
     {
-      "heading": "Beatitudes",
-      "text": "Blessed are the poor in spirit, for theirs is the kingdom of heaven..."
+      "verse": "Matthew 5:4",
+      "nrsv": "Blessed are those who mourn, for they will be comforted.",
+      "lamsa": "Blessed are those who mourn, for they shall be comforted.",
+      "hart": "How blessed are the sorrowful; they shall find consolation.",
+      "commentary": "<b>Mourning</b> is not just grief, but deep spiritual longing. <i>Esoteric:</i> Mourning for the world’s suffering brings divine comfort."
     },
     {
-      "heading": "Salt and Light",
-      "text": "You are the salt of the earth... You are the light of the world..."
+      "verse": "Matthew 5:5",
+      "nrsv": "Blessed are the meek, for they will inherit the earth.",
+      "lamsa": "Blessed are the meek, for they shall inherit the earth.",
+      "hart": "How blessed are the gentle; they shall have the earth for their possession.",
+      "commentary": "<b>Meek</b> means strength under control. <i>Esoteric:</i> The gentle inherit the earth by being in harmony with it."
     }
   ]
 }

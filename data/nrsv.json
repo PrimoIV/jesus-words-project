@@ -1,0 +1,29 @@
+{
+  "Matthew 5:3": {
+    "text": "Blessed are the poor in spirit, for theirs is the kingdom of heaven.",
+    "redLetterRanges": [[0, 57]],
+    "commentary": {
+      "basic": "Jesus begins the Sermon on the Mount with the Beatitudes, emphasizing spiritual humility.",
+      "scholarly": "The phrase 'poor in spirit' is widely interpreted as those who recognize their spiritual need.",
+      "esoteric": "To be 'poor in spirit' is to empty oneself of ego, making room for the Divine."
+    }
+  },
+  "Matthew 5:4": {
+    "text": "Blessed are those who mourn, for they will be comforted.",
+    "redLetterRanges": [[0, 54]],
+    "commentary": {
+      "basic": "Jesus promises comfort to those who grieve or long for righteousness.",
+      "scholarly": "Mourning here can refer to both personal loss and sorrow for the world's brokenness.",
+      "esoteric": "Mourning is the soul's longing for reunion with its Source."
+    }
+  },
+  "Matthew 5:5": {
+    "text": "Blessed are the meek, for they will inherit the earth.",
+    "redLetterRanges": [[0, 51]],
+    "commentary": {
+      "basic": "Meekness is presented as a strength, not a weakness.",
+      "scholarly": "In the ancient world, meekness implied self-control and gentleness.",
+      "esoteric": "The meek inherit because they are in harmony with the world, not in conflict."
+    }
+  }
+}
