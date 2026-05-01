@@ -284,3 +284,31 @@
         max-width: calc(100vw - 20px);
     }
 }
+/* =========================
+   ACCESSIBILITY GEAR BUTTON
+   ========================= */
+.acc-gear {
+    position: fixed;
+    bottom: 24px;
+    left: 24px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    z-index: 10000;
+    border: none;
+}
+.acc-gear img {
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+.acc-gear:hover { transform: scale(1.05); }
+
+.high-contrast #sidebar, .high-contrast #comparison-view { filter: contrast(150%) saturate(200%); border-color: #000; }
+.high-contrast .column-header, .high-contrast .sidebar-header { border-color: #000; box-shadow: 0 1px 0 #000; }

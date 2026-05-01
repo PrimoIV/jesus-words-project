@@ -1,98 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jesus Words Project</title>
-  <link rel="icon" href="assets/icons/sun.svg" type="image/svg+xml">
-
-  <!-- Core styles -->
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/dark-mode.css">
-  <link rel="stylesheet" href="css/accessibility.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jesus Words</title>
+    <!-- Use Inter font for clean layout -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+    <link rel="stylesheet" href="css/accessibility.css">
 </head>
 <body>
-  <!-- =========================
-       HEADER
-       ========================= -->
-  <header>
-    <h1>Jesus Words Project</h1>
+    <div id="app-container">
+        <!-- Left panel (Verse Navigator) -->
+        <aside id="sidebar">
+            <header class="sidebar-header">
+                <h1>Jesus Words</h1>
+                <div class="mode-toggle">
+                    <button class="toggle-btn active" data-mode="verse">Verse View</button>
+                    <button class="toggle-btn" data-mode="study">Study View</button>
+                </div>
+                <div class="search-container">
+                    <input type="text" id="sidebar-search" placeholder="Search...">
+                </div>
+            </header>
+            
+            <div id="sidebar-content" class="sidebar-content-area scroll-container">
+                <!-- Verse View -->
+                <div id="view-verse" class="view-layer active">
+                    <ul id="verse-list" class="item-list"></ul>
+                </div>
+                
+                <!-- Study View: Empty Sidebar State -->
+                <div id="view-study-empty" class="view-layer placeholder-state">
+                    <p>Select a category from the dashboard to explore verses.</p>
+                </div>
 
-    <!-- Navigation Tabs -->
-    <nav>
-  <button class="tab-button" data-section="home">Home</button>
-  <button class="tab-button" data-section="sermon">Sermon on the Mount</button>
-  <button class="tab-button" data-section="parables">Parables</button>
-  <button class="tab-button" data-section="sayings">Sayings</button>
-  <button class="tab-button" data-section="search">Search</button>
-</nav>
+                <!-- Study View: Category Detail (Verses) -->
+                <div id="view-study-detail" class="view-layer">
+                    <button id="btn-back-categories" class="back-btn">&larr; Categories</button>
+                    <h2 id="study-detail-title" class="study-title">Category Name</h2>
+                    <ul id="study-verse-list" class="item-list"></ul>
+                </div>
+            </div>
+        </aside>
 
-  </header>
+        <!-- Main content area -->
+        <main id="main-content">
+            <!-- 3-Column Comparison View -->
+            <div id="comparison-view" class="main-layer active">
+                <div class="column">
+                    <header class="column-header">DBH</header>
+                    <div class="column-content" id="col-dbh">
+                        <div class="placeholder-text">Select a verse to compare.</div>
+                    </div>
+                </div>
+                
+                <div class="column">
+                    <header class="column-header">NRSVUE</header>
+                    <div class="column-content" id="col-nrsvue"></div>
+                </div>
+                
+                <div class="column">
+                    <header class="column-header">LAMSA</header>
+                    <div class="column-content" id="col-lamsa"></div>
+                </div>
+            </div>
 
-  <!-- =========================
-       MAIN CONTENT
-       ========================= -->
-  <main>
-    <!-- Dynamic verse cards will load here -->
-    <section id="content-area"></section>
-  </main>
+            <!-- Categories Dashboard -->
+            <div id="categories-dashboard" class="main-layer">
+                <div class="dashboard-header">
+                    <h2>Study Categories</h2>
+                    <p>Select a theological theme to view all related spoken verses.</p>
+                </div>
+                <div id="dashboard-grid">
+                    <!-- Cards injected by JS -->
+                </div>
+            </div>
+        </main>
 
-  <!-- =========================
-       SEARCH
-       ========================= -->
-  <section id="search-panel">
-    <div class="search-bar-wrap">
-      <input type="text" id="search-input" placeholder="Search Jesus’ words...">
     </div>
-    <div id="search-results"></div>
-  </section>
 
-  <!-- Optional: Fallback tab content (not used by dynamic loader, but kept for reference) -->
-  <div id="home" class="tab-content">Home content here</div>
-  <div id="sermon" class="tab-content">Sermon on the Mount content here</div>
-  <div id="parables" class="tab-content">Parables content here</div>
-  <div id="sayings" class="tab-content">Sayings content here</div>
-  <div id="search" class="tab-content">Search content here</div>
+    <!-- Accessibility Menu -->
+    <button id="accessibility-toggle" class="acc-gear" aria-label="Accessibility Options">
+        <img src="assets/icons/accessicon2.svg" alt="accessibility icon" />
+    </button>
+    <div id="accessibility-menu" hidden>
+        <h2>Accessibility Options</h2>
+        <ul>
+            <!-- Options will be injected by JS -->
+        </ul>
+    </div>
 
-  <!-- =========================
-       ACCESSIBILITY MENU
-       ========================= -->
-  <button id="accessibility-toggle" class="acc-gear" aria-label="Accessibility Options">
-    <img src="assets/icons/accessicon2.svg" alt="accessibility icon"/>
-  </button>
-  
-  <div id="accessibility-menu" hidden>
-    <h2>Accessibility Options</h2>
-    <ul>
-      <!-- Options will be injected by JS -->
-    </ul>
-  </div>
+    <!-- Dark Mode Toggle -->
+    <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="Toggle dark mode">
+        <span class="icon-wrap">
+            <img class="icon-sun" src="assets/icons/sun.svg" alt="sun icon" />
+            <img class="icon-moon" src="assets/icons/moon.svg" alt="moon icon" />
+        </span>
+    </button>
 
-  <!-- Dark mode toggle -->
-  <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="Toggle dark mode">
-    <span class="icon-wrap">
-      <img class="icon-sun" src="assets/icons/sun.svg" alt="sun icon"/>
-      <img class="icon-moon" src="assets/icons/moon.svg" alt="moon icon"/>
-    </span>
-  </button>
-
-  <!-- =========================
-       FOOTER
-       ========================= -->
-  <footer>
-    <p>&copy; 2025 Jesus Words Project</p>
-  </footer>
-
-  <!-- =========================
-       SCRIPTS
-       ========================= -->
-  <script src="js/main.js"></script>
-<script src="js/accessibility.js"></script>
-<script src="js/dark-mode.js"></script>
-<script src="js/notes.js"></script>
-<script src="js/search.js"></script>
-
-  <!-- Dark mode overlay effect -->
-  <div class="overlay" data-enabled="false"></div>
+    <!-- Scripts -->
+    <script type="module" src="js/main.js"></script>
+    <script src="js/accessibility.js"></script>
+    <script src="js/dark-mode.js"></script>
 </body>
 </html>

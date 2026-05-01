@@ -1,5 +1,104 @@
-/* Highlight differences in dark mode: more visible yellow */
-.highlight-differences .diff {
-	background-color: #facc15;
-	color: #1e293b;
+/* =========================
+   DARK MODE TOGGLE BUTTON
+   ========================= */
+.dark-mode-toggle {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+    width: 48px;
+    height: 48px;
+    outline: none;
 }
+
+.dark-mode-toggle .icon-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.dark-mode-toggle:hover .icon-wrap {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.icon-sun, .icon-moon {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Base: Sun is showing (ready to click for light mode, default if we start dark)
+   Wait, the JS sets toggle.classList.toggle('active', isDark) */
+
+/* When not dark-mode (light), show moon to indicate "click for dark" */
+.icon-moon {
+    opacity: 1;
+    transform: translateY(0) rotate(0);
+}
+.icon-sun {
+    opacity: 0;
+    transform: translateY(20px) rotate(-45deg);
+}
+
+/* When dark-mode is active, show sun to indicate "click for light" */
+.dark-mode-toggle.active .icon-moon {
+    opacity: 0;
+    transform: translateY(-20px) rotate(45deg);
+}
+.dark-mode-toggle.active .icon-sun {
+    opacity: 1;
+    transform: translateY(0) rotate(0);
+}
+
+/* =========================
+   DARK MODE THEME
+   ========================= */
+body.dark-mode {
+    --bg-color: #111827;
+    --panel-bg: #1f2937;
+    --border-color: #374151;
+    --text-active: #f9fafb;
+    --text-muted: #9ca3af;
+    --text-main: #d1d5db;
+    --diff-bg: rgba(250, 204, 21, 0.15);
+    --highlight-bg: #374151;
+}
+
+body.dark-mode .sidebar-header,
+body.dark-mode .column-header {
+    background: var(--panel-bg);
+}
+
+body.dark-mode .list-item.active {
+    background-color: #4b5563;
+    color: #ffffff;
+}
+
+body.dark-mode .search-container input {
+    background: var(--bg-color);
+    border-color: #6b7280;
+    color: var(--text-active);
+}
+
+body.dark-mode .search-container input:focus {
+    border-color: #9ca3af;
+}
+
+
+
+body.dark-mode .dashboard-card { background: var(--bg-color); border-color: var(--border-color); }
+body.dark-mode .dashboard-card:hover { border-color: var(--text-muted); box-shadow: 0 12px 24px rgba(0,0,0,0.2); }
+body.dark-mode .card-count { background: #374151; color: #d1d5db; }

@@ -1,0 +1,2482 @@
+Postscript of David Bentley Hart bible translation
+
+
+
+Postscript 
+
+A Note on the Prologue of John’s Gospel 
+
+An Exemplary Case of the Untranslatable 
+
+There may perhaps be no passage in the New Testament more resistant 
+to simple translation into another tongue than the first eighteen 
+verses—the prologue—of the Gospel of John. Whether it was written 
+by the same author as most of the rest of the text (and there is cause 
+for some doubt on that score), it very elegantly proposes a theology of 
+the person of Christ that seems to subtend the entire book, and that 
+perhaps reaches its most perfect expression in its twentieth chapter. 
+But it also, intentionally in all likelihood, leaves certain aspects of that 
+theology open to question, almost as if inviting the reader to venture 
+deeper into the text to find the proper answers. Yet many of these fruitful 
+ambiguities are simply invisible anywhere except in the Greek of 
+the original, and even there are discernible in only the most elusive 
+and tantalizing ways. Take, for example, the standard rendering of just 
+the first three verses. In Greek, they read, 1Ἐν ἀρχῇ ἦν ὁ λόγος, καὶ 
+ὁ λόγος ἦν πρὸς τὸν θεόν, καὶ θεὸς ἦν ὁ λόγος· 2οὗτος ἦν ἐν ἀρχῇ 
+πρὸς τὸν θεόν· 3πάντα δι᾽ αὐτοῦ ἐγένετο, καὶ χωρὶς αὐτοῦ ἐγένετο 
+οὐδὲ ἓν ὃ γέγονεν· (1En archēi ēn ho logos, kai ho logos ēn pros ton theon, kai 
+theos ēn ho logos; 2houtos ēn en archēi pros ton theon; 3panta di’ avtou egeneto, 
+kai chōris avtou egeneto oude hen ho gegonen.) I am aware of no respectable 
+English translation in which these verses do not appear in more or 
+
+533 
+
+
+less the same form they are given in the King James Version: “1In the 
+beginning was the Word, and the Word was with God, and the Word 
+was God. 2The same was in the beginning with God. 3All things were 
+made by him; and without him was not any thing made that was made.” 
+Read thus, the Gospel begins with an enigmatic name for Christ, asserts 
+that he was “with God” in the beginning, and then unambiguously 
+goes on to identify him both as “God” and as the creator of all 
+things. Apart from that curiously bland and impenetrable designation 
+“the Word,” the whole passage looks like a fairly straightforward statement 
+of Trinitarian dogma (or at least two-thirds of it), of the Nicene-
+Constantinopolitan variety. The average reader would never guess that, 
+in the fourth century, those same verses were employed by all parties in 
+the Trinitarian debates in support of very disparate positions, or that 
+Arians and Eunomians and other opponents of the Nicene settlement 
+interpreted them as evidence against the coequality of God the Father 
+and the divine Son. The truth is that, in Greek, and in the context 
+of late antique Hellenistic metaphysics, the language of the Gospel’s 
+prologue is nowhere near so lucid and unequivocal as the translations 
+make it seem. For one thing, the term logos really had, by the time the 
+Gospel was written, acquired a metaphysical significance that “Word” 
+cannot possibly convey; and in places like Alexandria it had acquired a 
+very particular religious significance as well. For the Hellenistic Jewish 
+philosopher Philo, for instance, it referred to a kind of “secondary 
+divinity,” a mediating principle standing between God the Most High 
+and creation. In late antiquity it was assumed widely, in pagan, Jewish, 
+and Christian circles, that God in his full transcendence did not come 
+into direct contact with the world of limited and mutable things, and 
+so had expressed himself in a subordinate and economically “reduced” 
+form “through whom” (δι᾽ αὐτοῦ [di’ avtou]) he created and governed 
+the world. It was this Logos that many Jews and Christians believed to 
+be the subject of all the divine theophanies of Hebrew scripture. Many 
+of the early Christian apologists thought of God’s Logos as having been 
+generated just prior to creation, in order to act as God’s artisan of, and 
+
+
+archregent in, the created order. Moreover, the Greek of John’s prologue 
+may reflect what was, at the time of its composition, a standard 
+semantic distinction between the articular and inarticular (or arthrous 
+and anarthrous) forms of the word theos: the former, ὁ θεός (ho theos) (as 
+in πρὸς τὸν θεόν [pros ton theon], where the accusative form of article 
+and noun follow the preposition), was generally used to refer to God 
+in the fullest and most proper sense: God Most High, the transcendent 
+One; the latter, however, θεός (theos) (as in καὶ θεὸς ἦν ὁ λόγος [kai 
+theos ēn ho logos]), could be used of any divine being, however finite: a 
+god or a derivative divine agency, say, or even a divinized mortal. And 
+so early theologians differed greatly in their interpretation of that very 
+small but very significantly absent monosyllable. Now it may be that the 
+article is omitted in the latter case simply because the word theos functions 
+as a predicate there, and typically in Greek the predicate would 
+need no article. Yet this rule tends not to hold when the predication 
+is one of personal identity; moreover, the syntax is ambiguous as regards 
+which substantive should be regarded as the subject and which the 
+predicate; though Greek is an inflected language, and hence more syntactically 
+malleable than modern Western tongues, the order of words 
+is not a matter of complete indifference; and one might even translate 
+καὶ θεὸς ἦν ὁ λόγος as “and [this] god was the Logos.” But the issue 
+becomes at once both clearer and more inadjudicable at verse 18, where 
+again the designation of the Son is theos without the article, and there 
+the word is unquestionably the subject of the sentence. Mind you, in 
+the first chapter of John there are also other instances of the inarticular 
+form where it is not clear whether the reference is the Father, the 
+Son, or somehow both at once in an intentionally indeterminate way 
+(as though, perhaps, the distinction of articular from inarticular forms 
+is necessary in regard to the inner divine life, but not when speaking of 
+the relation of the divine to the created realm). But, in all subsequent 
+verses and chapters, God in his full transcendence is always ho theos; and 
+the crucial importance of the difference between this and the inarticular 
+theos is especially evident at 10:34–36. Most important of all, this 
+
+
+distinction imbues the conclusion of the twentieth chapter with a remarkable 
+theological significance, for it is there that Christ, now risen 
+from the dead, is explicitly addressed as ho theos (by the apostle Thomas). 
+Even this startling profession, admittedly, left considerable room for argument 
+in the early centuries as to whether the fully divine designation 
+was something conferred upon Christ only after the resurrection, and 
+then perhaps only honorifically, or whether instead it was an eternal 
+truth about Christ that had been made manifest by the resurrection. 
+
+Anyway, my point is not that there is anything amiss in the theology 
+of Nicaea, or anything that the original Greek text calls into question, 
+but only that standard translations make it impossible for readers who 
+know neither Greek nor the history of late antique metaphysics and 
+theology to understand either what the original text says or what it does 
+not say. Not that there is any perfectly satisfactory way of representing 
+the text’s obscurities in English, since we do not distinguish between articular 
+and inarticular forms in the same way; rather, we have to rely on 
+orthography and typography, using the difference between an uppercase 
+or lowercase g to indicate the distinction between God and [a] god. 
+This, hesitantly, is how I deal with the distinction in my translation of 
+the Gospel’s prologue, and I believe one must employ some such device: 
+it seems to me that the withholding of the full revelation of Christ 
+as ho theos, God in the fullest sense, until Thomas confesses him as such 
+in the light of Easter, must be seen as an intentional authorial tactic. 
+Some other scholars have chosen to render the inarticular form of theos 
+as “a divine being,” but this seems wrong to me on two counts: first, if 
+that were all the evangelist were saying, he could have used the perfectly 
+serviceable Greek word theios; and, second, the text clearly means to 
+assert some kind of continuity of divinity between God the Father and 
+the Logos, not merely some sort of association between “God proper” 
+and “a divine being.” Here, I take it, one may regard chapter twenty as 
+providing the ultimate interpretation of chapter one, and allow one’s 
+translation to reflect that. 
+
+
+Translating Certain Words 
+
+An Irregular Glossary 
+
+In order to avoid misunderstandings or, worse, a surfeit of long 
+and repetitious footnotes, I thought it best to explain my renderings of 
+certain words here for the curious. In some cases my choice of translation—
+or, in one case, my refusal of a choice of translation—might seem 
+somewhat eccentric, or even perhaps a little perverse; but I can honestly 
+say that all my decisions have been made in good faith and on what 
+I consider the soundest principles. I have also allowed my thinking on 
+certain terms to be shaped by—in addition to the studies of many modern 
+biblical scholars—the readings offered by certain ancient authorities 
+who, to my mind, possessed at once all the necessary attributes of trustworthy 
+exegetical guides: complete linguistic proficiency, penetrating 
+exegetical insight, and genuinely redoubtable theological powers: Origen, 
+Gregory of Nyssa, and Theodore of Mopsuestia (among others). 
+
+1. The first word is αἰώνιος (aiōnios), which in most traditional 
+translations is rendered as “eternal” or “everlasting,” except in the many 
+instances where such a reading would be nonsensical. And I have discovered 
+that there are many Christians whose sometimes furious objection 
+to any other rendering revolves around a single verse, Matthew 25: 
+46. After all, in the original Greek of the New Testament, there really 
+are only three verses that seem to threaten “eternal punishment” for 
+the wicked (though, in fact, none of them actually does), and many who 
+are doctrinally or emotionally committed to the idea of eternal torment 
+for the unelect would feel gravely bereaved if the delicious clarity of 
+the seemingly most explicit of those verses were allowed to be obscured 
+behind a haze of lexical indeterminacy. To these I can say only that, if 
+they really wish to believe in the everlasting torment of the reprobate, 
+they are perfectly free to do so, whether there is any absolutely unquestionable 
+scriptural warrant for doing so or not; but, then again, even 
+the Greek word typically rendered as “punishment” in that verse raises 
+problems of translation (see below, and see my footnote to Matthew 25: 
+
+46). More to the point, there are three immense difficulties that militate 
+against the traditional rendering of aiōnios in the New Testament. 
+
+The first is that there is a genuine ambiguity in the term in Greek 
+that is impossible to render directly in an English equivalent. Aiōnios is 
+an adjective drawn from the substantive αἰών (aiōn, or aeon), which can 
+sometimes mean a period of endless duration, but which more properly, 
+throughout the whole of ancient and late antique Greek literature, 
+means “an age,” or “a long period of time” of indeterminate duration, 
+or even just “a substantial interval.” Its proper equivalent in Latin would 
+be aevum. At times, it can refer to an historical epoch, to a time “long 
+past” or “far in the future,” to something as shadowy and fleeting as the 
+lifespan of a single person (in Homer and the Attic dramatists this is 
+its typical meaning), or even to a considerably shorter period than that 
+(say, a year). It can also, as it frequently does in the New Testament, 
+refer to a particular universal dispensation: either the present world 
+or the world to come or a heavenly sphere of reality beyond our own. 
+Moreover, the adjective aiōnios, unlike the adjective ἀΐδιος (aïdios) or 
+adverb ἀεί (aei), never clearly means “eternal” or “everlasting” in any 
+incontrovertible sense, nor does the noun aiōn simply mean “eternity” 
+in the way that the noun ἀϊδιότης (aïdiotēs) does; neither does aiōnios 
+mean “endless,” as ἀτέλευτος (atelevtos) or ἀτελεύτητος (atelevtētos) 
+does; and, in fact, there are enough instances in the New Testament 
+where the adjective or the noun obviously does not mean “eternal” or 
+“eternity” that it seems to me unwise simply to presume such meanings 
+in any instances at all. Where it is used of that which is by nature eternal, 
+God in himself, it certainly carries the connotation that, say, the 
+English words “enduring” or “abiding” would do in the same context: 
+everlasting. But that is a connotation by extension, not the univocal core 
+of the word. A perfect example of the word’s ambiguity can be found 
+in Romans 16:25–26, where in successive verses it is used first of “times 
+ages past” or “times ages-long” (χρόνοις αἰωνίοις [chronois aiōniois]) 
+and then of “the eternal God” or “the enduring God” or even perhaps 
+
+
+“the God of Ages” (τοῦ αἰωνίου θεοῦ [tou aiōniou theou]). I might add, 
+moreover, that this uncertainty regarding the proper acceptation of aiōnios 
+in the New Testament is anything but a reflex of modern faddish revisionism. 
+If one consults the literary remains of Greek-speaking Jewish 
+scholars of late antiquity, for example, one will find few instances of aiōn 
+or aiōnios used to indicate eternal duration: for both Philo of Alexandria 
+(an older contemporary of Jesus) and Josephus (born within a decade 
+of the crucifixion), an “aeon” is often still only a limited period of time, 
+usually a single lifetime, but perhaps as much as three generations. And 
+the same is true of Christian thinkers of the early centuries. Late in the 
+fourth century, John Chrysostom, in his commentary on Ephesians, 
+even used the word aiōnios of the kingdom of the devil specifically to indicate 
+that it is temporary (for it will last only till the end of the present 
+age, he explains). In the early centuries of the church, especially in the 
+Greek and Syrian East, the lexical plasticity of the noun and the adjective 
+was fully appreciated—and often exploited—by a number of Christian 
+theologians and exegetes (especially such explicit universalists as 
+the great Alexandrians Clement and Origen, the “pillar of orthodoxy” 
+Gregory of Nyssa and his equally redoubtable sister Makrina, the great 
+Syrian fathers Diodore of Tarsus, Theodore of Mopsuestia, Theodoret 
+of Cyrus, and Isaac of Nineveh, and so on, as well as many other more 
+rhetorically reserved universalists, such as Gregory of Nazianzus). Late 
+in the fourth century, for instance, Basil of Caesarea reported that the 
+majority of his fellow Christians (at least, in the Greek-speaking East 
+with which he was familiar) assumed that “hell” is not an eternal condition, 
+and that the “aiōnios punishment” of the age to come would end 
+when the soul had been purified of its sins and thus prepared for union 
+with God. Well into the sixth century, the great Platonist philosopher 
+Olympiodorus the Younger could state as rather obvious that the suffering 
+of wicked souls in Tartarus is certainly not endless, atelevtos, but 
+is merely aiōnios; and the squalidly brutal and witless Christian emperor 
+Justinian, as part of his campaign to extinguish the universalism of the 
+
+
+“Origenists,” found it necessary to substitute the word atelevtētos for 
+aiōnios when describing the punishments of hell, since the latter word 
+was not decisive. Early in the eighth century, John of Damascus delineated 
+four meanings of aiōn, the last of which—“eternity”—is offered as 
+not an intrinsic, but merely an imputed, connotation, presumed whenever 
+the word is used of something (like the Age of God’s Kingdom) 
+known to be endless; and even then, John affirms, the true eternity 
+of God is beyond all ages. As late as the thirteenth century, the East 
+Syrian bishop Solomon of Bostra, in his authoritative compilation of 
+the teachings of the “holy fathers” of Syrian Christian tradition, stated 
+simply as a matter of fact that in the New Testament lealam 
+(the Syriac 
+rendering of aiōnios) does not mean eternal, and that of course hell is not 
+endless. And the fourteenth-century East Syrian Patriarch Timotheus 
+II thought it uncontroversial to assert that the aiōnios pains of hell will 
+come to an end when the souls cleansed by them, through the prayers 
+of the saints, enter paradise. Conscious of the problems the word aiōnios 
+presents, some Anglophone translators have in the past chosen simply 
+to use an Anglicized version of the Greek word, “aeonian,” and thereby 
+avoid the issue of its precise meaning altogether. Others have ventured 
+such neologisms as “age-during.” Even, however, if I did not regard the 
+effects thus produced as a little silly, I would find either an unsatisfactory 
+solution, for a number of reasons—and this brings me to the second 
+difficulty. 
+
+In the Gospels there are instances where the substantive aiōn and 
+the adjective aiōnios are juxtaposed or associated in a single image or 
+utterance (most directly in Mark 10:30 and Luke 18:30). This obvious 
+parallel in the Greek is invisible in almost every English translation. For 
+us, who read these verses—and indeed the entire text—on the other side 
+of a process of translation, there appears to be a clear semantic and conceptual 
+distinction between words like “age” and “eternal.” For a first-
+century reader of the text, it would not be easy to dissociate or neatly 
+segregate terms that were simply different versions of the same word. 
+For a long time, I considered translating aiōnios as “enduring” or “last
+
+
+
+ing,” the latter, I confess, because the “last” in “lasting” seemed the best 
+I could do at insinuating into the text some faint echo of a hint of the 
+eschatological resonance of the word—its clear reference to the Kingdom 
+of God, “the Age to come”—in several contexts. But, in the end, I 
+feared the loss of that vital and theologically portentous echo. I might 
+have decided simply upon “age-long,” admittedly. Ultimately, though, 
+I decided that to treat aiōnios as denoting only duration (whether eternal 
+or limited), rather than a certain quality or dimension of reality as 
+well, would still fail to cast any light upon the connection between aiōn 
+and aiōnios in the text as a whole (especially in the fourth Gospel, where 
+the adjective aiōnios seems clearly to indicate a qualitatively different— 
+rather than successive—frame of reality, the divine sphere rather than 
+the earthly). And this brings me to the third difficulty, which may be 
+the most significant. 
+
+Jesus of Nazareth, as presented in the Gospels, was a first-century 
+Galilaean who spoke Aramaic and could read Hebrew (if he could speak 
+koinē Greek, as I think he most likely could, he certainly did not do so 
+when teaching his disciples or preaching to the multitudes in Galilee 
+and Judaea); and, if the sayings attributed to him in the Gospels are indeed 
+faithful transpositions of his words into Greek equivalents, then 
+there can be no doubt that the words aiōn and aiōnios correspond to 
+various forms and uses of the Hebrew olam or the Aramaic alma, both 
+of which most literally mean something at an immense distance, on 
+the far horizon, hidden from view, and which are usually used to mean 
+“age,” or “period of long duration,” or a time hidden in the depths of 
+the far past or far future, or a “world” or “dispensation,” or even “eternity,” 
+and so on; but it can also mean simply an extended period, and 
+not necessarily a particularly long one, with a natural term. Moreover, 
+the Septuagint—which, in its various forms, was the Bible for much 
+of the early church, and which provides nine-tenths of all the quotations 
+from Hebrew scripture found in the New Testament—serves as 
+something of a guide to how various expressions of the Jewish concept 
+olam or alma were typically rendered in Greek (for instance, in Deu
+
+
+
+teronomy 15:17 olam is used to indicate the period of the life of a slave, 
+and in the Septuagint version of that passage is rendered as aiōn). There 
+really is no word in Hebrew that naturally means “eternity,” either temporal 
+or atemporal, or any word that naturally means “forever”; the 
+claim occasionally made by champions of the received view—that both 
+aiōn and olam in scripture mean “eternal” typically rather than defectively—
+is not merely logically impossible to verify, but simply false. 
+There are, however, metaphoric, circumlocutory, or hyperbolic words 
+and phrases that convey the idea of an extremely long period, which 
+may even be endless in duration (but which, then again, may not be); 
+and these locutions are recognizable just below the surface of certain 
+standard Greek phrases in the Septuagint and the New Testament. Behind 
+aiōn lies olam (if we confine ourselves to the Hebrew forms), and 
+behind various constructions of aiōn lie corresponding constructions 
+of olam. For instance, εἰς τὸν αἰῶνα (eis ton aiōna)—often translated 
+as “forever” but literally meaning “unto the age” or “until the age” or 
+“into the age” or “throughout the age”—is the equivalent of leolam 
+or adolam 
+(“unto the age” or “until the age”). The phrase εἰς τοὺς 
+αἰῶνας τῶν αἰώνων (eis tous aiōnas tōn aiōnōn)—often translated as 
+“forever and ever” or something similar, but literally meaning “unto 
+the ages of the ages”—and the related ὁ αἰὼν τῶν αἰώνων (ho aiōn tōn 
+aiōnōn), “the age of the ages,” represent something like the Hebrew leolam 
+vaed 
+(“unto an age and beyond”) or leolameiolamim 
+(“unto ages 
+of ages”). More important here, however, the age to which many uses of 
+both aiōn and aiōnios refer is surely the olam haba, 
+“the Age to come”: 
+the age or world of God that is coming to this earth, the Age of the 
+Kingdom or of that reality now hidden in God. In the Greek of the New 
+Testament, this is often rendered as ὁ αἰὼν ἐρχόμενος (ho aiōn erchomenos), 
+“the coming age,” or ὁ μέλλων αἰών (ho mellōn aiōn), “the age 
+about to come,” or, more simply and mysteriously, ἐκεῖνος αἰών (ekeinos 
+aiōn), “that age.” And that coming age must be distinguished from 
+the olam hazeh, 
+“this present age,” which in Greek is οὗτος καιρός 
+(houtos kairos) or οὗτος αἰών (houtos aiōn), “this time” or “this age”; or 
+
+
+ἐνεστὼς καιρός (enestōs kairos) or ἐνεστὼς αἰών (enestōs aiōn), “the 
+present time” or “the present age”; or ὁ νῦν αἰών (ho nyn aiōn), “the 
+age now.” It is almost certainly the case that in the New Testament, and 
+especially in the teachings of Jesus, the adjective aiōnios is the equivalent 
+of something like the phrase leolam, 
+but also the case that it cannot be 
+neatly discriminated from the language of the olam haba 
+without losing 
+something of the theological depth and religious significance it possessed 
+in the time of Christ. One sees an apparent interchangeability 
+of the terms “aeonian” and “the Age to come,” I might add, at various 
+junctures in the text, and in certain scattered evidences from the early 
+centuries of the church. For instance, Mark 3:29 and Matthew 12:32 
+are obviously two versions of the same logion, but where the former 
+speaks of an “aeonian” transgression the latter speaks of a transgression 
+that cannot simply be pardoned “in this age or in the age to come.” 
+As late as the early fourth century, when the text of the Nicene Creed 
+was written, using the Apostles’ Creed as a paradigm, the scriptural 
+language of “eternal” or “aeonian” life—ζωή αἰώνιος (zōē aiōnios)— 
+with which the earlier symbol of the faith concluded, was rendered instead 
+as “the life of the Age to come”—ζωὴ τοῦ μέλλοντος αἰῶνος 
+(zōē tou mellontos aiōnos)—suggesting that even at that late date the two 
+concepts were not clearly distinct from one another. New Testament 
+scholars as theologically diverse as Marcus Borg and N. T. Wright have 
+suggested that translators might do well in many or most instances to 
+render aiōnios as “of the age to come”; in fact, in Wright’s own translation 
+of the New Testament he does just this wherever he deems it appropriate 
+(though his resolve inexplicably deserts him at the crucial juncture 
+of Matthew 25:46). I have not quite followed suit. Somewhat more 
+vaguely, perhaps, I have generally rendered aiōnios as “of” or “in” either 
+“that Age” (ekeinos aiōn) or “the Age,” using the unqualified noun alone 
+to suggest a long, if indeterminate, duration, but using the uppercase 
+letter to suggest something of its eschatological or otherworldly resonance. 
+This leaves it to the reader to decide whether he or she wishes 
+to read “Age” here as meaning an eternity of duration, an eternity of 
+
+
+quality, an indefinite (if long) span of time, or the Age that is coming. 
+Only in a few cases, where the context warrants, have I used a different 
+rendering. Wherever the word aiōnios appears in the text in a distinctive 
+construction, I have indicated the fact in a footnote, for clarity’s sake. 
+
+2.The next word is γέεννα (gehenna). In the New Testament there 
+is no single Greek term corresponding to the Anglo-Saxon “hell,” despite 
+the prodigality with which that word is employed in traditional 
+English translations, and no term at all that quite corresponds to the 
+picture of hell—a kingdom of ingenious tortures ruled by Satan—that 
+took ever more opulent and terrifying mythical shape in later Christian 
+centuries. Rather, there is “Hades,” the realm of the dead beneath the 
+earth, corresponding to the Hebrew Sheol (where, for instance, both 
+“Dives” and Lazarus await the end of all things, or where perhaps disembodied 
+souls heard the gospel from Jesus before his resurrection, 
+and so on); there is “Tartarus” (once, in 2 Peter 2:4), a name drawn 
+from pagan Greek lore referring to a place of postmortem imprisonment 
+and punishment, and most especially to the prison of the Titans, 
+but in the New Testament referring not to some sort of final “hell” of 
+perpetual torment, but solely to the subterranean prison where fallen 
+angels and their demonic offspring are held until the day of judgment; 
+and then there is “the gehenna,” the Aramaic form of the Hebrew GeHinnom, 
+“Valley of Hinnom” (originally the GebenHinnom, 
+“Valley 
+of Hinnom’s Son”). This last term appears eleven times in the synoptic 
+Gospels (seven in Matthew, three in Mark, and one in Luke), and only 
+once in the rest of the New Testament (in the Letter of James). Precisely 
+why this valley to the south and west of Jerusalem had by Christ’s 
+time become, in apocalyptic literature and emerging Rabbinic tradition, 
+a name for a place of punishment or purification or both is difficult 
+to tell. Scripture and tradition say that the Tophet was there, the 
+place of child sacrifice for worshippers of Moloch and Ba’al, a practice 
+attested in Leviticus, 2 Chronicles, 2 Kings, Isaiah, and Jeremiah; and 
+while there is as yet little archaeological evidence supporting the claim, 
+the association of the Ge-Hinnom with the sacrifice of infants to evil 
+
+gods was well established long before the Christian period. There is 
+also some small evidence in the valley’s southwest reaches that it might 
+have been a place of tombs and (after the arrival of the Romans) of 
+crematory grounds. There is as well a mediaeval tradition, which may 
+be based on older accounts, that the valley served as a rubbish tip and 
+charnel ground, where refuse was burned and where animal and human 
+corpses were left as carrion, but again the archaeological evidence for 
+this is wholly lacking. Christ himself describes the valley in terms of the 
+description in Isaiah 66:24 of human corpses being consumed by inexterminable 
+worms and inextinguishable fires (neither of which, incidentally, 
+is described as either otherworldly or eternal in nature). Then 
+again, these same images also fit well with Jeremiah’s vision of the Ge-
+Hinnom gorged with corpses—the “valley of slaughter”—as a result of 
+God’s historical punishment of Jerusalem and of those Israelites who 
+had worshipped false gods and sacrificed their babies, using the king of 
+Babylon as the instrument of his wrath; and, indeed, some very formidable 
+New Testament scholars over the years, noting more than incidental 
+echoes of Jeremiah and Isaiah in the teachings of Jesus, have concluded 
+that the language of the gehenna in the synoptic Gospels really 
+referred to the historical “wrath” and “judgment” that many could see 
+descending on Israel in Jesus’s own time (culminating in the fall of Jerusalem 
+and destruction of the Temple in AD 70), rather than to a cosmic 
+Day of Judgment yet to dawn. I happen to concur. After all, Jesus in the 
+Gospels clearly states that the “eschatological” events he prophesies 
+will come to pass during the lifetime of some of his listeners. But no one 
+knows for sure precisely how this valley became a metaphor for divine 
+punishment, in this world or the next, or exactly what the image’s figural 
+function in Christ’s evangel was. 
+
+Neither do we know with great certainty precisely what meanings 
+and connotations the term would have had for Jesus or for his listeners. 
+Before, during, and soon after the time of Jesus, it was common parlance 
+among a great many sects and schools, and was understood sometimes 
+as a place of final destruction, sometimes simply as a place of pun
+
+
+
+ishment, and sometimes as a place of purgatorial regeneration. The two 
+dominant rabbinical schools of Christ’s time, that of Shammai and that 
+of Hillel, both spoke of it as a place of purification or punishment for a 
+limited period, but both also taught that for the incorrigibly wicked 
+there would or could be a state of eternal or final shame, remorse, suffering, 
+or ruin; Shammai had a somewhat grimmer view of the number 
+of the ultimately lost (about a third of humanity, on some accounts), 
+whereas Hillel had a far keener sense of the power of God’s mercy to 
+save. For Shammai, the gehenna was principally a refiner’s fire for those 
+souls neither incorrigibly wicked nor blamelessly good, and those subjected 
+to its pains would ultimately be raised up to paradise. Hillel apparently 
+thought of the gehenna as a place of final punishment and annihilation 
+(body and soul) of the utterly depraved, but thought their 
+number extremely small. And rabbinical tradition says that it is from 
+Hillel that what became the standard Rabbinic view—that no one can 
+suffer in the gehenna for more than twelve months—originally comes; 
+the idea at least goes back as far as Rabbi Akiva, in the generation just 
+after Christ. But, really, we do not know whether Jesus advanced a similar 
+view of the gehenna’s fire, or what duration he might have assigned 
+to the sufferings of those committed to it, or how metaphorically or literally 
+he or his listeners might have understood its imagery. Clearly, 
+though, metaphor was his natural idiom, and so it seems unlikely that 
+his language here should be assumed to be any more literal than his language 
+of ovens or harvests or threshing floors or the closed doors of 
+feasts. And later Christian tradition casts no real light on the issue, 
+given the diversity of views that prevailed in the early centuries of the 
+church, and the total absence of any language of the gehenna, or of any 
+kind of lasting postmortem torment, in the earliest Christian documents 
+we possess, the letters of Paul. As for whether Jesus viewed that 
+fire as one of final destruction or one of purification, this too is difficult 
+to say with certainty. The former possibility seems in keeping with the 
+apparently “annihilationist” images frequently employed by Jesus— 
+chaff and darnel weeds and dead branches being consumed in an oven 
+
+
+(if these are metaphors for sinners rather than, as certain patristic exegetes 
+believed, for their sins)—as well as with his talk of the gehenna’s 
+power to destroy both body and soul. The latter possibility, however, 
+could explain those same images equally well while also, at the same 
+time, making sense of certain other metaphors used by Jesus in the 
+Gospels to describe the punishments that follow from divine judgment: 
+to wit, if remanded to the prison, “you shall most certainly not emerge 
+from there until you repay the very last pittance” (Matthew 5:26; cf. 
+Luke 12:59); the unmerciful slave is “delivered . . . to the inquisitors 
+until he should repay everything owing” (Matthew 18:34); some wicked 
+slaves “will be beaten with many blows” and others “beaten with few 
+blows” (Luke 12:47, 48); “everyone will be salted with fire,” the fire in 
+question being explicitly that of the gehenna, and salting being a common 
+image of purification and preservation—for “salt is good” (Mark 
+9:49–50). It might also explain why the Greek word used for “punishment” 
+in Matthew 25:46 is κόλασις (kolasis)—which typically refers to 
+remedial punishment—rather than τιμωρία (timōria)—which typically 
+refers to retributive justice (it might not, however, since by late antiquity 
+kolasis had perhaps become somewhat less specific in connotation). 
+And, if one regards Paul’s language as a reliable reflection of the 
+teachings of the apostolic church, one might take 1 Corinthians 3:12– 
+15—which distinguishes not between the saved and the “damned,” but 
+only between those who (their works passing the test of fire) merit rewards 
+in the Age to come and those who (their works failing that test) 
+will instead have to be saved “as by fire”—as at least a suggestive gloss. 
+As for the remaining possibility, that the gehenna is a name for a place 
+neither of annihilation nor of purification, but of eternal conscious torment—
+the God of love’s perpetual torture chamber—for this rather 
+repellant idea there is easily the least evidence in the Gospels (if any); 
+but the notion may have some substantial precedent in Jewish intertestamental 
+apocalyptic literature, such as the Book of Enoch, as well as 
+in some early Rabbinic traditions, and it accords with most later Christian 
+readings of that sole suggestive verse, Matthew 25:46 (especially 
+
+
+after the fifth century). One might also suppose that other images of 
+exclusion used by Jesus—locked doors, outer darkness, wailing and the 
+grinding of teeth—are descriptions of a literally perpetual state of existence 
+after death, of which there can be no end and from which there is 
+no hope of deliverance through purification. And one can perhaps assume 
+that the “inexcusable” sin of blasphemy against the Spirit, mentioned 
+in all three synoptic Gospels, is one for which the penalty exacted 
+must be everlasting, rather than one necessarily leading to either 
+annihilation or purification. But the texts do not actually say any of that, 
+and again, the absence of any hint of such a notion in the Pauline corpus 
+(or, for that matter, in the fourth Gospel, or the “Catholic Epistles,” or 
+those very early doctrinal and confessional texts the Didache and 
+Apostles’ Creed, or the writings of the Apostolic Fathers . . .) makes the 
+very concept nearly as historically suspect as it is morally unintelligible. 
+Moreover, to read back into these texts either the traditional view of 
+dual and in some sense synchronously eternal postmortem destinies or 
+the developed high mediaeval Roman Catholic view of an absolute distinction 
+between “Hell” and “Purgatory” would be either (in the 
+former case) a dogmatic reflex rather than an exegetical necessity or (in 
+the latter) an act of simple historical illiteracy. But I leave it to readers 
+to reconcile the various eschatological passages of the New Testament 
+with one another, or not, as they choose; the most I can do is offer an 
+observation about two of the greatest and most brilliant Church Fathers 
+of the later fourth and early fifth centuries. The Greek-speaking 
+Gregory of Nyssa, who was a universalist and who simply assumed the 
+purgatorial view of the gehenna, was able to unite all the various biblical 
+images and claims in a fairly seamless synthesis in his writings, omitting 
+nothing known to him as Christian canon. Conversely, the Latin-
+speaking Augustine, who took very much the contrary view, was far 
+more selective in his use of scripture, was dependent on often misleading 
+translations, and had to expend enormous energy on qualifying, rephrasing, 
+and explaining away a host of passages that did not really conform 
+well to the theological system he imagined he had found in Paul’s 
+
+
+writings. This is, if nothing else, instructive. For myself, it seems clear 
+that the gehenna is an image of historical destruction in Christ’s preaching, 
+not of eternal suffering, or in fact of any particular postmortem 
+destiny. But that is neither here nor there. I have translated “the gehenna” 
+as “the Vale of Hinnom” or “Hinnom’s Vale,” keeping the proper 
+name (which would have been audible to Jesus’s listeners) but using the 
+somewhat daintily pretentious “vale” to insinuate a hint of gauzy otherworldliness 
+into the image (since by Jesus’s time it was clearly no longer 
+simply a geographical designation, but a metaphor with an enormous 
+range of associations and connotations). 
+
+3.The next term is Ἰουδαῖος (Ioudaios)—or Ἰουδαῖοι (Ioudaioi) in 
+the plural—which is usually rendered “Jew” or “Jews,” except in places 
+where “Judaean” or “Judaeans” seems better to fit the context: again, a 
+perfectly justifiable practice, but also one that inadvertently introduces 
+a distinction into the text that would not have been entirely intended 
+by the authors. The books of the New Testament were written in an 
+age in which national, ethnic, religious, and racial identities were not 
+arranged in the often pernicious categories that came to hold sway in 
+subsequent centuries; and it would be a severe distortion of the texts of 
+the New Testament to allow these later developments to cast a shadow 
+backward onto a time innocent of the evils of mediaeval or modern history. 
+For example—and the most striking example—the Gospel of John 
+has often been accused of anti-Semitism, despite the anachronism of 
+the very concept. Where English readers are accustomed to reading the 
+Gospel as referring, often opprobriously, to “the Jews,” the original text 
+is usually referring to the indigenous Temple and synagogue authorities 
+of Judaea, or to Judaeans living outside Judaea, or even to “Judaeans” as 
+opposed to “Galileans” (see, for instance, John 7:1). The Gospel definitely 
+reflects the disenchantment of Jewish Christians in Asia Minor 
+with those they saw as having expelled them from the synagogue, and 
+later Christian culture certainly often took this as an excuse for anti-
+Jewish violence and injustice, but it would be misleading to impute to 
+the Gospel the sort of religious prejudices born in later generations, 
+
+or certainly the racial ideologies that are so much a part of the special 
+legacy of post-Enlightenment modernity. I have rendered the word as 
+“Judaean” or “Judaeans” throughout, even where that sounds somewhat 
+awkward, and even in places where “Jew” or “Jews” would be an utterly 
+anodyne or bracingly affirmative translation. After all, the general extension 
+of the term “Jews” to all who worshipped Israel’s God meant 
+principally that their cultic life was focused on the Temple in Jerusalem. 
+Again, my rationale for doing this, and for ignoring my own twinge of 
+reluctance whenever it produced a somewhat inept construction, is that 
+I thought it better to preserve the unity of the word and the concept 
+in the language of the ancient authors than to impose distinctions that 
+would make the texts conform more readily to our cultural categories 
+(and historical sins). 
+
+4. The next word is λόγος (logos), which in certain special instances 
+is quite impossible for a translator to reduce to a single word in English, 
+or in any other tongue (though one standard Chinese version 
+of the Bible renders logos in the prologue of John’s Gospel as 道 (tao), 
+which is about as near as any translation could come to capturing the 
+scope and depth of the word’s religious, philosophical, and metaphoric 
+associations in those verses, while also carrying the additional meaning 
+of “speech” or “discourse”). To be clear, in most contexts in the New 
+Testament, logos can be correctly and satisfactorily rendered as “word,” 
+“utterance,” “teaching,” “story,” “message,” “speech,” or “communication.” 
+In the very special case of the prologue to John’s Gospel, however, 
+any such translation is so inadequate as to produce nothing but a 
+cipher without a key. Few modern readers or, for that matter, readers in 
+any age could be expected to be cognizant of the complexities of late 
+antique metaphysics, or to be familiar with the writings of a Hellenistic 
+Jewish philosopher like Philo of Alexandria (c. 25 BC–c. AD 50), 
+or to be much acquainted with the speculative grammar of Hellenistic 
+Judaism’s “Wisdom” literature. And so they could scarcely be aware 
+of the vast range of meanings the word logos had acquired by the time 
+John’s Gospel was written, many of which are unquestionably present 
+
+in its use in the prologue. Over many centuries logos had come to mean 
+“mind,” “reason,” “rational intellect,” “rational order,” “spirit”; as well 
+as “expression,” “manifestation,” “revelation”; as well as “original principle,” 
+“spiritual principle,” and even “divine principle.” Really, the full 
+spectrum of its philosophical connotations could scarcely be contained 
+in a single book. In the special context of late antique, Greek-speaking 
+Judaism, and particularly in the work of Philo, the word had come to 
+mean a very particular kind of divine reality, a secondary or derivative 
+divine principle proceeding from the Most High God and mediating between 
+God and the created order. There was a shared prejudice among 
+many of the philosophical systems of late antiquity to the effect that the 
+highest God, God proper, in his utter transcendence could not interact 
+directly with or appear immediately within the created order; hence it 
+was only through a “secondary god” or “expressed divine principle” that 
+God made the world and revealed himself in it. It was assumed by many 
+Jewish and then Christian thinkers that the theophanies of the Jewish 
+scriptures were visitations of the Logos, God’s self-expression in his 
+divine intermediary or Son, as Philo called him. To an educated reader 
+of the late first or early second century, the Logos of John’s prologue 
+would clearly have been just this divine principle: at once the Most 
+High God’s manifestation of himself in a secondary divine moment, 
+and also the pervasive and underlying rational power creating, sustaining, 
+and governing the cosmos. For all of which reasons, I have chosen 
+not to translate the word at all in the first chapter of John—or in, more 
+controversially, John 5:38, 10:35; or in, yet more controversially, 1 John 
+1:1, 10; or in, most controversially of all, Revelation 19:13 (though perhaps 
+for somewhat different reasons in this last case). In certain usages, 
+the word is so capacious in its meanings and associations that it must be 
+accounted unique; any attempt to limit it to a single English term would 
+be to risk reducing it to a conceptual phantom of itself. 
+
+5. The next word is the verb προορίζειν (proörizein), which has traditionally—
+as a result of the Vulgate Latin translation—been rendered 
+as “to predestine.” This is simply incorrect (though some inferior lexica 
+
+over the years, taking their lead from traditional theological usage in 
+the West, have incorporated it in their definitions of the verb). The 
+word ὁρίζειν (horizein) (whence our word “horizon”), means “to demarcate,” 
+“delineate,” “to mark out as a boundary,” “to distinguish,” 
+“to sort,” “to define,” “to assign,” “to plan out,” “to make determinate,” 
+or “to appoint”; and prohorizein 
+is simply to do this in advance. 
+It certainly possesses none of the grim, ghastly magnificence of the late 
+Augustinian concept of “predestination”: an entirely irresistible predetermining 
+causal force, not based on divine foreknowledge but rather 
+logically prior to everything it ordains, by which God infallibly destines 
+only a very few to salvation and thereby infallibly consigns the 
+vast majority of humanity to unending torment. Thus, in two of the six 
+instances of the verb’s use in the New Testament (Romans 8:29–30), 
+Paul—blissfully innocent of later theological developments and anxieties—
+explicitly treats this divine “pre-demarcation” as consequent upon 
+divine foreknowledge, and does so without any qualification or noticeable 
+pangs of theological conscience. (1 Peter 1:1–2, more concisely, says 
+the same thing.) Of the very few instances of the verb or its cognate 
+noun προορισμός (proörismos) in Greek literature before the New Testament 
+(I am aware of only two), it carries no connotation of predestination. 
+More tellingly, none of the Greek-speaking Church Fathers 
+ever read the word as having such a connotation, or even seemed to suspect 
+that such a reading was a possibility. The Augustinian understanding 
+of “predestination,” for all its epochal significance for later Western 
+Christian thought, is a late fourth-century theological innovation, the 
+inadvertent invention of a Paul who never existed, a theological accident 
+prompted by a defective Latin translation and the temperamental 
+idiosyncrasies of a single sullen genius (with at times a singularly dismal 
+understanding of the “good news”). No matter what one’s theology, the 
+traditional rendering is simply insupportable. I have therefore translated 
+the verb, with bland literality, as “to mark out in advance.” 
+
+6.The next word is ἄνθρωπος (anthrōpos), which means “man” or 
+“human being,” but which is not simply another word for ἀνήρ (anēr) 
+
+(“man” strictly in the sense of an adult male). Like the German Mensch 
+(as distinct from Mann), it is a masculine noun that, used in either the 
+definite singular (to mean “the man” or “that man”) or the indefinite singular 
+(to mean “a man”), would typically refer only to a male; but, used in 
+the singular as a categorical designation, it can mean “man” in the sense of 
+“mankind” or “humanity”; and, used in the plural, it can refer to human 
+beings in general. I have not striven in this translation for “inclusive language,” 
+at least where it would involve altering the text. For one thing, 
+I would dislike the pretense that the text does not use the sort of language 
+that it does, and I think readers can be trusted to know that these 
+are first-century writings. Moreover, mine is not a version written for 
+liturgical or homiletic purposes, but an attempt to make the original text 
+visible through as thin a layer of translation as I can contrive to superimpose 
+upon it. So, in a few places where a late modern phrase like “human 
+being” or “human person” would have seemed jarringly awkward, I have 
+yielded to the sirens of euphony and used “man” or “men”—quite unrepentantly 
+in certain instances (no impulse of conscience, however fervent, 
+could cause me to sacrifice as grand, ancient, poetic, and mysterious 
+a title as “Son of Man” in favor of “Human” or “Child of Humanity” 
+or something equally insipid). Again, I trust readers not only to have a 
+sense of the realities of cultural history, but also to be able to distinguish 
+between substantial and empty gestures. All that said, however, in every 
+instance where it proved both possible and agreeable to do so, I have employed 
+the term “human being” or something similar. In some cases I 
+find this a very happy way of adding what I take to be a needed emphasis 
+to certain phrases, especially those in which the plural noun is modified 
+by the adjective “all.” For some reason—possibly simply on account of 
+our settled habit of hearing certain biblical phrases as saying what we expect 
+them to say—we often fail to notice some of the more striking and 
+radical theological formulations that appear in the New Testament; and 
+somehow using phrases like “all human beings” or “every human being” 
+seems to make them more audible to us than does the use of the more 
+familiar “all men” (or even “all persons”). I am thinking of such verses 
+
+
+as Romans 5:18; 1 Timothy 2:4, 4:10; Titus 2:11 (when translated correctly), 
+as well as of the light they cast upon such similar or related verses 
+as John 12:32; 1 Corinthians 15:22; 1 Timothy 2:6; and 2 Peter 3:9. 
+
+7. The next word is ἔργα (erga), plural of ἔργον (ergon), which 
+means “work,” “task,” “skill,” “labor,” “operation,” “handiwork,” or 
+“business”; or, more simply, “work” in the sense of “deed,” “act,” or 
+“feat”; or, in certain special contexts, a ritual action to be performed or 
+a duty to be discharged. In most cases in the New Testament, the word 
+refers simply to discrete actions, labors, or deeds, and my translation reflects 
+that. There are some special instances in Paul’s letters, however, 
+in which the “works” in question are specifically “works of the Law”— 
+that is to say, obligations imposed by the Mosaic code, like circumcision, 
+Sabbath obligations, or kosher laws—and so I have rendered erga 
+as “observances” (which is one of the standard renderings of the plural 
+form when used in connection with religious obligations). I do this 
+principally because, removed as most of us are not only from the ritual 
+life of first-century Judaism, but also from the idiom Paul shared with 
+many of his contemporaries, we tend to forget what the principal religious 
+issues were for him. And, perhaps needless to say, there is a long 
+tradition of reading Paul as though his concerns were entirely different: 
+Where he drew a distinction between, on the one hand, the righteousness 
+or rewards that one can achieve through such observances (which, 
+incidentally, he affirms) and, on the other, the righteousness God takes 
+account of entirely in respect of one’s faithfulness (which involves good 
+deeds and which God graciously rewards), many Christian theologians 
+down the centuries (at least in the West) have taken him to be drawing 
+a distinction between, on the one hand, the divine blessings one 
+wins through one’s good deeds (which supposedly Paul denies are possible) 
+and, on the other, the entirely gratuitous graces bestowed by God 
+without any prevision of or attention to one’s moral deeds at all (else 
+grace were not grace). This is clearly an error, and introduces an antithesis 
+into Paul’s thought of which his writings betray no consciousness 
+(see, for example, Romans 2:7–14). Taken to its extreme (which, 
+
+logically, it always has to be) it leads to an absurd situation: Not only 
+is one obliged to read Paul’s teaching as diametrically opposed to the 
+theology of “judgment according to works” clearly enunciated by Jesus 
+in the Gospels, by the Letter of James, by the book of Revelation, and 
+so on (however this has been dissembled by a long tradition of forced 
+readings), but one is also obliged to read Paul’s teaching as diametrically 
+opposed to itself, since he too clearly affirms “judgment according to 
+works” (see Romans 2:1–16, 4:10–12; 1 Corinthians 3:12–15; 2 Corinthians 
+5:10; Philippians 2:16; and so on). And, for those who presuppose 
+a perfect theological consistency in the New Testament, it can 
+lead to even more ungainly exegetical contortions, such as John Calvin’s 
+weirdly endearing practice of treating Christ’s more demanding moral 
+counsels in the Gospels (his advice to the rich young ruler, his exhortation 
+to his disciples to be perfect as their Father in heaven is perfect, 
+and so on) as exercises in irony (for surely, reasoned Calvin, Jesus cannot 
+mean that our good deeds are relevant to our election, or that we 
+should strive for spiritual perfection). Certainly, Paul affirms that it is 
+God who gives the power and grace necessary for the soul to perform 
+good works, and that without God creatures can achieve nothing; but 
+he never suggests either that this power and grace are irresistible predestining 
+forces, or that good works are not genuinely criteria by which 
+God weighs souls in the balance (and determines, perhaps, whether they 
+are to be rewarded for their works or instead are to be saved through 
+the fire by which their works will be consumed). One may view the 
+relation between divine grace and human effort in Paul’s thought in 
+whatever way one wishes (though the Eastern Christian language of 
+synergeia—synergy—seems clearly to be nearest to Paul’s own thought 
+and language). But what one certainly ought not to do is mistake Paul’s 
+distinction between faithfulness of the heart and works of the Law for 
+an opposition between mere personal belief and concrete moral effort. 
+For him, as for other writers in the New Testament, human beings are 
+justified—that is, “proved righteous” or “made righteous” (see below)— 
+“by works, and not by faith alone” (James 2:24). 
+
+
+8.The next word is ὑποκριτής (hypokritēs)—or ὑποκριταί (hypokritai) 
+in the plural—which is understandably usually translated as “hypocrite” 
+or “hypocrites.” But in the Greek of the first century the word 
+did not quite mean what “hypocrite” has come to mean to us: a person 
+whose actions belie his words, or whose moral character contradicts his 
+professed moral principles. The word originally designated a public interpreter 
+or expounder of a text, one who declaimed verse, a rhapsode, 
+or an actor playing a role on stage. As a term of abuse, it meant simply 
+one who dissembles or deceives, or one who is putting on a performance 
+to impress or beguile others. I have rendered the word variously in this 
+translation, as context dictates, but in most instances have rendered it 
+as “charlatan” or “charlatans.” 
+9. The next word is the plural noun ἔθνη (ethnē), which can mean 
+“nations,” “peoples,” or “gentiles,” and which I have translated as one or 
+another of these as context dictates. It is as well to note, however, that 
+behind these three English words, wherever they appear in the text, 
+there is only a single Greek word and so, arguably, only a single concept. 
+10. The next word is actually a pair of words: λύτρον (lytron) and 
+ἀντίλυτρον (antilytron). The former appears only twice (Matthew 20: 
+28; Mark 10:45) and the latter only once (1 Timothy 2:6), and they are 
+effectively synonymous. There are also occasional verbal formulations 
+derived from the same root. Each refers to Christ in his role specifically 
+as redeemer and is traditionally translated “ransom.” Though this is not 
+wrong, it does not quite convey the full meaning that the word, in either 
+of its forms, carries in the text. We often fail to appreciate how often 
+the language of salvation in the New Testament employs the imagery 
+and terminology of contemporary civil law regarding slavery. A lytron 
+or antilytron is, in that context, the required fee for the emancipation 
+of a slave, paid to the slaveholder in order to secure legal manumission. 
+In the earliest centuries of Christian thought, the meaning of the word 
+was still obvious to all readers; the only question of theological moment 
+regarding this manumission fee was to whom we ought to imagine it 
+had been paid: to the devil, our principal slaveholder, so to speak, or to 
+
+death, the household of our bondage. But, as the centuries flowed on 
+and Christianity spread into other lands, cultures, and languages, the 
+original meaning was occasionally lost sight of, so much so that some 
+Christians came to imagine that the word referred to a ransom paid to 
+God the Father by the Son, to appease God’s righteous wrath, or to repair 
+his injured dignity, or to yield tribute to the awful majesty of his 
+sovereignty. That idea is not only incoherent, but also entirely alien to 
+the way the word is used in the New Testament; there is no suggestion 
+there that, in Christ, God pays God off, or God rescues us from God; 
+rather, the work of salvation is depicted as a single, unified act of rescue, 
+whereby God the Father, through the Son, redeems (that is, “buys 
+back”) his children from the slavery into which they have been sold, 
+even at the most terrible of costs (the death of the divine Son). So I have 
+rendered it by such phrases as “the price of liberation” or “fee for emancipation,” 
+and so on, and have rendered its verbal correlates accordingly. 
+
+11. Next comes a cluster of words springing up around a common 
+root: the adjective δίκαιος (dikaios), which can be translated as 
+“just,” “right,” “righteous”; the noun δικαιοσύνη (dikaiosynē), which 
+can be translated as “righteousness,” “justice,” “what is correct,” “what 
+is proper,” “rectitude”; the verb δικαιόω (dikaioō), which can be translated 
+as “make just,” “make right,” “rectify,” “correct,” or alternatively, 
+as “prove just,” “show to be right,” “vindicate”; and all other words related 
+to the noun δίκη (dikē), usually rendered as “justice,” “rightness,” 
+“correct custom.” Here I have had to betray my prejudice for formal 
+consistency of translation. To begin with, in regard to the adjectives 
+and nouns, it is not always easy to decide, when translating a particular 
+passage or a particular author, whether it is better to use words like 
+“just” and “justice” or words like “righteous” and “righteousness,” given 
+the connotations of each. The nearest we come to words that split the 
+difference are “right,” “correct” or “what is right,” “uprightness,” “rectitude,” 
+“correctness”; and I have employed some of these where it 
+seemed wise to do so. In the world of the New Testament, religious 
+and legal identity—or religious and legal obligation—were not distinct 
+
+concepts, as they usually are for us. But in some instances it is clear that 
+the context is more juridical than religious or moral, and in other instances 
+that the opposite is true, and I have simply made as prudent a 
+choice as I could in each case regarding which word to use. Moreover, 
+there are two special problems of translation that have required firm 
+decisions on my part precisely where I would have preferred indecisive 
+vacillation. First, in most translations of the New Testament the word 
+dikaiosynē is rendered as “righteousness”; but it often carries the specific 
+connotation of “ritual propriety” or “what is legally correct,” and in the 
+Bible it carries the even more specific connotation of “what is correct 
+according to the Law (of Moses)”—as in the Septuagint’s version of 
+Isaiah 26:2, or as in Matthew 3:15; where appropriate, I have attempted 
+to make this clear. Second, the word dikaioō is usually translated as “justify”—
+or, in its passive construction, as “to be justified”—but this does 
+not really capture either of the word’s proper meanings exactly, at least 
+not in modern English; and in fact, as a theological term, “justification” 
+has over the centuries acquired so many questionable connotations 
+that it is more likely to obscure the original authors’ intentions 
+than to reflect them. Again, dikaioō can mean either “rectify,” “set right,” 
+“correct” or “vindicate,” “prove right,” “show to be just”; and it is not 
+always clear, especially in Paul’s letters, which of these senses should 
+predominate, since arguments can often be made for either. In reality, 
+I believe, he used the word in both senses, according to context. Of 
+course, from the early fifth century onward, one stream of Western 
+theology came to treat Paul’s use of the verb (or of its Latin equivalent, 
+justifico) as meaning some sort of merely formal or forensic imputation 
+of righteousness, rather than either a real corrective transformation or a 
+real evidential vindication—an interpretation, arguably, that reached its 
+most extreme expression in certain of Augustine’s late writings and in 
+the sixteenth- and seventeenth-century theologies of figures like John 
+Calvin and Cornelius Jansen. But nothing in the word’s history allows 
+for such a meaning intrinsically, and there is nothing in Paul’s arguments 
+that encourages such a reading (despite our habit of reading and trans
+
+
+
+lating Paul through the prism of Augustinian tradition). In the end, I 
+found myself constrained to choose between “rectify” and “vindicate” 
+(or similar locutions) in each particular instance of the word’s use. 
+
+12. Another uniradical cluster of words comprises both the noun 
+πίστις (pistis), often rendered as “faith,” and the verb πιστεύω (pistevō), 
+often rendered as “to believe” or “to have faith.” All I wish to 
+emphasize here (and in my translation) is that πίστις can mean both 
+“trust” in something and the “trustworthiness” of something, and can 
+even (somewhat combining these two connotations) be understood as 
+“fidelity” or “faithfulness.” And πιστεύω does not really mean “to believe” 
+in an impartial and merely intellectual way, but “to vest faith in” 
+or “to have trust in” something or someone, and sometimes even “to 
+entrust” either oneself or something at one’s disposal to another. I have 
+tried to do justice to these connotations in my translation. 
+13. Next comes κόσμος (kosmos), which I have for the most part 
+chosen not to translate (in the traditional way) as “world,” but simply 
+to transliterate as “cosmos.” The effect is often perhaps a bit jarring. 
+But, while there are instances in the text where the word functions as 
+an equivalent of οἰκουμένη (oikoumenē), the inhabited world of human 
+beings, it more frequently means the whole of the created order, the 
+heavens no less than the earth. It certainly carries this latter meaning 
+in some crucial and occasionally unsettling ways in many verses 
+in John’s Gospel, Paul’s letters, and elsewhere. It is good, for example, 
+to be reminded that in the New Testament, and in Paul’s theology in 
+particular, both slavery to death in sin and final liberation from death 
+in divine glory are described as cosmic—not merely human—realities, 
+taking in the whole of creation. Moreover, the word “world” as we use 
+it today simply does not capture what is most essential to the ancient 
+concept of “cosmos,” a word that most literally means “order” or “arrangement” 
+or even “loveliness of design.” For us, the “world” is either 
+merely the physical reality of nature and society “out there,” or it is the 
+human sphere with all its attendant moral and historical contingencies. 
+For the late antique cultures from which the New Testament came, the 
+
+“cosmos” was quite literally a magnificently and terribly elaborate order 
+of reality that comprehended nature (understood as a rational integrity 
+organized by metaphysical principles), the essential principles of 
+the natural and animal human condition (flesh and soul, for instance, 
+with all their miseries), the spiritual world (including the hierarchies 
+of the “divine,” the angelic, and the daemonic), the astral and planetary 
+heavens (understood as a changeless realm at once physical and spiritual), 
+as well as social, political, and religious structures of authority 
+and power (including the governments of human beings, angels, celestial 
+“daemons,” gods, terrestrial demons, and whatever other mysterious 
+forces might be hiding behind nature’s visible forms). It is a vision of 
+the whole of things that is utterly unlike any with which most of us are 
+today familiar, and that simply does not correspond to any meaning of 
+“world” intuitively obvious to us. For the author of 1 Peter or of 1 John, 
+for instance, to tell his readers to have nothing to do with the “cosmos” 
+is to say something far more comprehensive, imponderable, and astonishing 
+than that they should avoid vice and materialist longings, or that 
+they should withdraw from society. It seemed better to me to risk oddity 
+of expression than to risk losing sight of these truths. 
+
+14. Next, μετάνοια (metanoia), a word traditionally translated 
+as “repentance,” but whose literal meaning is a “change of mind,” or 
+“of thinking,” or “of intention,” or “of the heart.” “Repentance” is a 
+word that today carries none of those connotations naturally; for us, 
+it is a largely negative term that means something like “regret and repudiation,” 
+both of which may be some part of the special meaning of 
+μετάνοια in the New Testament, but which say nothing of the real inner 
+transformation that is a far larger part of the word’s sense; μετάνοια 
+and its correlative verb μετανοέω (metanoeō) have a positive and genuinely 
+transitive power, such that at various times the New Testament 
+uses the formulation of a μετάνοια εἰς (metanoia eis), an interior change 
+“toward” (God, salvation, life, full knowledge, or so on). Admittedly, in 
+modern English idiom neither “change of mind” nor “change of heart” 
+carries quite the hortatory moral force or rhetorical vigor of the Greek 
+
+word, but either is more accurate than the now dully conventional “repentance.” 
+My only difficulty here was deciding whether I should use a 
+term like “mind” or “thinking” to emphasize the ratiocinative element 
+of the concept, or should instead speak of the “heart” in order properly 
+to emphasize the affective element. I elected the latter, but with the 
+qualification that the heart should be understood in the classical sense, 
+as the seat of both the intellect and the passions. And, as the syntax of 
+particular verses warrants, I have used “change” or “turn” or “transformation” 
+to indicate the metain 
+metanoia. 
+
+15. The next word is ψυχή (psychē), which in most versions of the 
+New Testament is translated in a great variety of ways, in each instance 
+as context seems to dictate. This is a perfectly fair practice, since, again, 
+there is no single English equivalent for the word that could possibly 
+comprise the full range of its connotations and nuances. The inevitable 
+result of this, however, as is the case in any translation of a conceptually 
+rich or ambiguous term, is that what appeared to the author of the 
+original to be a complex but coherent unity of meaning becomes for the 
+translator, and those dependent on his or her labors, a cloud of associations—
+or, really, of dissociations. Psychē can mean “life” or “principle of 
+life,” or can mean “soul” in the sense of “enlivening force,” or can mean 
+“soul” in the sense of “conscious mind” or “self.” Its nearest equivalent 
+in Latin is anima, meaning both principle of the body’s life and soul in 
+the sense of personal identity or self. Thus, for instance, when Paul distinguishes 
+in 1 Corinthians 15:44–46 between the body human beings 
+possess in this age and that which they shall receive in the Age to come, 
+he speaks of the former as a dissoluble and perishable composite of flesh 
+and soul, a σῶμα ψυχικόν (sōma psychikon), but of the latter as an imperishable 
+unity, a σῶμα πνευματικόν (sōma pnevmatikon): an “animal” 
+or “psychical body,” on the one hand, and a “spiritual” or “pneumatic 
+body,” on the other. The substantive psychē, however, I have rendered as 
+“soul” throughout, even in those cases where this produces somewhat 
+ungainly phrasing. I was prompted to do this by my perhaps overly 
+scrupulous principle that what the original author considered a concep
+
+tual unity the translator should try not to convert into a multiplicity of 
+distinct concepts; but I was prompted also by my desire that my translation 
+reflect the text’s origin in an age when the very idea of physical 
+life was still not only inseparable from, but even identical to, the idea of 
+the soul—when, that is, the principle of organic life and the principle 
+of thought, sensation, and spiritual personality were understood as one 
+and the same principle. And this seems to me a doubly important consideration 
+in light of what I take to be some of the defective theological 
+scholarship of the past (especially within certain Protestant critical traditions 
+of the nineteenth and twentieth centuries). At one time it was 
+fashionable to note that in ancient Hebrew scripture there is no concept—
+or at best only a somewhat shadowy and attenuated concept—of 
+a “soul” separable from corporeal existence, and then to assert rather 
+boldly that the same was true of the Judaism of Christ’s time and so 
+also of Christian scripture. This is false. In the intertestamental period, 
+when Judaism was well developed in the direction of what we now know 
+as Rabbinic tradition, and had been absorbing and synthesizing Persian 
+and Greek styles of thought for centuries, most Jews (with the exception, 
+apparently, of “mortalist” Sadducees), like most gentiles (again, 
+with some exceptions), were well accustomed to thinking of the soul as 
+in some sense discrete from the flesh, able to persist in some conscious 
+condition after the death of the body. None of them thought like modern 
+Cartesians, admittedly, but most of them understood psychē as we 
+now use the word “soul”: as simultaneously what makes us alive and 
+what makes us who we are. 
+
+At certain points—for instance, 1 Corinthians 2:14 or Jude 1:19— 
+I have rendered the adjective psychikos or ψυχικοί (psychikoi) (the plural 
+form) simply as “psychical,” fully aware of how odd that looks. My 
+reason for doing so is that, in the Greek of the original text, the word 
+sometimes obviously reflects a distinction between persons whose 
+natures are “psychical” or merely “ensouled” and persons who, as Jude 
+puts it, “have spirit” or even “have a spirit.” But most translations distort 
+these verses so violently that their original meaning has become 
+
+
+quite invisible. In the verse from Jude, for instance, most translators 
+render psychikoi as vaguely as possible—as “natural,” say, or “sensual”— 
+and then capitalize the word “spirit” as though it were a straightforward 
+reference to the Holy Spirit (which it certainly is not). Precisely how 
+Jude or his readers would have understood this distinction is uncertain, 
+but it is there in the text all the same. Today we tend to think that such 
+divisions among persons, or even among Christians within the church, 
+were among the more exotic eccentricities of the para-Christian or 
+“gnostic” movements of the second century and after. But, even if the 
+word “gnostic” is useful as a general designation for groups outside the 
+ecclesial mainstream, their language on this matter was in continuity 
+with language used by early Christians of just about every stripe. Jude 
+may not have conceived of such a distinction as some sort of ontological 
+division between different kinds of human beings, but he certainly did 
+see it as a division between different states of sanctification or “spiritual” 
+progress, and he may well have believed that “spirit” is a special 
+property acquired by progressive sanctification. (And, frankly, we cannot 
+be certain that all the so-called gnostics saw the matter much differently.) 
+Which brings me to the next word. 
+
+16.That is, πνεῦμα (pnevma), “spirit,” which (like the word for 
+“spirit” in so many tongues) most literally means “wind” or “breath.” 
+My principal remark here is that in many passages in the New Testament, 
+and especially in some of Paul’s letters, it is impossible to tell 
+whether the author is speaking of human “spirit” or of God’s “Spirit.” 
+At certain crucial junctures, again in Paul’s letters, the absence of a clear 
+distinction seems almost intentional. Traditionally, translators choose 
+how the reader should understand the word in moments of uncertainty 
+by either capitalizing it or leaving it in the lowercase; and far too often 
+the word is capitalized when it probably ought not to be. A particularly 
+good example of this is Galatians 5:17, where Paul (whose anthropology 
+is considerably more “dualistic” than it is currently fashionable 
+to admit) is clearly speaking of an opposition between the desires of 
+“the flesh” and of “the spirit” within each human being, but where most 
+
+English translations quite presumptuously and unintelligibly describe 
+an opposition between “flesh” and “the [Holy] Spirit.” Another, equally 
+good example is 1 Peter 3:18, where “flesh” and “spirit” are again (somewhat 
+dualistically) opposed to one another in the form of modal datives—
+the one indicating the manner of Christ’s death, the other the 
+manner of his resurrection—but where, again, many translators have 
+tried to turn the latter into a reference to the Holy Spirit, even though 
+both the syntax of the Greek text and the logic of the author’s argument 
+make such a reading impossible (among other things, it renders unintelligible 
+the claim of the following verse: see my footnotes to those 
+verses). Yet another example is Jude 1:19, which I have discussed in the 
+section immediately above. And still another might be John 6:63. In any 
+event, in my rendering I have been considerably more chaste in my use 
+of the capital s than most translators have been in the past. As a general 
+rule, I have done it in cases where the word pnevma is accompanied by a 
+definite article, in a way that indicates that it is specifically the Spirit of 
+God that is being spoken of. I have also used the capital s in many places 
+where the article is absent but where something more than “spirit” in 
+a vague and abstract sense is meant, and where, again, the reference is 
+to a “Spirit” who comes from God. But in several places my judgment 
+on the matter is only a best guess, and reflects a distinction that is not 
+always clearly present in the text. There are numerous instances—in 
+the latter chapters of Romans, say—where the text speaks of “spirit” 
+and even “holy spirit,” and it is all but impossible to say whether divine 
+or creaturely spirit is at issue. (How, for example, is one to translate 
+Romans 8:27? How is one to understand it?) Moreover, I can only caution 
+the reader, though without much in the way of further exegetical 
+clarity, not to assume the fully developed theology of the Holy Spirit as 
+enunciated in later church councils when reading the New Testament. I 
+might have dispensed with capitalization altogether and left the matter 
+entirely up to the reader; my only reason for not doing so, I confess, was 
+to make it all the more conspicuous where I specifically chose not to use 
+
+
+the capital letter. I might also add that, at a few points—1 Corinthians 
+2:15, 3:1, 14:37; Galatians 6:1—I was tempted to render πνευματικός 
+(pnevmatikos), or its plural form πνευματικοί (pnevmatikoi), simply as 
+“Pneumatic” (as a substantive), but feared this might have the absurd 
+effect of summoning up images of tires or drills or bustlines; still, I 
+wanted to make clear that Paul appears in those passages almost certainly 
+to be speaking of a special class of “spiritual persons” within the 
+body of the church, so I resorted to the same dubious strategy of capitalization 
+that I have just so rudely deplored (but to a very different 
+end). Again, the fear of any hint of “proto-gnosticism” in Paul’s letters 
+leads some scholars to reject the conclusion that Paul ever speaks of 
+such a special class of Christian; but the text makes it fairly unavoidable, 
+and Paul, after all, seems to hint that there are especially advanced 
+Christians who, unlike neophytes in the faith, possess “gnosis.” 
+
+17.Then there is σάρξ (sarx), which literally means “flesh” and which 
+I translate as “flesh” (I also translate its associated adjective σαρκικός 
+[sarkikos] as “fleshly”). This might not seem an exactly daring decision 
+on my part, but in many translations various strategies are employed 
+precisely to avoid rendering this word literally. It has become something 
+of a fashion over the past century for theologians to insist almost 
+exclusively on the “worldliness” of Christianity, or on how exuberantly 
+it affirms the material order—the material body especially—as the good 
+creation of God, or on how radically the early Christian view of corporeality 
+supposedly differed from that of more “Hellenistic” or “gnostic” 
+or “idealist” schools of thought. And so sarx is often rendered by some 
+sort of theologically sanitized circumlocution like “sinful human nature” 
+or “fallen human nature” or “the mortal body.” Both this practice 
+and the theological platitudes inspiring it should be eschewed at every 
+juncture. It is true that there is nothing like an absolute dualism in the 
+New Testament, of the sort that would suggest that the physical world 
+is ultimately evil, or that the Age to come will not involve a redemption 
+of the whole created order; but, even so, there is at least a very strong 
+
+provisional dualism, and when the text speaks of “flesh” in opprobrious 
+terms it is not employing a vague metaphor, for which some less upsetting 
+abstraction may safely be substituted. As both 1 Corinthians 15: 
+40–54 and 1 Peter 3:18, 4:6 make quite clear—and as Matthew 22:30; 
+Mark 12:25; Luke 20:36; and perhaps Acts 23:8 all powerfully suggest— 
+many early Christians understood the difference between the mortal 
+body and the resurrected body (whether Christ’s or ours) as the difference 
+between a carnal frame and a kind of life that has transcended the 
+flesh (for, as Paul says, “flesh and blood cannot inherit the Kingdom of 
+God”). At times, the early Christians, no less than their pagan or “gnostic” 
+contemporaries, had a somewhat jaundiced view of “this cosmos” 
+or “this age,” as well as of “this body of death,” not merely as moral dispensations, 
+but as physical realities. 
+
+18. Next comes πορνεία (porneia), along with the related substantives 
+πόρνη (pornē) and πόρνος (pornos). Porneia means “prostitution” 
+or (more bluntly) “whoring,” but in most traditional translations it is 
+rendered as “fornication.” Perhaps, historically speaking, this is very 
+nearly a distinction without a difference. In the first-century world, and 
+especially in Judaea, casual sexual encounters were not a readily available 
+form of recreation; women did not enjoy the liberty (or the safety) 
+to go about in many public places, and certainly had little desire to 
+court the disastrous social and personal consequences of premarital or 
+extramarital liaisons. Most men seeking sexual release outside of marriage 
+generally had to pay for the service. Even so, the word’s meaning 
+is precise and ought not to be obscured. Similarly, a pornē was a female 
+prostitute and a pornos a boy prostitute or hired “catamite,” and prostitutes 
+of both sexes were more often than not slaves. In the former case, 
+most translations of the New Testament do in fact render the term 
+accurately as “harlot” or “whore.” In the latter case, however, they generally 
+settle on “fornicator.” Admittedly, there is a complication here, 
+inasmuch as pornos is used at many junctures in biblical Greek to mean 
+not a catamite, but rather a man who uses prostitutes of either sex; even 
+so, the traditional rendering makes neither meaning obvious. I should 
+
+also note that all of these words have a certain indelicacy about them, 
+and so I have generally used a coarser word like “whoring” or “whore” 
+rather than something blander, like “prostitution” or “prostitute.” 
+
+19. Finally, μακάριος (makarios), which is generally translated as 
+“blessed” or “happy” or “fortunate,” and which indeed means all of 
+these things. But it is also a word whose original connotations included 
+something like “divine blessedness” or “the bliss of the gods,” and which 
+well into late antiquity suggested a special intensity of delight and freedom 
+from care that the more shopworn renderings no longer quite capture 
+(at least not to my ear). I expect that for many readers this will 
+prove the most insufferable decision on my part for a number of reasons, 
+and one that will be written off as expressing a perverse aversion to 
+common phrases or a desire slyly to introduce a hint of Asian mysticism 
+into the text, but I have elected to render the word as “blissful” (and I 
+remain entirely impenitent in having done so). 
+Notes on Authorship 
+
+Regarding the issue of how I have assigned the authorship of the 
+various books of the New Testament, I can only say I have followed 
+what I regard as the most credible current scholarship. For the most 
+part, however, this is not so much a matter of identifying who wrote 
+what, but of clearly indicating the depths of our ignorance. Most scholars 
+are in agreement that seven of the letters traditionally attributed to 
+Paul are indisputably authentic—in the most likely chronological order, 
+1 Thessalonians (or, as I prefer to render it, Thessalonikans), Galatians, 
+1 Corinthians, Philemon, Philippians, 2 Corinthians, and Romans— 
+though some doubt the authenticity of even 1 Thessalonians and Philippians 
+(but on rather feeble grounds). Otherwise, the books of the canon 
+are of uncertain authorship, and in some cases are pseudonymous; in 
+one case, Hebrews, the text is simply anonymous (see below). Even the 
+four Gospels were given their names probably only in the second century, 
+and the stories that came to surround those names are legendary at 
+best. The author of the earliest of them (written around AD 70 perhaps) 
+
+
+is known to us as Mark, but whether this was indeed his name we do not 
+know, and even if it was we still do not know who he really was. The 
+evangelist called Matthew, whose Gospel was written perhaps a decade 
+or two later, was not the disciple of Jesus who bore that name, but someone 
+who had to rely on a combination of Mark’s text (in structure and 
+content) and on independent collections of logia, or “sayings,” in order 
+to construct his narrative, and who amplified at length upon the originals. 
+The probably single author of both the third Gospel (chronologically 
+perhaps the latest written) and the book of Acts—which together 
+constitute almost a third of the New Testament—is known to us as 
+Luke (though neither the Gospel nor Acts uses the name), and tradition 
+tells us that he was a gentile Christian, a physician, and a companion 
+of Paul. The first two of these claims may well be true, but a 
+great many scholars believe that in all likelihood the third is not, despite 
+certain passages in Acts written in the first person plural. For one 
+thing Paul’s own brief references to his personal story contradict Luke’s 
+narrative. For another, Luke’s Gospel is also transparently built upon 
+and redacts Mark’s, and draws on logia traditions (many, but not all of 
+which, he shares with Matthew). The dominant critical estimate, for 
+what little that may ultimately be worth, is that Luke’s books come 
+from the late first or even early second century. There are also signs in 
+Luke’s Gospel of a sophisticated and purposeful theological sensibility, 
+one that even prompts the author to amend the record—or, perhaps, to 
+select alternative features of the tradition—in accord with his theological 
+concerns. For instance, where Mark and Matthew tell us that the 
+centurion below the cross saw in Jesus the son of a god (probably not, 
+as commonly translated, God’s Son), Luke tells us the centurion paid 
+tribute only to a “righteous man”; where Matthew and Mark (quoting 
+Psalm 22) record Christ’s cry of godforsakenness from the cross, Luke 
+(quoting Psalm 31 instead) reports only that he peacefully yielded up 
+his spirit into his Father’s hands. And it is fair to say that, among all the 
+writers of the New Testament, none places a greater emphasis on the 
+social and even political dimensions of the gospel: In Luke’s render
+
+
+
+ing of the beatitudes, it is not the “poor in spirit” who are blessed, but 
+simply “the poor,” while in his corresponding list of “woes” the rich are 
+informed that they had their comforts in this life and will have none 
+in the Age to come; it would be difficult to imagine a more subversive 
+social and economic manifesto than Mary’s “Magnificat”; Jesus in the 
+synagogue at Nazareth proclaims the fulfillment of Isaiah’s prophecy 
+regarding God’s rescue of the poor, the imprisoned, and the oppressed 
+as his mission; the parable of the rich man and Lazarus is clearly a condemnation 
+not simply of the former’s dissipations, but of his hoarding 
+of the wealth he should be giving to the destitute; Jesus instructs the 
+rich young ruler to sell his possessions and distribute the money to the 
+poor not as an act of perfection in addition to what is needful for entry 
+into the Kingdom, but as the one deed yet lacking in his pursuit of salvation; 
+and Luke’s description in Acts of the early church’s communism 
+of goods in Jerusalem is one that good Christians have striven heroically 
+for the better part of two millennia to pretend not to notice. It is Luke 
+who bequeathed to later Christian centuries the best-loved portrait of 
+Jesus and of the early faith, and no writer in Christian history did more 
+to make Christ and his gospel something immediate and even radiant 
+in the Christian imagination; and yet, even so, we do not know who he 
+actually was. As for the fourth Gospel—believed by many to have been 
+written in the last decade of the first century and later attributed to 
+John—its principal author (there were certainly more than one) was not 
+the disciple of Jesus named John; many, however, believe that the book 
+at least comes from a community descending from John’s mission and 
+teachings, as the text seems to suggest at such places as chapter nineteen’s 
+description of the piercing of the crucified Christ’s side, or at the 
+close of the Gospel’s added “second conclusion” (the dreamlike coda 
+of chapter twenty-one). Moreover, the author was clearly more concerned 
+with making a complex theological statement about who Christ 
+was than with offering an ostensibly documentary history. His Gospel 
+does not unfold an historical narrative consistent with that of the 
+other three: It depicts Christ’s ministry as stretching over at least three 
+
+
+years, rather than the single year or less of the synoptic Gospels, and 
+as comprising several visits to Judaea and Jerusalem rather than one; it 
+seems to depict Jesus as a man in his forties (8:57), rather than as the 
+younger man suggested by the historical chronology of Matthew and 
+Luke; it rearranges the order of certain events, placing the cleansing of 
+the Jerusalem Temple at the beginning rather than at the end of Christ’s 
+ministry, and situating the crucifixion on the eve of the Passover rather 
+than on the day itself (hence recording no Passover seder and so no Last 
+Supper); it reports at enormous length prayers addressed to the Father 
+by Jesus in private on the eve of the crucifixion, of which there could 
+clearly have been no witness and in which there is no trace of the “agony 
+of Gethsemane”; it describes Jesus as bearing his own cross to Golgotha, 
+rather than Simon of Cyrene doing it for him; and so on. And, as 
+a whole, it is obviously meant as a theological document rather than as a 
+simple record of events. Hence, it is the most mysterious of the Gospels 
+and its author the most mysterious of the evangelists. 
+
+And so it goes. Of the “Pauline” letters that most scholars believe 
+were not written by Paul himself, 2 Thessalonians, Ephesians, and 
+Colossians do boast substantial coteries of scholars convinced (as a minority 
+report) of Pauline authorship. But, while 2 Thessalonians echoes 
+Paul’s style somewhat, it seems also to be consciously structured upon 
+the genuine 1 Thessalonians; in many respects, also, it seems to be a late 
+text, written in response to realities that arose after Paul’s time (in particular, 
+the unexpectedly long delay of Christ’s parousia). What is more 
+significant still, it contains eschatological claims of striking exactitude 
+that are not only found nowhere else in the Pauline corpus, but that 
+seem almost impossible to reconcile with the eschatological language 
+and motifs of the indubitable letters. The overall impression of the letter 
+is that it emanates from a somewhat idiosyncratic faction within 
+the next generation or two of the early church, one in which an elaborate 
+anagogy of the last days had begun to develop in place of the much 
+simpler Pauline vision of an imminent return of Christ and transformation 
+of the cosmos. But that may be only an impression. 
+
+
+As for Ephesians and Colossians, it is generally recognized that the 
+style and language of both letters differ somewhat from those of the 
+definitely authentic letters, and that there are certain apparent novelties 
+of theology and vocabulary in both. But arguments from consistency 
+of style, which can always be misleading, are especially perilous in the 
+case of authors who dictated their texts to amanuenses (as was, of necessity, 
+the common practice in late antiquity), because those amanuenses 
+may have exercised varying degrees of editorial discretion over the final 
+products; and it is questionable that we actually possess a sample size of 
+Pauline texts large enough to make such judgments wholly credible. Arguments 
+from consistency of thought, moreover, can often fail to take 
+into account just how much a single thinker’s “system” can develop over 
+time. And there can be something insidiously circular about them as 
+well: the scholar who has reached some conclusion regarding “how Paul 
+thought” or “how Paul wrote,” based on a small number of texts interpreted 
+by criteria that may be more arbitrary than that scholar realizes, 
+then finds material in other canonically Pauline texts that seems at odds 
+with that conclusion; so, rather than qualify his initial judgments, he 
+dismisses the evidence. To take one obvious example, the authenticity of 
+Colossians has often been denied by some scholars on the grounds that 
+it seems to contain doctrines (a strong “moralism” of good works, for 
+instance) incompatible with those found in the authentic letters. That, 
+however, is where a trap may have been laid. What those scholars generally 
+mean is that Colossians seems somewhat hard to reconcile with 
+Paul’s authentic letters as interpreted by magisterial Protestant tradition. 
+But the problem with this is that (pardon my bluntness) those traditional 
+Protestant readings of Paul are demonstrably wrong. In the late 
+Augustinian understanding of nature and grace that was exaggerated by, 
+and then became the dominant grammar of, the sixteenth-century Reformation 
+systems, Paul supposedly inveighed against belief in “justification” 
+(meaning “unmerited extrinsic imputation of righteousness”) 
+through “works” (meaning all kinds of human efforts, religious and 
+moral), and insisted instead on justification through “faith” (meaning 
+
+
+intellectual and emotional assent to Jesus as Lord and savior), by the 
+grace of a “predestination” not based on any divine foreknowledge of 
+human “merits.” But Paul taught nothing of the sort. Instead he taught 
+that human beings cannot be “justified” (that is, “proved” or “made 
+righteous”) by “works of the Law” (such as circumcision or kosher 
+dietary practices), but only by a “faithfulness” that necessarily entails 
+“works” of love—good deeds—in respect of which one will be judged 
+and either rewarded or “punished” (or, better perhaps, “purged”). The 
+power to perform such works is indeed a gift of grace, but for Paul it is 
+one that unites us to God in a real “synergy” (such that we can become, 
+as he likes to say, synergoi, “workers-together-with” God). Moreover, 
+as for why some are “marked out in advance” (certainly not “predestined”) 
+for God’s mission to the cosmos (for mission, that is, not for 
+salvation), Romans 8:29 clearly describes God’s decision as contingent 
+upon divine foreknowledge (as does 1 Peter 1:2, incidentally, and much 
+theological tradition for centuries has gone through agonizing contortions 
+trying to reverse the clear meaning of both verses). All of which 
+is quite unsettling if one has been raised to believe in a stark antithesis 
+between “works-righteousness” and faith, or between grace and works, 
+or between divine and human merits, or between divine “sovereignty” 
+and human effort; but Paul was not a Lutheran, or Calvinist, or even 
+Augustinian. And so, when the Paul of the authentic letters is freed 
+from the Paul of theological myth, it turns out that Colossians not only 
+says nothing different on these matters at all, but does not even necessarily 
+sound any distinctly different intonations. None of this is to 
+deny the scrupulousness of most modern New Testament scholarship 
+on these texts, but I would caution against accepting its verdicts too 
+credulously. I confess that before I began this translation I had casually 
+accepted the judgment that Ephesians and Colossians were not 
+written by Paul; by the time I had finished it, I had not entirely come 
+around to the opposite conclusion, but I had come to believe that many 
+doubts regarding their authenticity are based on poorer stylistic evidence 
+than is generally claimed, as well as on theological arguments 
+
+
+that may say more about certain scholars’ theological presuppositions 
+than about the rather unsystematic, late antique “system” of thought 
+to which Paul actually held. There are genuine questions to be raised 
+about the provenance of the letters—for instance, Ephesians frequently 
+appears to have been written by someone who did not share Paul’s conviction 
+that Christ’s return was imminent—but the solvency of many 
+of those questions may turn out in the end to be rather thinner than has 
+come to be assumed. Whatever the case, even if Ephesians and Colossians 
+are not works of Paul himself, they are nevertheless very much of 
+his “school” and expand faithfully upon his theological vision. Perhaps 
+they were constructed from Pauline fragments by later editors, or were 
+produced either by amanuenses working from particularly rudimentary 
+dictations or by disciples under his directions, or were reconstructions 
+of Pauline teachings by later disciples, or were simply better redacted 
+and edited than the earlier letters; we simply cannot know. 
+
+Other “pseudo-Pauline” letters, by contrast, truly are more remote 
+in theological and moral sensibility. The three so-called Pastoral 
+Epistles—1 and 2 Timothy and Titus—may well have been written by a 
+single author, and in many respects they develop themes in Paul’s theology, 
+such as the universal saving will of God in Christ; but they appear 
+in some ways to be products of a period in the church’s institutional 
+history somewhat later than Paul’s time (the early second century probably), 
+seem stylistically unlike Paul’s unquestioned writings (the prose is 
+better, the vocabulary more Hellenistic and less Septuagintal), and seem 
+at odds with certain of Paul’s more astonishingly radical views, such as 
+the equal spiritual dignity of masters and slaves, or of men and women 
+(especially if, as textual evidence makes very likely, the famously dissonant 
+passage of 1 Corinthians 14:34–35 is an interpolation). Even so, 
+no less eminent a New Testament scholar than Luke Timothy Johnson 
+has made a case for their Pauline authorship; and, while I do not find 
+the argument convincing, I cannot quibble with its pedigree. I am quite 
+prepared, moreover, to believe that all three of the pastorals contain real 
+Pauline materials, revised and amplified upon by later followers. 
+
+
+In the end, then, I suppose I would characterize the various skeptical 
+arguments regarding the Pauline dubia thus: the cases against Ephesians 
+and Colossians are not without weight, but are probably weaker 
+than it has become common to assert; those against 2 Thessalonians are 
+extremely (and to my mind decisively) strong; those against the Pastoral 
+Epistles are nearly insuperable; but those against 1 Thessalonians and 
+Philippians are so weak as to be practically self-refuting. 
+
+As for Hebrews, in language, substance, and theological intention it 
+could scarcely be more incandescently unlike the letters of Paul, though 
+it is as brilliant as the greatest of them. It also exhibits a command of 
+Greek that, as was generally recognized from the early centuries in educated 
+Eastern Christian circles, is vastly beyond Paul’s own; in respect 
+of style alone, to ascribe the letter to Paul is about as credible as ascribing 
+a novel of Anatole France to Maurice Leblanc or a travel memoir 
+of Patrick Leigh Fermor to Erskine Caldwell. But the text’s acceptance 
+into the canon of the New Testament was delayed in some parts of the 
+Christian world by uncertainty regarding its origin; so, at the very least, 
+its eventual general attribution to Paul, however incredible, served to 
+dispel doubts about its canonical propriety. Really, though, as Origen 
+said in the third century, only God knows who truly wrote it. 
+
+Of the other non-Pauline epistolary books, or Catholic Epistles, the 
+letter of James comes nearest to giving us a clear picture of its author. 
+At least, there is no reason to doubt that he was indeed the leader of the 
+Christians in Jerusalem a decade or two after Christ; he may even have 
+been, as tradition asserts, the brother of Jesus, though the letter makes 
+no such claim. He clearly was a Jewish Christian writing to other Jewish 
+Christians whom he still regarded as Jews, in some sense answerable 
+to the Law of Moses (he even at one point, for what it is worth, refers 
+to the Christian assembly not as an ekklēsia but as a synagogue, though 
+most translations hide that fact from view). Regarding the identity of 
+Judas—or as he is more customarily known, for delicacy’s sake, Jude— 
+and regarding what exactly provoked him to write his short, exasper
+
+
+
+ated letter, we know next to nothing. As for the three letters of John, 
+they may have been the work of one man; at least the second and third 
+seem to have been, both having been composed by someone identifying 
+himself as “the Elder.” But most scholars properly deny that the author 
+of any of them was the same John who wrote the fourth Gospel, or the 
+John of Patmos who wrote Revelation, or John the Apostle. There are 
+stylistic similarities, however, between the Gospel of John and the first 
+of the Johannine letters, and it seems reasonable to suppose that, even 
+if they were not the work of the same hand, they emanated from a close 
+community of shared discourse, and that the latter text is written in a 
+fairly deft imitation of the voice of the former. As for the two letters 
+ascribed to Peter (the second being probably the latest New Testament 
+text by a good margin), they were certainly written by two different 
+authors, neither of whom was either the disciple of Jesus or the first 
+leader of the church in Rome. Admittedly, some scholars have tried to 
+argue for a kind of “indirect authenticity” for the first letter, suggesting 
+that it may contain genuine teachings of the apostle communicated to, 
+and then paraphrased by, a disciple fluent in Greek; but the case against 
+authenticity is far stronger. No credible scholar argues for the authenticity 
+of the second letter, however; it is an extremely late writing, incorporating 
+a great deal of the Letter of Jude practically verbatim. 
+
+I imagine that, for certain readers, the knowledge that the authors 
+of some of the books of the New Testament were not in fact who they 
+represented themselves as being must seem disturbing. It is unlikely, 
+moreover, to assuage the distress of the aggrieved textual literalist to 
+observe that such pseudonymy was a common and even marginally acceptable 
+practice in late antiquity, and that religious and speculative 
+texts were often written “in the voice” of authorities long dead or even 
+merely legendary, and that—by antiquity’s more generous standards of 
+“authenticity”—a text composed of redacted or rearranged materials 
+by an author, or even merely composed by disciples of his school, could 
+still be attributed to him. And perhaps it would be charitable to think 
+
+
+that, in many cases, this authorial self-effacement may have been intended 
+not so much as dissimulation as humility. 
+
+A Note on Ancient Idioms and Present Tenses 
+
+One exquisite example of the cunning of history at its most sardonic 
+would have to be the divergent and yet complementary courses taken by 
+the French and the English etymological derivations of the Latin verb 
+traducere (meaning principally “to transfer”). Traduire means “to translate”; 
+“to traduce” means “to slander,” “to malign,” “to betray by false 
+witness.” That the two words share a single lineage is a fact whose lovely 
+aptness could hardly be lost on anyone who has ever set out to make 
+a good translation of a difficult text, most especially on anyone who 
+has attempted to render ancient texts into modern tongues. At times, 
+treachery seems almost inevitable. To begin with, it is nearly impossible 
+to say with absolute certainty whether the dissimilarities one discovers 
+between ancient and modern habits of speech reflect profound 
+conceptual differences or only trivial differences in idiomatic convention. 
+And then again, one quickly realizes, this may itself be a false distinction. 
+Perhaps habits of speech and habits of thought are ultimately 
+much the same thing. And perhaps, dangerous as it may be to fail to 
+see the ways in which ancient manners of expressing ideas or telling 
+stories resemble our own, it is a far more pernicious thing to fail to 
+recognize and respect all the ways in which they are truly alien. I think 
+I have come to the conclusion that what separates ancient from modern 
+idioms is not simply a difference between distinct ways of saying the 
+same things; rather, it is an essential incompatibility between distinct 
+ways of seeing reality. The worlds we inhabit take shape from—and give 
+shape to—the words we use. For this reason, it is my peculiar superstition 
+that even the most seemingly impenetrable of ancient idioms ought 
+to be regarded as inviolable by the translator. One should never transform 
+an apparently obsolete metaphor or perplexing image into what 
+one imagines to be its functional equivalent among the conventional ex
+
+
+
+pressions of the present. If one is disposed to gloss an ancient text rather 
+than to transfer it into modern language as exactly as possible, with all 
+its jagged edges still sharp and forbidding, then it would be better just 
+to leave the poor thing unmolested. 
+
+This is true even, I would argue, of what might look like mere variances 
+of grammatical structure. It seems an obvious choice, for instance, 
+to write “the Father’s beloved Son” as the reasonable English 
+rendering of a Greek phrase that would more literally be rendered as 
+“the Son of the Father’s love.” But, when attempting to convey the text 
+of scripture with as much immediacy as possible to those who know 
+no Greek, one should consider whether, between two such phrases, 
+the difference in the very relations of words—which, for instance, are 
+substantives and which adjectives—might not grant us some small, 
+maybe ineffable access to another way of understanding a whole host 
+of conceptual relations. Even, however, if one is not quite that fastidious, 
+one should never be willing to exchange the imagery preserved in 
+ancient turns of phrase for expressions proper to our time, especially 
+where this would mean sacrificing the obscure grandeur and mystery 
+of poetic tropes for the drearily prosaic phrases to which modern languages 
+are more naturally prone. Far too often, it seems to me, modern 
+biblical translators presumptuously attempt to “explain” the meaning 
+of texts that they should instead simply be trying to mirror as faithfully 
+as possible. Where the original text gives the translator a concrete, 
+delightfully naïve metaphor like “apple of his eye,” it is a crime against 
+both good taste and hermeneutical discernment to write “his eyeball.” 
+Where the original text speaks of “many waters,” the translator absolutely 
+must never write “a great quantity of water.” Where the text tells 
+us that “he was full of years,” it is an inexcusable vulgarity to write “he 
+was very old.” Where the text speaks of “David’s seed,” it is not only 
+an unseemly prudery to write “David’s descendants” but also an act 
+of crass indifference to a vast range of metaphorical associations: husbandry 
+and harvests, fruition and fertility, roots and flowers, abundance 
+
+
+and growth, and so on. Nor should we allow ourselves to imagine that 
+the beauty and poetry of these deeply embedded metaphors and finely 
+wrought turns of phrase are illusory, effects not of anything intrinsic 
+to the language of the texts but only of their exotic strangeness to us 
+today. Poetry is more primordial to culture than is prose, and poetic 
+apprehension more original and natural than the more starkly calculative 
+way of seeing things reflected in our “developed” tongues, and the 
+world that inhabits and crystallizes within the language of one age is not 
+the same as that which exists in another. All the subtle interweavings 
+and disjunctions that compose the world’s phenomenal and conceptual 
+orders are established and sustained in grammar and semantics, metaphor 
+and metonymy. Hence the poetry of ancient idioms must always 
+be jealously guarded and preserved by the translator, so that the worlds 
+they figure forth are never lost. To render the still-living metaphors of 
+ancient texts into the drab, denatured language and dead metaphors 
+that shape and sustain our modern perspective is philistinism; to pursue 
+“dynamic equivalence” is pure barbarism. 
+
+On the other hand, I have to admit, equally dangerous for the translator 
+is to fail to grasp not the unexpected differences, but rather the 
+unexpected similarities between the distant past and the present. At 
+least I have found this to be so in the matter of certain narrative conventions, 
+especially those regarding the use of tenses. I am not the first 
+translator of the New Testament to have rendered all the Greek present 
+tense verbs in the original as English present tense verbs. In fact, the 
+committee of scholars who produced the King James Version did the 
+same, for the most part—though many modern readers may be too distracted 
+by the older, nonsibilant, third-person-singular constructions 
+to notice that when “Jesus saith” something or “goeth” somewhere, he 
+does so in a kind of abstract narrative now. Still, some in the modern 
+guild of New Testament scholars take exception to the practice. This 
+is largely because they have been indoctrinated to think it somehow incorrect. 
+For over half a century, seminarians and divinity school students 
+have been taught to believe that the constant but irregular use 
+
+
+of present tense verbs in the Gospels of Matthew, Mark, and John (it 
+occurs very rarely in Luke) is actually both regular and internally coherent 
+and that it reflects a system of tenses different from that of modern 
+European languages; hence, allegedly, the practice would not have 
+seemed to first-century listeners to or readers of the texts to be shifts 
+from past to present at all, let alone incongruous shifts. Those seminarians 
+and divinity students have also been taught that such usage follows 
+naturally from the way tenses originally developed in Indo-European 
+tongues, that is, as indices not of the temporal locations of actions but 
+rather of their temporal quality, or “action types” (Aktionsarten). Thus, 
+when reading the Gospels, we will (or, in theory, should) find that the 
+aorist is used strictly to indicate a punctiliar action, the perfect to indicate 
+(obviously) an action in a perfected state, and the present to indicate 
+an iterative or durative action. Thus the present tense, when 
+used in a narrative of past events, supposedly sometimes has an imperfect 
+force, sometimes is used of actions that continue into the present, 
+sometimes refers to repeated actions, sometimes describes a “gnomic” 
+activity that is timelessly the case, and so forth. And those same seminarians 
+and divinity students have then been taught that the historical 
+present is in fact used also to indicate Aspekt, “temporal aspect,” which 
+is to say the way an action appears from the point of view of the agents 
+in the story (continuous or completed, principally). This last, at least, 
+has the advantage of being an unfalsifiable assertion, since, of course, 
+all actions in a historical narrative are (or were) present events from the 
+perspective of those who were there at the time. 
+
+The problems with such claims are, alas, large and numerous. The 
+most immediately obvious is that the theory, enunciated thus, describes 
+a systematic use of tenses that simply is not reflected in the New Testament 
+texts. “They crucify him,” for instance, clearly describes neither a 
+durative nor an iterative action. In fact, tenses are used so haphazardly 
+in the Gospels that one action is often related in a confusion of tenses, 
+the present alongside the aorist or the perfect. As for Aspekt, it is true 
+that many very ancient tongues used tenses as indications of types or 
+
+
+states of actions, but the common Greek of the first century did not. 
+And, once again, the actual texts, apart from a few individual verses 
+(Matthew 20:30, for example), prove wholly refractory to the theory. 
+In the Gospels, various tenses are typically combined utterly unsystematically 
+in a single episode, and even in a single sentence, clause, 
+or phrase. Moreover, while gnomic uses of the present tense are fairly 
+common to all languages—if I say, “I write for a living,” I do not mean 
+to suggest that I am writing in the very moment of the utterance—this 
+has no bearing on the issue of how to render descriptions of past actions. 
+The sentence “My wife knew that I write for a living” is comprehensible 
+because my present is still contained within the frame of what 
+she knew about me then. I really ought not, however, write a sentence 
+like “Cicero knew that Plato lives in Athens” for the obvious reason 
+that neither of the subjects in that sentence still belongs to a present to 
+which I may meaningfully refer. And the koinē Greek of Graeco-Roman 
+antiquity possessed little greater “aspectual” temporal plasticity than 
+this. Ultimately, all these explanations of the New Testament’s “historical 
+present” involve a very misty understanding of the different epochs 
+of the Greek tongue. It was around the middle of the last century, I 
+suspect, that a number of New Testament scholars began to borrow 
+the insights of classical philologists—most notably, perhaps, Kurt von 
+Fritz—regarding the interesting truth that early Indo-European languages 
+employed tenses to indicate the types rather than the times of 
+actions, and seized on this information as a way of exculpating the evangelists 
+as much as possible of any charge of literary infelicity or grammatical 
+laxity. Perhaps Matthew, Mark, and John were not slapdash in 
+their use of tenses after all, but were rather obeying a rigorously precise 
+method of historical exposition standard in the first century. Sadly, the 
+texts still obstinately refuse to comply with the theory. And, frankly, 
+it was a mistake ever to imagine they should. What those philologists 
+were describing was a stratum of Greek much more ancient than first-
+century koinē, and what they were calling attention to were narrative 
+practices that were, as von Fritz was careful to point out, already in de
+
+
+
+cay before the time of Xenophon. By the period of the New Testament, 
+Greek verbs were more or less invariably bound to temporal designations, 
+as in modern European tongues. If anything remains of the older 
+historical present in the New Testament, it is in the attenuated form 
+of the occasional use of a present tense as something like a durative 
+imperfect (such as Matthew 2:22), where we today would generally use 
+a preterit or atemporal infinitive construction (at least when writing). 
+Even then, such verses are emblematic not of any large and consistent 
+narrative practice but only of a few random idiomatic habits of speech. 
+
+The correct, simpler explanation of the shifting tenses in late antique 
+Greek historical narratives is that they reflect a perfectly ordinary 
+practice found in just about any language that possesses tenses at 
+all, including ours. Yes, there was and is such a thing as the Greek “historical 
+present.” There is also, however, an English “historical present,” 
+and in this translation I have simply rendered the former into the latter. 
+In one notable respect, of course, the standard view is correct: In late 
+antiquity, the effect of the use of the historical present on a text’s audience 
+(as most persons listened to rather than read texts) would not have 
+been jarring, but this is not because it would have been grammatically 
+inconspicuous. The present would have been heard as the present, but 
+would nevertheless have seemed perfectly natural in context. We do the 
+same thing today; we simply tend to limit the practice to spoken stories. 
+
+I went to my friend to get him to pay the money he owed me. When 
+I got there, I saw his lights were on and I heard music playing. So I 
+go to the door and knock, but nothing happens, except that the 
+music suddenly gets softer and then stops altogether. I knock again, 
+more loudly, but still nothing happens. And then I see the curtain 
+on one of the porch windows move ever so slightly, and can see an 
+eye peering at me. Now I was beginning to get angry. 
+
+We move effortlessly and intuitively between temporal perspectives, 
+wholly unsystematically but perfectly coherently, sensing when the 
+
+
+action spontaneously invites a more immediate descriptive language 
+and when the action should drift back into its more remote temporal 
+frame. Admittedly, we find this fluidity of tense in the written texts 
+of late antiquity much more than in written texts today but, in that 
+age, a written text was also usually an oral text, having been dictated to 
+an amanuensis and intended for reading out loud. Hence, the less refined 
+the genre or more colloquial the style, the more a text preserved 
+the cadences and usages of common speech. Luke almost never used 
+the historical present principally because he was the most urbane and 
+“scholarly” of the evangelists, engaged in writing a treatise rather than 
+in merely telling tales. One might describe his style as “syngrammatic” 
+and that of the other three as “phrastic.” And, indeed, this I offer as my 
+own small, humble contribution to the great inventory of obscure philological 
+terminology: Rather than continuing to propound an elaborate 
+but empirically false account of the historical present, in order to 
+make certain texts seem more polished than they are, we should speak 
+instead of the difference between syngrammatic and phrastic textual 
+types. 
+
+All this said, however, and to recur to my initial observations, it remains 
+the case that mistaking the familiar for the strange is nowhere 
+near so destructive an error as mistaking the strange for the familiar. 
+One temptation to which the translator of scripture can all too easily 
+fall prey is, out of an excessive passion for concision, to try to convert 
+an ambiguous term from the distant past into a single convenient item 
+of today’s parlance even if this means sacrificing important nuances. It 
+seems to me that in such circumstances it is always wiser to err on the 
+side of prolixity instead. Consider, for instance, a single word found in 
+Acts 17:22. My version reads thus: “And Paul stood in the middle of the 
+Areopagus and said, ‘Athenian men, I observe how exceedingly reverent 
+you are toward the daemonian (δεισιδαιμονέστερος, deisidaimonesteros) 
+in everything.’” I feel a certain sympathy for those who recoiled 
+from this rendering, but I would defend it, if not to the death, at least 
+
+
+to the point of spoiling a conversation over dinner. I have never liked 
+either of the standard alternatives for the most difficult term used in 
+the verse, deisidaimonesteros: neither the more benign “exceedingly religious” 
+nor the more censorious “exceedingly superstitious.” The latter 
+makes no sense here in any event, despite its use in some translations. 
+It is clear that Paul is not berating the Athenians for their superstitions, 
+but rather commending them for their natural piety, so that he can then 
+appropriate their altar to the unknown god for his message. But, even 
+in other contexts, the term “superstitious” seems wrong, if only because 
+we use that word disdainfully about beliefs in things we think fantastic; 
+in the ancient world, by contrast, to be δεισιδαίμων (deisidaimōn) 
+was to be excessively afraid of numinous forces that were thought to 
+be very real, but not as dangerous or malicious as was often imagined. 
+Again, though, Paul is using the word in a complimentary sense. Even 
+for that, though, “religious” strikes me as an inadequate rendering. For 
+one thing, the word refers explicitly not to God or the gods above the 
+heavens. Neither Paul nor Luke would have used the word to indicate 
+the sort of devotion appropriate to faith in the one God Most High 
+from whom all things come; neither would most pagans have done so. 
+The word has to do, rather, with the whole sacred realm of powers pervading 
+this cosmos and mediating between it and the exalted, super-
+celestial realm of the truly divine, τὸ θεῖον (to theion). The secondary, 
+more proximate “divine” orders of daimōnes—genii, longaevi, aerial 
+sprites, the ethereal and spiritual forces pervading nature, the rulers of 
+the planetary spheres, the angelic or daemonic governors of the nations, 
+the entire glittering and multifarious host of spirits and angels and elemental 
+powers—composed a whole unseen hierarchy of gentle and terrible 
+and glorious and mysterious presences uniting the realm of generation 
+and decay here below with the eternity of the empyrean beyond 
+the turning spheres above. What Paul is almost certainly not saying 
+to the Athenians in the Areopagus sermon is that they are already aware 
+of the true nature of God Most High; hence his claim that it is precisely 
+
+
+the god they do not know that will prove to be the true God. I should 
+note, moreover, that Paul himself certainly believed in the reality of the 
+daemonian realm. It was a central tenet of his Gospel that it is precisely 
+these powers that Christ has subdued, not necessarily in order wholly 
+to destroy them or condemn them, but so as to place them in proper 
+order under his feet—even (to use the pseudo-Pauline or Pauline language 
+of Colossians 1:19–20) to reconcile them to himself—so that the 
+entire spiritual and natural totality of the cosmos may be surrendered 
+to the Father, that God might be all in all (1 Corinthians 15:25–28). All 
+this being so, it seems to me that no translation should allow the presence 
+of the “daemonian” dimension in Paul’s reported language to go 
+unrepresented. 
+
+The Realm of the Dead 
+
+There is more, however. Fully to appreciate all the ways in which 
+the late antique vision of reality differed from ours today, one must 
+look not only at the physical and spiritual features of the living world 
+as it was then imagined but also at those still more mysterious dimensions 
+lying beyond the borders of life, in the region of death or in the 
+Age of the world that is coming. If I may dilate upon some remarks 
+I made in my footnote to Luke 16:22–23: My version of that passage 
+reads thus: “And it happened that the poor man died and was carried off 
+by the angels into the Vale of Abraham (εἰς τὸν κόλπον Ἀβραάμ, eis 
+ton kolpon Abraam); but the rich man also died and was entombed. And 
+lifting up his eyes in Hades, being in torment, he sees Abraham far 
+off and Lazarus in his vales (ἐν τοῖς κόλποις αὐτοῦ, en tois kolpois 
+avtou).” My most obvious departure from convention here is the 
+choice to render κόλπος (kolpos) not as the familiar “bosom” but as 
+the aggressively unusual “vale.” The original Greek phrase, I should 
+note, is somewhat odd. “Bosom” may, by the first century, have been 
+the far more common meaning of kolpos, but it was never the exclusive 
+meaning. And, while the phrase “kolpos Abraam” might seem to reflect 
+
+
+some recognized idiom of the time, we have no other evidence of its 
+use from earlier or contemporary sources. There is at most a fragment 
+of papyrus from Alexandria, probably from about the same general era 
+as Acts, that mentions the kolpos of all three of Israel’s patriarchs; but, 
+of course, that merely makes the image more obscure, since three men 
+rarely share a single torso. Surely one should assume the phrase means 
+something like “in their midst,” or “among them,” or “in their special 
+place,” or “under their sheltering care,” or even (to risk a wild conjecture) 
+“in their vale.” Then, from some centuries after the time of Acts, 
+there is a single Mishnaic phrase that might refer to the same image, in 
+the tractate Kiddushin (72b), where the third-century figure Adda bar 
+Ahava is described as seated within “Abraham’s bosom.” But this, it is 
+generally believed, is a usage without deep roots in antiquity, perhaps 
+borrowed from the Christians, and unilluminating with regard to the 
+Greek phrase used by Luke back in the first century. It is possible, I 
+grant, that Luke used kolpos here as an equivalent of the Hebrew cheyq, 
+which is to say either the breast or the fold in a man’s garment located at 
+the level of his chest. But Luke did not write in Hebrew or Aramaic, and 
+he lived in a Hellenistic and Roman Mediterranean world, and he used 
+its language, and he conceived of reality in the terms common to his 
+time. And, seen within that picture of things, the rich man and Lazarus 
+after their deaths should not be regarded as occupying, respectively, the 
+hell and the heaven of later Christian imagination. This would be sheer 
+anachronism. Rather, they occupy two distinct regions of the one realm 
+of the dead (Hades or Sheol). As all good scholars of late antique Judaism, 
+Christianity, or paganism are aware, in the first century the most 
+common picture of the afterlife, shared by practically everyone, was of 
+a region of the dead in which there are places both of torment and of 
+beatitude. The kolpos Abraam—however one translates the phrase—is 
+something like the Elysian fields of Greek myth, a place of repose in 
+the postmortem realm of souls reserved exclusively for the good and 
+the just. Such is, after all, very much the picture provided by 1 Enoch, 
+
+
+which first-century Jews and Christians alike tended to regard as a truly 
+prophetic work and which exercised an immense influence over Christian 
+belief in the first few generations of the church (but I shall come 
+to that presently). 
+
+It is worth noting as well that, whereas verse 22 speaks in the singular 
+of Abraham’s kolpos, verse 23 speaks instead in the plural of his 
+κόλποι (kolpoi). For me, at least as regards consistency of imagery, this 
+change in number militates against any preference for a physiological 
+rather than a topological understanding of the term. “Inward parts?” 
+Perhaps, but that is not quite the same thing as the image of Lazarus 
+resting his head upon the chest and within the embrace of father 
+Abraham. One has to understand that the word kolpos really did have 
+an enormous range of uses, almost none of which were metaphorical, 
+strictly speaking, but some of which were situated at the more poetical 
+end of the rhetorical spectrum. The word originally meant anything 
+folded or enclosed, and as a physiological designation could be used 
+for just about any encompassing posture or part of the human anatomy 
+(use your imagination). It could also, however, mean a purse or a fold 
+in fabric, and as a word for the pectoral fold in a man’s garment, in 
+which he might carry money or papers, it acquired a special association 
+with the chest or bosom on which a head might tenderly be laid. Then 
+again, it could also mean a lap, so perhaps we should think of Lazarus 
+sitting in the lap of Abraham, or (for that matter) of the divine Son 
+sitting in the lap of the Father (John 1:18). In either case, the image 
+would be a fetchingly sweet one, I suppose. But the word also meant 
+other kinds of enclosed spaces, like bays or gulfs or valleys, especially 
+when employed for evocative effect. Luke was clearly a man of refined 
+literary tastes and education, surely with some training in rhetoric, and 
+there would have been nothing extraordinary in his giving his narrative 
+a touch of lyrical color by using the somewhat more ornate phrase. 
+He is relating a fable about the lands of the dead, after all. For the educated, 
+the word had a long literary pedigree. Pindar, for instance (Olympian 
+Odes 9.87), speaks of the victory that came “to Epharmostos in the 
+
+
+Valley of Nemea”: Νεμέας Ἐφαρμοστῷ κατὰ κόλπον (Nemeas 
+Epharmostōi kata kolpon). Thucydides (Peloponnesian War 2.99) speaks of 
+a place that “even now it is still called the Pierian Valley”: ἔτι καὶ νῦν 
+Πιερικὸς κόλπος καλείται (eti kai nyn Pierikos kolpos kaleitai). The 
+plural form used in verse 23, moreover, strikes me as especially reminiscent 
+of Sophocles (Antigone 1121) speaking of “the Valleys of Eleusinian 
+Demeter, common to all”: παγκοίνοις Ἐλευσινίας Δηοῦς ἐν κόλποις 
+(pa[n]gkoinois Elevsinias Dēous kolpois). None of this, however, 
+would have been decisive for me if not for what I take to be an obvious 
+source of Luke’s imagery. 
+
+This, as it happens, is the real point of this excursus. It is difficult 
+to exaggerate how influential the intertestamental “Noachic” literature 
+was for the Jews and then Christians of the first century. On the whole, 
+too many New Testament scholars over the years have neglected to 
+assess properly not only the three centuries of Hellenistic culture in 
+which Jewish culture had been steeping by the time of Christ and the 
+apostolic church but also the profound importance for the early church 
+(quite explicit at numerous places in the New Testament) of the angelology, 
+demonology, cosmology, and eschatology of texts like 1 Enoch 
+and Jubilees. Too often in the past, the first-century Judaism of pious 
+New Testament and early-church studies has been a fantastic abstraction, 
+decocted from equal parts the biblical prophets and later Rabbinic 
+Judaism, while the pervasive Greek and Persian and apocalyptic and 
+other influences of that remarkably and gloriously culturally promiscuous 
+age have been ignored or treated as extraneous minor features of 
+late antique Judaism, as well as (of course) corruptions. No one, however, 
+who knows how intermixed the cultures of the Hellenistic world 
+really were should be surprised by the suggestion that Luke’s picture 
+of the realm of the dead looks very much like the one that was, by his 
+time, common to just about every Mediterranean and Near Eastern 
+culture. Much less, however, should it surprise anyone to learn that 
+Luke’s imagery resembles that of the Book of Enoch (from which, I 
+think it likely, it was at least partially drawn). This is most clear in what 
+
+
+remains of the original Greek text, since the complete Ge’ez translation 
+preserved in the Ethiopian Bible contains an error that obscures 
+some of the original meaning. (The adjective κοῖλος, koilos, which 
+means “hollow,” is mistaken for κάλος, kalos, which means “lovely.”) In 
+“The Book of the Watchers,” the first section in Enoch, chapter 22 describes 
+the region of the dead as being set among a chain of mountains 
+and comprising four “hollow places” or “vales”—τόποι κοῖλοι (topoi 
+koiloi), κοιλώματα (koilōmata)—entirely separated—ἐχωρίσθησαν 
+(echōristhēsan)—from one another; one of these vales is full of light and 
+flowing water, while the other three are dry, deep, and dark. Here the 
+dead await the judgment, the righteous in the place of light, with its 
+refreshing springs, the various classes of the unrighteous in the places 
+of suffering and darkness. Here too, I believe, or in some very similar 
+topography of Hades, Luke has placed Lazarus and the rich man: the 
+one in the Vale or Vales of Abraham, the other in a dark, dry, fiery valley 
+of suffering. 
+
+The Life of the Age to Come 
+
+Even these observations, however, can convey only a small part of 
+the larger vision of existence—cosmos, life, death, salvation, spiritual 
+beings, creation, the end of time—in which the New Testament lives 
+and moves and has its being. Let me also dilate here, then, upon some 
+observations made more fleetingly above. A great deal of Christian biblical 
+scholarship over the past few centuries has tended so to distort 
+our notions of the apostolic age as to create an entirely fictional early 
+Christianity. Not that this is especially shocking: it is perfectly natural 
+that Christians should mistake the version of the faith they know for 
+the only version that has ever existed, and this was especially understandable 
+before historical and classical scholarship on late antiquity 
+had become as plentifully available as it now is. But, again, this has 
+always inevitably entailed the simultaneous creation of an equally fictional 
+late antique Judaism, especially in much older Protestant scholarship: 
+a fantastic “purified” Judaism situated outside cultural history, 
+
+
+purged of every Hellenistic and Persian “alloy,” stripped of those shining 
+hierarchies of spirits and powers and morally ambiguous angels and 
+demi-angelic nefilim that had been incubated in the intertestamental 
+literature; a Judaism largely and miraculously unaffected even by those 
+Septuagintal books absent from the later Masoretic text of the Jewish 
+Bible and precociously conformed to early mediaeval Rabbinic orthodoxy—
+and, even then, to a fantasy Rabbinic orthodoxy, one robbed of 
+its native genius and variety and then imperiously reduced to a kind of 
+Protestantism without Jesus. No such Judaism ever existed, either in 
+the days of Christ and the apostles or in any other period, but it has enjoyed 
+a long and vigorous life in Protestant dogmatics and biblical criticism. 
+Nor, in the late antique Graeco-Roman world, was there some 
+sort of impermeable cultural or intellectual partition between pagan 
+and Jewish thought, or between the “philosophy” of the Greeks and 
+the “pure” covenantal piety of the Jews. It was an age of amazing intellectual 
+adventurousness and openness. In much of the Graeco-Roman 
+world and at its edges, Jews and gentiles freely learned from one another, 
+influenced one another, belonged to one and the same diverse-
+but-integrated, imaginative, and speculative atmosphere. And it was an 
+atmosphere so remote from us today, with our anachronistic and narrow 
+notions of what constituted ancient Christian or Jewish or even 
+pagan forms of thought, that we often scarcely suspect how vastly differently 
+we use the terms we share with late antique believers. There 
+are no more striking examples of this, as I have noted, than the ways in 
+which modern Christians tend to interpret the New Testament’s use of 
+the words “spirit” (πνεῦμα, pnevma), “soul” (ψυχή, psychē), and “flesh” 
+(σάρξ, sarx), or the theologies of resurrection that attach to them. 
+
+We are, of course, far removed from the world of the first century, 
+and so it is hard for us, when we encounter words like “soul” and 
+“spirit” in the New Testament, not to see them as having only very 
+vague imports, apposite only to hazily ill-defined concepts or spectrally 
+impalpable objects. We almost invariably etherealize or moralize their 
+meanings in ways that entirely obscure the picture of reality they origi
+
+
+
+nally reflected. We do not, after all, envisage the earth we live on today 
+as divided from the several heavenly spheres above by the lunary sphere, 
+nor the aerial realm of generation and decay here below as separated 
+by that sphere from the imperishable ethereal realm of spiritual forces 
+there above. For us today, even words like “heavenly” (ἐπουράνιος, 
+epouranios) and “earthly” (χοϊκός, choïkos) convey practically nothing 
+of the exquisite cosmology—at once concretely physical and vibrantly 
+spiritual—in which the authors of the New Testament lived. And inevitably, 
+when we read of “spirit,” “soul,” and “flesh” in the New Testament, 
+the specter of Descartes (largely unnoticed by us) imposes itself 
+between us and the text; we have next to no sense of the implications, 
+physical and metaphysical, that such words had in the age of the early 
+church. Even “flesh” becomes an almost perfect cipher for us, not only 
+because we lack the perspective of ancient persons but also because 
+of the drastic oversimplifications of Christian tradition with which we 
+have been burdened; we think we know—just know in our bones—that 
+the early Christians unambiguously affirmed the inherent goodness 
+of the material body, and that surely, then, Christian scripture could 
+never have meant to employ the word “flesh” literally in order to designate 
+something bad. So, as we read, either we choose not to notice that 
+nearly every use of the word in the text is openly opprobrious and the 
+rest merely neutral or we acknowledge this but tell ourselves that the 
+word is being used metaphorically or as a lexical synecdoche for some 
+larger conceptual construct like “the mortal life in the flesh, stained 
+with sin and lying under divine judgment.” We deceive ourselves. As 
+I said earlier, in the New Testament “flesh” does not mean “sinful nature” 
+or “humanity under judgment” or even “fallen flesh.” It just means 
+“flesh,” in the bluntly physical sense, and it often has a negative connotation 
+because flesh, belonging to the realm of mutability and mortality, 
+can form only a body of death. Hence, according to Paul, the body 
+of the resurrection is not one of flesh and blood animated by “soul,” 
+but is rather a new reality altogether, an entirely spiritual body beyond 
+
+
+composition or dissolution. And this is how his language would have 
+been understood by his contemporaries. 
+
+To grasp this, one really does have to take leave of the Cartesian 
+picture with almost violent peremptoriness. One must cease to think 
+that only the material body possesses extension in any sense; one must 
+learn not to treat words like “soul,” “spirit,” and “mind” as interchangeable 
+terms for one and the same thing; and one must most emphatically 
+not think of soul or spirit or mind as necessarily incorporeal in the 
+absolute sense of lacking all extension or consistency. And one must be 
+especially conscious that the words pnevma and psychē were not nebulous 
+terms in the religious or speculative vocabulary of the Hellenized 
+world; neither in most cases were they likely to be confused with one 
+another, as “spirit” and “soul” can be in modern English, because they 
+were usually used as precise names for two distinct cosmic and metaphysical 
+principles that, in some systems of thought, were practically 
+antithetical to one another. In different eras, places, and schools, admittedly, 
+each of these words carried somewhat different, if never entirely 
+unrelated, connotations; but each always had a clear significance. And 
+Paul used both terms in ways that were very much part of the philosophical 
+and scientific lingua franca of his age. In this broader system 
+of ideas, “soul”—psychē or anima—was chiefly the life-principle proper 
+to the realm of generation and decay, the “psychical” or “animal” 
+substance that endows sublunary organisms with the power of self-
+movement and growth, though only for a short time. And the bodily 
+life produced by this “animating” principle was understood as strictly 
+limited to the aerial and terrestrial sphere. It could exist nowhere else, 
+and most certainly not in the aether of the heavenly places. It was too 
+frail, too ephemeral, too much bound to mutability and transience. 
+“Spirit,” by contrast—pnevma or spiritus—was quite different, a kind of 
+life inherently indestructible and incorruptible, not bound to death or 
+to the irrational faculties of brute nature and not confined to any single 
+cosmic sphere. It could survive anywhere and could move with com
+
+
+
+plete liberty among all the spiritual realms, as well as in the material 
+world here below. Spirit was something subtler but also stronger, more 
+vital, more glorious than the worldly elements of a coarse corruptible 
+body compounded of earthly soul and material flesh. Thus too the word 
+“spirits” was commonly used to refer to all those rational agencies and 
+entities who populated the cosmos but were not bound to vegetal or 
+animal bodies: lesser celestial gods, daemons, angels, nefilim, devils, or 
+what have you. These beings enjoyed a life not dependent on the lower 
+elements, the στοιχεῖα (stoicheia), or the intrinsically dissoluble combinations 
+thereof. 
+
+Even so, none of these beings was typically considered to be wholly 
+incorporeal, at least as we would use that word today. The common belief 
+of most educated persons was that the only reality that was bodiless 
+in the absolute sense was God, or the highest divine principle. Everything 
+else, even spirits, had some kind of body, because all of them 
+were irreducibly local. The bodies of spirits may have been at once 
+more invincible and more mercurial than those with an animal constitution, 
+but they were also, if in a peculiarly exalted sense, still physical. 
+Many thought them to be composed from, say, the aether, or the “quintessence,” 
+above, the “spiritual” substance that constitutes the celestial 
+regions beyond the moon. Many also identified that substance with 
+the pnevma—the “wind” or “breath”—that stirs all things, a universal 
+quickening force subtler even than the air it moves. It was generally believed, 
+moreover, that many of these ethereal or spiritual beings were 
+not only embodied but visible to the naked eye. The stars overhead 
+were thought to be divine or angelic intelligences (as we see reflected 
+in James 1:17 and 2 Peter 2:10–11). And it was a conviction common to 
+a good many pagans and Jews alike that the ultimate destiny of great 
+or especially righteous souls was to be granted astral bodies and to be 
+elevated into the heavens to shine as stars (as we see in Daniel 12:3 and 
+Wisdom 3:7, and as may be reflected in 1 Corinthians 15:30–41). The 
+“blissful abode” of the righteous was literally overhead, up in the shin
+
+
+
+ing aether beyond the moon (see, for example, Orphic Hymn 37, or even 
+Aeneid VI.743–751). In the Jewish and Christian beliefs of the age, in 
+fact, there were no fully incorporeal angels—certainly not the angels of 
+Thomism, for example, who are pure form devoid of prime matter and 
+therefore each its own unique species. In fact, it was a central tenet of 
+the most influential Jewish and Christian angelology of the age, derived 
+as it was from the intertestamental Noachic literature, that angels had 
+actually sired children—the monstrous nefilim—with human women. 
+
+It is arguable, in fact, that no school of pagan thought, early or 
+late, perhaps not even Platonism, really had a perfectly clear concept 
+of any substance entirely without extension. For Plotinus, for instance, 
+“soul” was “incorporeal,” but not in the way we might assume; while the 
+soul in Plotinus’s system was not susceptible of “material” magnitude, 
+and hence could contain all forms without spatial extension (Enneads 
+2.4.11), it was still “incorporeal” only in the sense that it possessed so 
+subtle a nature that it could wholly permeate material bodies without 
+displacing their discrete material constituents (Enneads 4.7.82). Neither 
+“spirit” nor “soul” was anything quite like a Cartesian “mental substance.” 
+Each, no less than “flesh and blood,” was thought of as a kind 
+of element. “Spirit,” for instance, in certain antique schools of natural 
+philosophy and medicine, could be defined as that subtle influence or 
+ichor that pervades the veins and passages of a living body and, among 
+other things, endows it with sense perception—by filling, for instance, 
+the nerves or porous passages between eye and brain. For many persons, 
+in fact, this vital influence was literally “physically” continuous 
+with the “wind” that fills the world and the “breath” that swells our 
+chests. This is almost unimaginable for us, of course. When today, for 
+instance, we try to make sense of John 3:8, we are frustrated by the absence 
+in English of any word adequate to all the meanings present in the 
+original’s use of pnevma. My attempt at a rendering, whose inadequacy 
+I sheepishly acknowledge, is: “The spirit respires (τὸ πνεῦμα . . . πνεῖ, 
+to pnevma . . . pnei) where it will, and you hear its sound but you do not 
+
+
+know where it comes from or where it goes; such is everyone born of 
+the Spirit (ἐκ τοῦ πνεύματος, ek tou pnevmatos).” I could, however, 
+in each instance have written not “spirit” for pnevma, but “wind” or 
+“breath”; instead of “respires” for pnei, I could have written “blows.” 
+Perhaps, then: “The wind blows where it will . . . such is everyone born 
+from the wind.” Or, perhaps, “The breath breathes where it will . . . 
+such is everyone born from the breath.” Happily, I spared the reader 
+that. But, still, all these various possible meanings would have been 
+audibly present in the text for its author and for those who heard it 
+read aloud in the earliest Christian communities. Even if we are aware 
+of this, however, we are still likely to read the verse as a kind of play on 
+words—at most, an illustrative simile. And, needless to say, our fully 
+formed theological concept of the Holy Spirit disposes us, on grounds 
+of piety alone, to see it as such. But it probably should not really be 
+taken as wordplay at all. If we could hear the language of pnevma with 
+late antique, Graeco-Roman ears, our sense of the text’s meaning would 
+not be that of two utterly distinct concepts—one physical and one mystical—
+only metaphorically entangled with one another by dint of a verbal 
+equivocity; rather, we would almost surely hear only a single concept 
+expressed univocally through a single word, a concept in which the 
+physical and the mystical would remain undifferentiated. To be born 
+of spirit (or Spirit), to be born of the wind of life, to be born of the 
+divine and cosmic breath vivifying and uniting all things—it would all 
+make perfectly simple, straightforward, physical sense to us. Whatever 
+the case, though, this much is certain: it was widely believed in late antiquity 
+that, in human beings, flesh and soul and spirit were all present 
+in some degree; spirit was merely the element that was imperishable by 
+nature and constitution. 
+
+This is why I complained above about those traditional but catastrophic 
+translations of 1 Corinthians 15:35–54 that render Paul’s distinction 
+between the “psychical body” (σῶμα ψυχικόν, sōma psychikon) 
+and the “spiritual body” (σῶμα πνευματικόν, sōma pnevmatikon) as 
+a distinction between “natural” and “spiritual” bodies. The very cate
+
+
+
+gory of the “natural” is otiose here, as would be any opposition between 
+natural and supernatural modes of life, or radically discontinuous natural 
+and supernatural realms; that is a conceptual division that belongs 
+to other, much later, much more intellectually unfortunate ages. For 
+Paul, both psychical and spiritual bodies were in the proper sense natural 
+objects, and both in fact are found in nature as it now exists. He 
+distinguished, therefore, not between “natural” and “spiritual” bodies, 
+but only between “terrestrial bodies” (σώματα ἐπίγεια, sōmata epigeia) 
+and “celestial bodies” (σώματα ἐπουράνια, sōmata epourania). 
+And this, again, is a distinction not between natural and supernatural 
+life, but merely between incommiscible “natural” states: “incorruptibility” 
+and “decay,” “glory” and “dishonor,” “power” and “weakness.” 
+In speaking of the body of the resurrection as a “spiritual” rather than 
+“psychical” body, Paul is saying that, in the Age to come, when the 
+whole cosmos will be transfigured into a reality appropriate to spirit, 
+beyond birth and death, the terrestrial bodies of those raised to new life 
+will be transfigured into the sort of celestial bodies that now belong to 
+the angels: incorruptible, immortal, purged of every element of flesh 
+and blood and (perhaps) soul. For, as Paul quite clearly states, “flesh 
+and blood cannot inherit the Kingdom of God; neither does perish-
+ability inherit imperishability.” And, of course, he also says that those 
+who are in Christ have been made capable of this transformation precisely 
+because, in the body of the risen Lord, the life of the Age to come 
+has already appeared in glory: “So it has also been written, ‘The first 
+man Adam came to be a living soul,’ and the last Adam a life-making 
+spirit. . . . The first man out of the earth, earthly; the second man out 
+of heaven. As the earthly man, so also those who are earthly; and, as 
+the heavenly, so also those who are heavenly; and, just as we have borne 
+the image of the earthly man, we shall also bear the image of the heavenly 
+man.” This is for Paul nothing less than the transformation of the 
+psychical composite into the spiritual simplex—the metamorphosis of 
+the mortal fleshly body that belongs to soul into the immortal fleshless 
+body that belongs to spirit: “We shall be changed. For this perishable 
+
+
+thing must clothe itself in imperishability, and this mortal thing must 
+clothe itself in immortality.” 
+
+It is not so much Christian dogma as hardened habits of thought 
+and imagination that make Paul’s language so impenetrable to modern 
+Christians. No matter how clear Paul’s pronouncements are, the 
+plain meaning of his words still seems “pagan” or “Platonic” or “semignostic” 
+to modern Christian ears, and of course all of those things 
+are taken as very bad. Thus the picture persists of resurrection, even 
+in Paul’s thought, as something along the lines of a reconstruction and 
+reanimation of the earthly body in an only slightly more durable state. 
+This is deeply problematic, since “animated” is arguably already a synonym 
+for psychikon, and since it is, historically speaking, probably impossible 
+that Paul thought of the spiritual body as a kind of articulated 
+organism, consisting in an extrinsic liaison between something animated 
+(a revived and improved material body) and something animating 
+(an extrinsic life-principle). He almost certainly thought of “spirit” 
+as being itself the substance that will compose the risen body. Our instinctive 
+Cartesian dualism could not be more anachronistic here. Nor 
+could the later clear distinction between the “natural” and the “supernatural.” 
+Nor could our habitual failure to grasp the central opposition 
+between the two distinct principles of soul and spirit—which 
+runs through the entire New Testament’s anthropology, theology, and 
+metaphysics—that Paul presumed. 
+
+There is, admittedly, no single consistent account of resurrection— 
+either Christ’s or ours—in the New Testament, but Paul’s language reflects 
+the most prevalent. Only one verse, Luke 24:39, seems to advance 
+a contrary picture; there, more or less reversing Paul’s terms, the risen 
+Christ proves that he is not a spirit precisely by demonstrating that he 
+possesses “flesh and bone.” But here, needless to say, the word “spirit” 
+is being employed with its most debased and vulgar meaning, “ghost.” 
+And even Luke, over the course of his two books, seems somewhat 
+inconsistent on the terminology appropriate to resurrection (because, 
+I suspect, he was drawing on diverse sources). There is, at the very 
+
+
+least, ample scriptural evidence that Paul’s language in 1 Corinthians 
+15 may be little more than a précis of a theology and metaphysics of 
+resurrection not at all uncommon in many of the Jewish circles of his 
+time. Certainly, his may have been one of the standard Pharisaic views 
+of the matter. We almost unquestionably see evidence of this in Acts 
+
+23:8: “For the Sadducees say there is no resurrection—neither as angel 
+nor as spirit (μήτε ἄγγελον μήτε πνεῦμα, mēte a[n]ggelon mēte 
+pnevma)—while the Pharisees profess both.” It seems quite clear from 
+that phrase “neither as angel nor as spirit” that the concept of resurrection 
+described here is, like Paul’s, that of an exchange of the “animated” 
+or “psychical” body of this life for the sort of bodily existence 
+proper to a “spirit” or an “angel.” Admittedly, some older translations 
+rendered this passage as saying that the Sadducees believed neither in 
+the resurrection, nor in spirits, nor in angels, but that is obviously not 
+what the Greek means. Consider also Mark 12:25, Matthew 22:30, and 
+Luke 20:35–36, all of which tell us that, for those who share in the resurrection, 
+there is neither marrying nor being married—after all, there 
+will no longer be either birth or (so notes Luke) death—because those 
+who are raised will be “as the angels in heaven,” or “in the heavens,” and 
+will in fact be “the angel’s equals” or “equivalent to angels” (ἰσάγγελοι, 
+isa[n]ggeloi). It is difficult not to think that here Jesus may be telling 
+the Sadducees that the theology of resurrection that he shares with the 
+Pharisees claims not that the raised will enjoy merely a revived animated 
+material body but rather that they will live forever in an angelic manner, 
+an angelic frame. 
+Nowhere in scripture, of course, is this fundamental opposition 
+between flesh and spirit given fuller theological (and mystical) treatment 
+than in John’s Gospel, and nowhere else is the promise that the 
+saved will escape from a carnal into a spiritual condition more explicitly 
+or repeatedly issued. The Logos of John’s Gospel does, of course, 
+“become flesh” and “pitch a tent” among his creatures, but this involves 
+no particular affirmation of the goodness of fleshly life; the Logos descends 
+to us that we might ascend with him, and in so doing, presum
+
+
+
+ably, shed the flesh (though not, one must emphasize, the body). This 
+is the entire soteriological morphology of the Gospel, after all: the tale 
+of the descent from above of the Father’s only Son—the Son who has 
+come down from heaven and who can, therefore, go up to heaven again 
+(3:13)—so that those who are born from above, of water and spirit, can 
+see the Kingdom of God (3:3–5); “that which is born of flesh is flesh, 
+and that which born of the spirit is spirit” (3:6). At the same time, of 
+course, no other Gospel places greater emphasis upon the physical substantiality 
+of the body of the risen Christ: Thomas invited to place his 
+hands in Christ’s wounds, the disciples invited to share a breakfast of 
+fish with him beside the Sea of Tiberias. This should not confuse us. It 
+is another essentially modern, Cartesian prejudice that material bodies 
+must by definition be more substantial, more concrete, more capable 
+of generating physical effects than is anything that might be denominated 
+as “soul” or “spirit” or “intellect.” But, in late Graeco-Roman 
+antiquity, it made perfect sense to think of spiritual reality as more 
+substantial, powerful, and resourceful than any animal body. Nothing 
+of which a mortal, corruptible, “psychical” body is capable would have 
+been thought to lie beyond the powers of an immortal, incorruptible, 
+wholly spiritual being. It was this evanescent life, lived in a frail and 
+perishable animal frame in the realm of generation and decay, that was 
+regarded as the poorer, feebler, more ghostly of the two conditions; 
+spiritual existence was something immeasurably mightier, more robust, 
+more joyous, more plentifully alive. And this definitely seems to be 
+the picture provided by the Gospels in general. The risen Christ, possessed 
+of a spiritual body, could eat and drink, could be felt, could break 
+bread between his hands; but he could also appear and disappear at will, 
+unimpeded by walls or locked doors, or could become unrecognizable 
+to those who had known him before his death, or could even ascend 
+from the earth and pass through the incorruptible heavens where only 
+spiritual beings may venture. 
+
+And then, as I have also already mentioned in passing, there is 
+
+
+1 Peter 3:18–19: “For the Anointed also suffered, once and for all, a just 
+man on behalf of the unjust, so that he might lead you to God, being put 
+to death in flesh and yet being made alive in spirit (θανατωθεὶς μὲν 
+σαρκί, ζῳοποιηθεὶς δὲ πνεύματι, thanatōtheis men sarki, zōiopoiētheis 
+de pnevmati), whereby (ἐν ᾧ, en hōi) he also journeyed and made a proclamation 
+to the spirits in prison (τοῖς ἐν φυλακῇ πνεύμασιν, tois en 
+phylakēi pnevmasin).” This verse is extremely easy to misconstrue. It is 
+usually read as relating the same story found in 1 Peter 4:6, which seems 
+to tell of Christ evangelizing the dead in Hades so that, though they 
+had been judged “in flesh” according to human beings, they might live 
+“in spirit” (not “in the Spirit”) according to God. While that verse too 
+is germane to my remarks here, the verses from chapter three do not 
+refer to the same episode. For one thing, whether or not the evangelization 
+of Hades was understood as having occurred during the interval 
+between Christ’s death and his resurrection, the tale cited in chapter 
+three is explicitly about something Christ accomplished after his resurrection. 
+The parallel construction “thanatōtheis men sarki, zōiopoiētheis de 
+pnevmati” employs two modal datives—in or by or as flesh, in or by or as 
+spirit—to indicate the manner or condition, first, of Christ’s death and, 
+second, of his being made alive again, while the conjunctive formula 
+en hōi seems to make it clear that, by being raised “as spirit,” Christ was 
+made capable of entering into spiritual realms, and so of traveling to the 
+“spirits in prison.” Again, the word here is “spirits,” meaning rational 
+creatures who by their nature do not possess psychical bodies of perishable 
+flesh; the reference is not to the “souls” of human beings who 
+have died, but to those wicked angels or daemonic beings imprisoned in 
+Tartarus until the day of judgment (mentioned also in 2 Peter 2:4–5 and 
+Jude 1:6) whose stories are told in 1 Enoch and Jubilees. It may even be 
+of some significance here that these infuriatingly enigmatic verses seem 
+to echo the account of Enoch’s visit to the abode of these spirits in order 
+to proclaim God’s condemnation upon them (1 Enoch 12–15). Who can 
+say? It is certainly of considerable significance, however, that this pas
+
+
+
+sage seems to say that the risen Christ was able to make his journey to 
+those hidden regions precisely because he was no longer hindered by a 
+carnal frame but instead now possessed the boundless liberty of spirit. 
+
+It is just such liberty, incidentally, that for the New Testament appears 
+to constitute a vital part of the substance of salvation. If we fail 
+to notice this, it is only because, again, we still instinctively draw an 
+absolute qualitative distinction between physical and spiritual reality, 
+or between the natural and the supernatural. The authors of scripture 
+inhabited a very different universe. For them, the eternal Son’s descent 
+into this world was at once genuinely a movement from transcendence 
+into immanence, but also a movement through space, down from the 
+unchanging divine aeon, or realm above the heavens, through the concentric 
+spheres of the planetary and lunar heavens, into the realm of 
+generation, alteration, and decay. At the same time, our ascent to God 
+in and through Christ is at once a sacramental, mystical, and gracious 
+passage from death to new life, but also a path of ascent in and with 
+Christ through the heavens into God’s eternity above. Both Christ and 
+those saved by him traverse the spiritual and moral chasm of estrangement 
+between God’s empyrean and this cosmos, but also (in some 
+sense) the actual space between them. Or, at any rate, those intervening 
+cosmic heavens, in the wake of Christ’s triumph over the hostile 
+powers reigning in them and governing the world below, will no longer 
+be barriers between God’s heaven and the world of the Age to come. It 
+is hard for us to imagine in any but metaphorical colorations the great 
+religious anxiety of late antiquity: that we are imprisoned in the “here 
+below,” in the realm of transience, of birth and death, in the volatile 
+region of air, under the impenetrable, turning, and sentineled spheres 
+of the heavens above. Some of us may be aware that, in the early centuries 
+of the church, there were mystery religions or “gnostic” sects or 
+Orphic cults or Hermetic wisdoms (and so on) that promised salvation 
+precisely in the form of escape from—and through the midst of—the 
+hostile celestial agencies that imprison us here; but, even then, we tend 
+
+
+to imagine that such beliefs were alien to Jewish or Christian faith. 
+They were not. 
+
+Most Jews, from well before to well after the time of Christ, as well 
+as most Christians of those early centuries, thought of the cosmos and 
+of salvation in just these terms. Hence the New Testament tells of a 
+cosmic dispensation under the reign of the god of this aeon (2 Corinthians 
+4:4) or the Archon of this cosmos (John 14:30; Ephesians 2:2), 
+and of spiritual beings hopelessly immured within heavenly spheres 
+thronged by hostile archons and powers and principalities and daemons 
+(Romans 8:3, 39; 1 Corinthians 10:20–21; 15:24; Ephesians 1:21; 
+and so on), bound under and cursed by a law that was in fact ordained 
+by lesser, merely angelic powers (Galatians 3:10–11, 19–20). Into this 
+prison, this darkness that knows nothing of the true light (John 1:5), 
+a divine savior descends from the divine realm above (John 3:31; 8:23; 
+and so on), perhaps veiled from the eyes of the hostile celestial powers 
+by being in the “form” and “flesh” of a man (Romans 8:3; 1 Corinthians 
+2:8; Philippians 2:7-8), bringing with him a secret truth that has 
+been hidden from before the ages (Romans 16:25–26; Galatians 1:12; 
+Ephesians 3:3–9; Colossians 1:26), a wisdom unknown even to “the archons 
+of this cosmos” (1 Corinthians 2:7–8) that has the power to liberate 
+fallen spirits (John 8:31–32, and so on). The letter to the Ephesians 
+is practically a primer in this sort of cosmic soteriology: Christ has 
+been seated at God’s right hand in the heavenly places, “far above every 
+Rule and Authority and Power and Lordship” with “all things ordered 
+under his feet” (Ephesians 1:20–22), having taken the hostile Powers 
+captive as he ascended through the heavens (4:8–10); he has, moreover, 
+emancipated us from the “Archon of the Power of the air” (2:2) and 
+set us alongside himself in the heavenly places (2:6); and even now he 
+is revealing God’s plan to these celestial Archons and Powers through 
+his church (3:10); nevertheless, until the consummation of all things, 
+Christians must continue to wrestle “not against blood and flesh, but 
+against the Archons, against the Powers, against the Cosmic Rulers of 
+
+
+this darkness, against the spiritual forces of wickedness in the celestial 
+places” (6:12). The language is perfectly clear. Nor should we doubt for 
+a moment how very literally these images were meant to be taken. This 
+might seem to some of us today, of course, to reduce much of the soteriology 
+of the New Testament to little more than naïve mythology or bad 
+science, but that would be a thoroughly parochial judgment. Persons of 
+every age are constrained to think and speak within the image of reality 
+they know, but that does not mean that the truths they attempt to enunciate 
+are exhausted by those conceptual forms. The language of salvation 
+in Christ as it appears in the earliest Christian documents reflects 
+the presuppositions of its time, but perhaps its revolutionary import 
+has the power to shatter all presuppositions without losing its force. 
+Its symbolic force may even long outlive the tacit (and, sadly, mechanistic) 
+metaphysics and cosmology of reality that forms the dominant 
+cosmic mythology of the modern age. Whatever the case, the fact remains 
+that, for Paul (as for others of his time), Christ’s triumph over 
+and subjugation of the cosmic Principalities and Authorities and Powers 
+(1 Corinthians 15:24–28) has literally opened a path through the planetary 
+spheres, the encompassing heavens, the armies of the air and the 
+potentates on high, all the way to God. This is a claim made in intonations 
+at once both physical and spiritual. And, even if now most of us 
+can hear only the latter as having any genuinely compelling or credible 
+force, we should nevertheless—just for understanding’s sake—let ourselves 
+occasionally hear the former as well. We should, that is, let ourselves 
+recognize the integral unity of the natural and the supernatural, 
+the cosmic and the divine, in Paul’s joyous proclamation that “neither 
+death nor life nor angels nor Archons nor things present nor things imminent 
+nor Powers nor height nor depth nor any other creature will be 
+able to separate us from the love of God” (Romans 8:38–39). 
+
+

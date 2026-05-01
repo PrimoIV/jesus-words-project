@@ -8,34 +8,18 @@ A web application for exploring and studying the direct words of Jesus Christ as
 - **Search Functionality**: Search across all content for specific words or phrases
 - **Dark Mode**: Toggle between light and dark themes
 - **Accessibility Options**: Popup menu with High Contrast, Large Text, Reduce Motion, and Simplified View. All options can be combined and persist across reloads.
+- **Semantic Highlighting Engine**: Dynamically compares verses to highlight profound theological differences using heuristic rules.
 - **Notes/Annotations**: Add, edit, and save notes for each section/verse. Notes are saved in your browser and persist across reloads.
 - **Responsive Design**: Works on desktop and mobile devices
 
-## File Structure
+## Structure Overview
 
-```
-jesus.words/
-├── index.html              # Main HTML file
-├── css/
-│   ├── styles.css          # Main styles and layout
-│   ├── dark-mode.css       # Dark mode specific styles
-│   └── accessibility.css   # Accessibility enhancements
-├── js/
-│   ├── main.js            # Tab navigation and content loading
-│   ├── search.js          # Search functionality
-│   ├── dark-mode.js       # Dark mode toggle
-│   ├── accessibility.js   # Accessibility menu
-│   └── notes.js           # Notes functionality (per section/verse)
-├── data/
-│   ├── home.json          # Home page content
-│   ├── sermon.json        # Sermon on the Mount content
-│   ├── parables.json      # Parables content
-│   └── sayings.json       # Sayings content
-└── assets/
-    ├── icons/             # SVG icons for UI elements
-    ├── images/            # Images (if any)
-    └── fonts/             # Custom fonts (if any)
-```
+For a detailed breakdown of the complete project layout and directory logic, please refer to the [Project Structure](PROJECT_STRUCTURE.md) guide. At a high level:
+
+- `/data`: Contains the finalized core `jesus_verses.json` consumed by the live application.
+- `/scripts`: The backend Python/Node.js build pipeline for formatting and collating data.
+- `/sources`: The offline textual processing repository, starting from raw PDFs to intermediate text formats.
+- `/css` & `/js`: The vanilla frontend layout, styling, themes, and application logic.
 
 ## Quick Start
 
@@ -54,17 +38,11 @@ cd jesus.words
 npx http-server -p 8000
 ```
 
-### Using PHP:
-```bash
-cd jesus.words
-php -S localhost:8000
-```
-
 3. **Open your browser** and navigate to `http://localhost:8000`
 
 ## Usage
 
-- **Navigation**: Click the tab buttons to switch between Home, Sermon, Parables, and Sayings. Content loads dynamically.
+- **Navigation**: Click the tab buttons to switch between sections. Content loads dynamically.
 - **Search**: Type in the search box to find content across all sections. Results show the source section.
 - **Dark Mode**: Click the sun/moon toggle button (bottom left) for a smooth animated transition. Your preference is saved.
 - **Accessibility**: Click the gear icon (bottom left) for a popup menu. Enable High Contrast, Large Text, Reduce Motion, or Simplified View. All options can be combined and persist.
@@ -72,16 +50,12 @@ php -S localhost:8000
 
 ## Development
 
-The project uses vanilla HTML, CSS, and JavaScript with no build process required. Content is stored in JSON files for easy editing.
+The frontend project uses vanilla HTML, CSS, and JavaScript with no build process required. Content is stored in JSON format for easy loading.
 
-### Adding Content
-
-Edit the JSON files in the `data/` directory to add or modify content:
-- Each file contains a `title` and `sections` array
-- Each section has a `heading` and `text` property
+### Rebuilding Dataset Content
+To rebuild or modify the data pipeline, execute the processing tools in `/scripts/` against the raw texts in `/sources/`. The live web app strictly consumes the single compiled `/data/jesus_verses.json`.
 
 ### Customizing Styles
-
 - Main styles: `css/styles.css`
 - Dark mode: `css/dark-mode.css`
 - Accessibility: `css/accessibility.css`
@@ -93,57 +67,6 @@ Works in all modern browsers that support:
 - CSS Grid and Flexbox
 - Fetch API
 
-## Next Steps
-
-- [ ] Add more comprehensive content to JSON files
-- [ ] Implement verse references and cross-references
-- [ ] Include multiple Bible translations
-- [ ] Add print-friendly styling
-- [ ] Implement offline functionality with service workers
-
 ## License
 
-This project is for educational and spiritual purposes. Scripture content is in the public domain.
-
-## Full Directory Structure
-
-```
-jesus.words/
-├── index.html
-├── README.md
-├── css/
-│   ├── styles.css
-│   ├── dark-mode.css
-│   └── accessibility.css
-├── js/
-│   ├── main.js
-│   ├── search.js
-│   ├── dark-mode.js
-│   ├── accessibility.js
-│   └── notes.js
-├── data/
-│   ├── hart.json
-│   ├── home.json
-│   ├── lamsa.json
-│   ├── nrsv.json
-│   ├── parables.json
-│   ├── sayings.json
-│   └── sermon.json
-├── assets/
-│   ├── icons/
-│   │   ├── accessibilityicon.svg
-│   │   ├── accessicon2.svg
-│   │   ├── moon.svg
-│   │   └── sun.svg
-│   ├── images/   # (currently empty)
-│   └── fonts/    # (currently empty)
-└── .git/         # (if using git)
-```
-
-- All JSON data files for translations and content are in `data/`.
-- All scripts are in `js/`.
-- All stylesheets are in `css/`.
-- All icons are in `assets/icons/`.
-- Images and fonts folders are present for future use.
-
----
+This project is for educational and spiritual purposes.
