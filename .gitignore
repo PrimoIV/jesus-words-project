@@ -23,6 +23,17 @@ Thumbs.db
 # Logs
 *.log
 
-# Large raw source files (uncomment if needed later)
-# sources/raw/
-# archive/
+# Generated reports and review exports
+dev/reports/
+
+# Local backups and one-off planning notes
+*_backup.json
+*.bak
+*.tmp
+plan-copilot.prompt.md
+IDEAS.md
+
+# Large/offline source artifacts
+archive/
+docs/sources/full_txts/*.pdf
+docs/source_info/**/*.docx

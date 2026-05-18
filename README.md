@@ -1,4 +1,5 @@
 # Jesus Words Project
+Updated 05/17/2026
 
 A web application for exploring and studying the direct words of Jesus Christ as recorded in the canonical Gospels.
 
@@ -16,9 +17,9 @@ A web application for exploring and studying the direct words of Jesus Christ as
 
 For a detailed breakdown of the complete project layout and directory logic, please refer to the [Project Structure](PROJECT_STRUCTURE.md) guide. At a high level:
 
-- `/data`: Contains the finalized core `jesus_verses.json` consumed by the live application.
+- `/data`: Contains the finalized core `jesus_verses_final.json` consumed by the live application.
 - `/scripts`: The backend Python/Node.js build pipeline for formatting and collating data.
-- `/sources`: The offline textual processing repository, starting from raw PDFs to intermediate text formats.
+- `/docs/sources`: The offline textual processing repository, starting from raw PDFs/JSON to intermediate text formats.
 - `/css` & `/js`: The vanilla frontend layout, styling, themes, and application logic.
 
 ## Quick Start
@@ -53,7 +54,16 @@ npx http-server -p 8000
 The frontend project uses vanilla HTML, CSS, and JavaScript with no build process required. Content is stored in JSON format for easy loading.
 
 ### Rebuilding Dataset Content
-To rebuild or modify the data pipeline, execute the processing tools in `/scripts/` against the raw texts in `/sources/`. The live web app strictly consumes the single compiled `/data/jesus_verses.json`.
+To rebuild or modify the data pipeline, execute the processing tools in `/scripts/` against the raw texts in `/docs/sources/`. The master build consumes the formatted files in `/docs/sources/extracted_txt/` and writes the compiled `/data/jesus_verses_final.json`.
+
+Recommended rebuild flow (core steps):
+```bash
+node scripts/build_master_jesus_dataset.js
+node scripts/audit_jesus_dataset.js
+# Optional: generate highlight reports or verify pipeline
+# node scripts/generate_highlight_report.js
+# node scripts/verify_highlight_pipeline.js
+```
 
 ### Customizing Styles
 - Main styles: `css/styles.css`

@@ -69,36 +69,174 @@
 body.dark-mode {
     --bg-color: #111827;
     --panel-bg: #1f2937;
+    --surface-bg: #172033;
     --border-color: #374151;
+    --strong-border-color: #4b5563;
     --text-active: #f9fafb;
     --text-muted: #9ca3af;
     --text-main: #d1d5db;
-    --diff-bg: rgba(250, 204, 21, 0.15);
+    --highlight-wording-bg: rgba(148, 163, 184, 0.12);
+    --highlight-wording-border: rgba(148, 163, 184, 0.58);
+    --highlight-meaning-bg: rgba(217, 180, 100, 0.25);
+    --highlight-meaning-border: rgba(217, 180, 100, 0.48);
+    --highlight-interpretive-bg: rgba(129, 140, 248, 0.24);
+    --highlight-interpretive-border: rgba(165, 180, 252, 0.58);
+    --highlight-critical-bg: rgba(225, 145, 115, 0.25);
+    --highlight-critical-border: rgba(251, 146, 60, 0.58);
+    --diff-bg: var(--highlight-meaning-bg);
+    --diff-critical-bg: var(--highlight-critical-bg);
+    --diff-border: var(--highlight-meaning-border);
+    --diff-critical-border: var(--highlight-critical-border);
     --highlight-bg: #374151;
+    --accent: #60a5fa;
+    --card-shadow: 0 16px 34px rgba(0, 0, 0, 0.28);
+    --soft-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
 }
 
 body.dark-mode .sidebar-header,
-body.dark-mode .column-header {
+body.dark-mode .selected-verse-card {
     background: var(--panel-bg);
 }
 
+body.dark-mode #sidebar {
+    background: #111827;
+}
+
+body.dark-mode #main-content {
+    background: linear-gradient(180deg, #111827 0%, #0f172a 100%);
+}
+
 body.dark-mode .list-item.active {
-    background-color: #4b5563;
+    background-color: #263244;
+    border-color: #64748b;
     color: #ffffff;
 }
 
-body.dark-mode .search-container input {
+body.dark-mode .list-item {
+    background: rgba(31, 41, 55, 0.72);
+}
+
+body.dark-mode .list-item:hover {
+    background: var(--panel-bg);
+}
+
+body.dark-mode .search-container input,
+body.dark-mode .filter-row select,
+body.dark-mode .filter-check {
     background: var(--bg-color);
     border-color: #6b7280;
     color: var(--text-active);
 }
 
-body.dark-mode .search-container input:focus {
+body.dark-mode .search-container input:focus,
+body.dark-mode .filter-row select:focus {
     border-color: #9ca3af;
 }
 
 
 
-body.dark-mode .dashboard-card { background: var(--bg-color); border-color: var(--border-color); }
-body.dark-mode .dashboard-card:hover { border-color: var(--text-muted); box-shadow: 0 12px 24px rgba(0,0,0,0.2); }
-body.dark-mode .card-count { background: #374151; color: #d1d5db; }
+body.dark-mode .filter-check,
+body.dark-mode .nav-btn,
+body.dark-mode .translation-label,
+body.dark-mode .phrase-chip,
+body.dark-mode .phrase-section,
+body.dark-mode .reading-mode-control,
+body.dark-mode .translation-tabs {
+    background: var(--surface-bg);
+}
+
+body.dark-mode .translation-tab.active,
+body.dark-mode .reading-mode-btn.active,
+body.dark-mode .comparison-row,
+body.dark-mode .selected-verse-card,
+body.dark-mode .coverage-item,
+body.dark-mode .dashboard-card {
+    background: var(--panel-bg);
+    border-color: var(--border-color);
+}
+
+body.dark-mode .translation-tabs {
+    background: #111827;
+}
+
+body.dark-mode .translation-tab {
+    color: #7f8da3;
+}
+
+body.dark-mode .reading-mode-btn {
+    color: #7f8da3;
+}
+
+body.dark-mode .translation-tab.active {
+    background: #263244;
+    border-color: #64748b;
+    color: var(--text-active);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.34), 0 1px 2px rgba(0, 0, 0, 0.28);
+}
+
+body.dark-mode .reading-mode-btn.active {
+    background: #263244;
+    border-color: #64748b;
+    color: var(--text-active);
+}
+
+body.dark-mode .inspector-panel section {
+    background: rgba(23, 32, 51, 0.62);
+    border-color: rgba(75, 85, 99, 0.62);
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.12);
+}
+
+body.dark-mode .difference-table {
+    background: transparent;
+}
+
+body.dark-mode .key-difference-item {
+    background: rgba(31, 41, 55, 0.42);
+    border-color: rgba(75, 85, 99, 0.58);
+}
+
+body.dark-mode .translation-tab:hover {
+    background: rgba(38, 50, 68, 0.68);
+    color: var(--text-active);
+}
+
+body.dark-mode .phrase-chip.diff {
+    background: rgba(217, 178, 94, 0.1);
+    border-color: rgba(217, 178, 94, 0.28);
+    color: var(--text-active);
+}
+
+body.dark-mode .key-difference-item.critical {
+    background: rgba(244, 143, 143, 0.09);
+    border-color: rgba(244, 143, 143, 0.38);
+}
+
+body.dark-mode .diff-badge,
+body.dark-mode .card-count {
+    background: #374151;
+    color: #d1d5db;
+}
+
+body.dark-mode .dashboard-card:hover {
+    border-color: var(--text-muted);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+}
+
+
+/* --- Homepage Layout Styles --- */
+body.dark-mode .btn-primary {
+    background: #ffffff;
+    color: #000000;
+}
+
+body.dark-mode .btn-primary:hover {
+    background: #e2e8f0;
+}
+
+body.dark-mode .browse-card {
+    background: var(--panel-bg);
+}
+
+body.dark-mode .feature-card {
+    background: var(--surface-bg);
+}

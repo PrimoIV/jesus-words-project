@@ -3,11 +3,21 @@
 export async function runHighlightStressTest({
     dataset,
     allVerseIds,
+    getDisplayText,
     processWords,
-    generateHighlightedHTML
+    generateHighlightedNodes
 }) {
     try {
+        if (typeof getDisplayText !== "function") {
+            console.warn("Highlight stress test skipped: getDisplayText callback is required.");
+            return;
+        }
+
         const res = await fetch("./dev/test-data/test_verses.json");
+        if (!res.ok) {
+            console.warn("Highlight stress test skipped: test data not found.");
+            return;
+        }
         const verses = await res.json();
 
         console.log("=== Highlight Stress Test Start ===");
@@ -39,24 +49,23 @@ export async function runHighlightStressTest({
                 continue;
             }
 
-            const trans = v.translations || {};
-            const dbhText = trans.DBH || "";
-            const nrsvueText = trans.NRSVUE || "";
-            const lamsaText = trans.LAMSA || "";
+            const dbhText = getDisplayText(matchId, v, "DBH");
+            const nrsvueText = getDisplayText(matchId, v, "NRSVUE");
+            const lamsaText = getDisplayText(matchId, v, "LAMSA");
 
             const dbhProc = processWords(dbhText);
             const nrsvueProc = processWords(nrsvueText);
             const lamsaProc = processWords(lamsaText);
 
-            const htmlDbh = generateHighlightedHTML(
+            const nodesDbh = generateHighlightedNodes(
                 dbhProc.words,
                 nrsvueProc.tokenSet,
                 lamsaProc.tokenSet
             );
 
-            const chunksDbh = (htmlDbh.match(/<span/g) || []).length;
+            const chunksDbh = nodesDbh.filter(node => node.nodeType === Node.ELEMENT_NODE && node.matches('[data-highlight-type]')).length;
 
-            console.log(ref, "=>", chunksDbh, "chunks", htmlDbh);
+            console.log(ref, "=>", chunksDbh, "chunks", nodesDbh.map(node => node.textContent).join(""));
         }
 
         console.log("=== Highlight Stress Test End ===");

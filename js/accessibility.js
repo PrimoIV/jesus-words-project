@@ -94,7 +94,12 @@
       console.log('Toggled accessibility:', optionId);
       
       // Save accessibility preferences
-      const preferences = JSON.parse(localStorage.getItem('jw:accessibility') || '{}');
+      let preferences = {};
+      try {
+        preferences = JSON.parse(localStorage.getItem('jw:accessibility') || '{}');
+      } catch {
+        preferences = {};
+      }
       preferences[optionId] = document.body.classList.contains(optionId);
       localStorage.setItem('jw:accessibility', JSON.stringify(preferences));
     }
@@ -111,7 +116,13 @@
 
     // Load saved accessibility preferences
     function loadAccessibilityPreferences() {
-      const preferences = JSON.parse(localStorage.getItem('jw:accessibility') || '{}');
+      let preferences = {};
+      try {
+        preferences = JSON.parse(localStorage.getItem('jw:accessibility') || '{}');
+      } catch {
+        preferences = {};
+        localStorage.removeItem('jw:accessibility');
+      }
       Object.keys(preferences).forEach(optionId => {
         if (preferences[optionId]) {
           document.body.classList.add(optionId);

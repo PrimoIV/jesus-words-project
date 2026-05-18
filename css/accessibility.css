@@ -1,160 +1,20 @@
-/* =========================
-     HIGH CONTRAST MODE (WCAG, SYSTEM, SEARCH BAR, BUTTONS, LINKS)
-     ========================= */
-@media (prefers-contrast: more), (forced-colors: active) {
-    body, .high-contrast body {
-        background: #000 !important;
-        color: #fff !important;
-    }
-    .high-contrast, .high-contrast main, .high-contrast #content-area, .high-contrast .content-card, .high-contrast .verse-card, .high-contrast #search-panel {
-        background: #000 !important;
-        color: #fff !important;
-        box-shadow: none !important;
-        filter: none !important;
-        background-image: none !important;
-    }
-    .high-contrast h1, .high-contrast h2, .high-contrast h3, .high-contrast h4, .high-contrast h5, .high-contrast h6, .high-contrast label, .high-contrast .translation-label {
-        color: #fff !important;
-        font-weight: bold;
-        text-shadow: none !important;
-    }
-    .high-contrast a, .high-contrast a:visited {
-        color: #FFFF00 !important;
-        text-decoration: underline !important;
-        background: none !important;
-        box-shadow: none !important;
-    }
-    .high-contrast a:focus, .high-contrast .tab-button:focus, .high-contrast .link-toggle:focus, .high-contrast button:focus, .high-contrast input:focus, .high-contrast select:focus {
-        outline: 2px solid #FFFF00 !important;
-        outline-offset: 2px !important;
-    }
-    .high-contrast button, .high-contrast .tab-button, .high-contrast .link-toggle {
-        background: #fff !important;
-        color: #000 !important;
-        border: 2px solid #fff !important;
-        box-shadow: none !important;
-        text-shadow: none !important;
-        transition: none !important;
-    }
-    .high-contrast button:hover, .high-contrast .tab-button:hover, .high-contrast .link-toggle:hover, .high-contrast button:active, .high-contrast .tab-button:active {
-        background: #000 !important;
-        color: #fff !important;
-        border: 2px solid #fff !important;
-    }
-    .high-contrast #search-input, .high-contrast input[type="text"], .high-contrast textarea, .high-contrast select {
-        background: #000 !important;
-        color: #fff !important;
-        border: 2px solid #fff !important;
-        box-shadow: none !important;
-        outline: none !important;
-    }
-    .high-contrast #search-input::placeholder, .high-contrast input[type="text"]::placeholder {
-        color: #FFFF00 !important;
-        opacity: 1 !important;
-    }
-    .high-contrast label, .high-contrast .search-bar-wrap label {
-        color: #FFFF00 !important;
-        font-weight: bold;
-    }
-    .high-contrast select, .high-contrast option {
-        background: #000 !important;
-        color: #fff !important;
-        border: 2px solid #fff !important;
-    }
-    .high-contrast input[type="checkbox"], .high-contrast input[type="radio"] {
-        accent-color: #FFFF00 !important;
-        border: 2px solid #fff !important;
-        background: #000 !important;
-    }
-    .high-contrast .red-letter {
-        color: #ff2d2d !important;
-        text-shadow: none !important;
-    }
-    .high-contrast .commentary-esoteric, .high-contrast .commentary-basic, .high-contrast .commentary-scholarly {
-        background: #000 !important;
-        color: #FFFF00 !important;
-        border-left: 4px solid #FFFF00 !important;
-    }
-    .high-contrast .comm-layer-content {
-        background: #000 !important;
-        color: #fff !important;
-        border-left: 4px solid #FFFF00 !important;
-    }
-    .high-contrast .search-bar-wrap, .high-contrast #search-panel {
-        background: #000 !important;
-        box-shadow: none !important;
-        border: none !important;
-    }
-    .high-contrast #search-results {
-        background: #000 !important;
-        color: #fff !important;
-        box-shadow: none !important;
-        border: none !important;
-    }
-    .high-contrast .content-card, .high-contrast .verse-card {
-        background: #000 !important;
-        color: #fff !important;
-        border: 2px solid #fff !important;
-        box-shadow: none !important;
-    }
-    .high-contrast .icon-sun, .high-contrast .icon-moon, .high-contrast img, .high-contrast svg {
-        filter: invert(1) brightness(2) !important;
-    }
-    .high-contrast .overlay {
-        display: none !important;
-    }
-    /* Extra: All interactive elements get a thick yellow focus outline */
-    .high-contrast a:focus, .high-contrast button:focus, .high-contrast input:focus, .high-contrast select:focus, .high-contrast textarea:focus, .high-contrast .tab-button:focus, .high-contrast .link-toggle:focus {
-        outline: 2px solid #FFFF00 !important;
-        outline-offset: 2px !important;
-        box-shadow: 0 0 0 2px #FFFF00 !important;
-    }
-    /* Ensure all links are bright yellow and underlined */
-    .high-contrast a, .high-contrast a:visited {
-        color: #FFFF00 !important;
-        text-decoration: underline !important;
-    }
-    /* Button backgrounds pure white, text pure black; invert on hover/focus */
-    .high-contrast button, .high-contrast .tab-button, .high-contrast .link-toggle {
-        background: #fff !important;
-        color: #000 !important;
-        border: 2px solid #fff !important;
-    }
-    .high-contrast button:hover, .high-contrast button:focus, .high-contrast .tab-button:hover, .high-contrast .tab-button:focus, .high-contrast .link-toggle:hover, .high-contrast .link-toggle:focus {
-        background: #000 !important;
-        color: #fff !important;
-        border: 2px solid #fff !important;
-    }
-}
-/* High contrast for red-letter and commentary */
-.high-contrast .red-letter {
-    color: #ff2d2d !important;
-    text-shadow: 0 0 2px #fff, 0 0 4px #fff;
-}
-.high-contrast .commentary-esoteric {
-    background: #fffbe6 !important;
-    color: #7c3aed !important;
-    border-left: 4px solid #7c3aed !important;
-}
-/* =========================
-   ACCESSIBILITY MENU POPUP
-   ========================= */
+/* Accessibility controls and user-selected reading modes */
+
 #accessibility-menu {
     position: fixed;
-    /* Position will be set dynamically by JavaScript */
-    background: var(--card-bg);
+    background: var(--panel-bg);
     border: 1px solid var(--border-color);
-    border-radius: var(--border-radius);
-    box-shadow: var(--card-shadow-hover);
-    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 16px 40px rgba(17, 24, 39, 0.18);
+    color: var(--text-active);
+    padding: 16px;
     min-width: 220px;
     max-width: 280px;
     z-index: 10001;
     transform: scale(0.95);
     opacity: 0;
     pointer-events: none;
-    transition: all 0.2s ease;
-    backdrop-filter: blur(10px);
+    transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
 #accessibility-menu:not([hidden]) {
@@ -164,11 +24,10 @@
 }
 
 #accessibility-menu h2 {
-    margin: 0 0 1rem 0;
-    font-size: 1.1rem;
+    margin: 0 0 12px;
+    font-size: 1rem;
     font-weight: 600;
-    color: var(--text-color);
-    text-align: left;
+    color: var(--text-active);
 }
 
 #accessibility-menu ul {
@@ -177,116 +36,30 @@
     padding: 0;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
-}
-
-#accessibility-menu li {
-    margin: 0;
+    gap: 8px;
 }
 
 #accessibility-menu button {
     width: 100%;
-    padding: 0.75rem 1rem;
+    padding: 10px 12px;
     border: 1px solid var(--border-color);
     border-radius: 8px;
-    background: transparent;
-    color: var(--text-color);
-    font-size: 0.9rem;
+    background: var(--bg-color);
+    color: var(--text-active);
+    font: 500 0.9rem var(--font-stack);
     cursor: pointer;
     text-align: left;
-    transition: all 0.2s ease;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
 }
 
-#accessibility-menu button:hover {
-    background: var(--card-bg);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transform: translateY(-1px);
+#accessibility-menu button:hover,
+#accessibility-menu button[aria-pressed="true"] {
+    background: var(--highlight-bg);
 }
 
-#accessibility-menu button:active {
-    transform: translateY(0);
+#accessibility-menu button[aria-pressed="true"] {
+    border-color: var(--text-muted);
 }
 
-/* Active states for accessibility options */
-.high-contrast #accessibility-menu button[data-option="high-contrast"],
-.large-text #accessibility-menu button[data-option="large-text"],
-.reduce-motion #accessibility-menu button[data-option="reduce-motion"],
-.simplified-view #accessibility-menu button[data-option="simplified-view"] {
-    background: var(--text-color);
-    color: var(--bg-color);
-    border-color: var(--text-color);
-}
-
-/* Accessibility option implementations */
-
-/* Only apply high contrast to main content, not overlays or menus */
-.high-contrast main,
-.high-contrast #content-area,
-.high-contrast .content-card,
-.high-contrast .verse-card {
-    filter: contrast(150%) saturate(200%);
-}
-
-.large-text {
-    font-size: 120% !important;
-}
-
-.large-text * {
-    font-size: inherit !important;
-}
-
-.reduce-motion * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-}
-
-.simplified-view .content-card:hover {
-    transform: none !important;
-    box-shadow: var(--card-shadow) !important;
-}
-
-.simplified-view .overlay {
-    display: none !important;
-}
-
-/* Click outside to close functionality */
-.accessibility-menu-backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 10000;
-    pointer-events: none;
-}
-
-#accessibility-menu:not([hidden]) ~ .accessibility-menu-backdrop {
-    pointer-events: auto;
-}
-
-/* =========================
-   RESPONSIVE SIZING
-   ========================= */
-@media (max-width: 768px) {
-    #accessibility-menu {
-        min-width: 200px;
-        max-width: 250px;
-    }
-}
-
-@media (max-width: 480px) {
-    #accessibility-menu {
-        min-width: 180px;
-        max-width: calc(100vw - 20px);
-    }
-}
-/* =========================
-   ACCESSIBILITY GEAR BUTTON
-   ========================= */
 .acc-gear {
     position: fixed;
     bottom: 24px;
@@ -303,12 +76,164 @@
     z-index: 10000;
     border: none;
 }
+
 .acc-gear img {
     width: 24px;
     height: 24px;
     display: block;
 }
-.acc-gear:hover { transform: scale(1.05); }
 
-.high-contrast #sidebar, .high-contrast #comparison-view { filter: contrast(150%) saturate(200%); border-color: #000; }
-.high-contrast .column-header, .high-contrast .sidebar-header { border-color: #000; box-shadow: 0 1px 0 #000; }
+.acc-gear:hover {
+    transform: scale(1.05);
+}
+
+.high-contrast {
+    --bg-color: #000;
+    --panel-bg: #000;
+    --border-color: #fff;
+    --text-active: #fff;
+    --text-muted: #ffff00;
+    --text-main: #fff;
+    --highlight-wording-bg: transparent;
+    --highlight-wording-border: #66ccff;
+    --highlight-meaning-bg: rgba(255, 255, 0, 0.22);
+    --highlight-meaning-border: #ffff00;
+    --highlight-interpretive-bg: rgba(153, 153, 255, 0.25);
+    --highlight-interpretive-border: #b8b8ff;
+    --highlight-critical-bg: rgba(255, 128, 128, 0.28);
+    --highlight-critical-border: #ff8080;
+    --diff-bg: var(--highlight-meaning-bg);
+    --diff-border: var(--highlight-meaning-border);
+    --diff-critical-bg: var(--highlight-critical-bg);
+    --diff-critical-border: var(--highlight-critical-border);
+    --highlight-bg: #1f1f1f;
+}
+
+.high-contrast body,
+body.high-contrast {
+    background: #000 !important;
+    color: #fff !important;
+}
+
+.high-contrast button,
+.high-contrast input,
+.high-contrast select,
+.high-contrast .list-item,
+.high-contrast .dashboard-card,
+.high-contrast .selected-verse-card,
+.high-contrast .reading-mode-control,
+.high-contrast .reading-mode-btn,
+.high-contrast .translation-tabs,
+.high-contrast .translation-tab,
+.high-contrast .comparison-row,
+.high-contrast .translation-label,
+.high-contrast .inspector-panel section,
+.high-contrast .difference-table,
+.high-contrast .key-difference-item,
+.high-contrast .difference-phrase,
+.high-contrast .difference-meta,
+.high-contrast .phrase-chip,
+.high-contrast .phrase-section,
+.high-contrast .coverage-item,
+.high-contrast .sidebar-header {
+    border-color: #fff !important;
+}
+
+.high-contrast button:focus,
+.high-contrast input:focus,
+.high-contrast select:focus,
+.high-contrast .list-item:focus {
+    outline: 2px solid #ffff00 !important;
+    outline-offset: 2px;
+}
+
+.high-contrast .highlight-wording,
+.high-contrast .highlight-meaning,
+.high-contrast .highlight-interpretive,
+.high-contrast .highlight-critical {
+    color: #fff;
+    outline: 2px solid currentColor;
+    outline-offset: 1px;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+.high-contrast .highlight-wording {
+    text-decoration-style: dotted;
+}
+
+.high-contrast .highlight-interpretive {
+    text-decoration-style: double;
+}
+
+.high-contrast .highlight-critical {
+    outline-color: var(--highlight-critical-border);
+    text-decoration-color: var(--highlight-critical-border);
+}
+
+.high-contrast .icon-sun,
+.high-contrast .icon-moon,
+.high-contrast .acc-gear img {
+    filter: invert(1) brightness(2);
+}
+
+.large-text {
+    font-size: 120%;
+}
+
+.large-text .translation-text {
+    font-size: 1.3rem;
+}
+
+.large-text .list-item,
+.large-text .search-container input,
+.large-text .filter-row select,
+.large-text .reading-mode-btn,
+.large-text .translation-tab,
+.large-text .phrase-chip,
+.large-text .difference-phrase,
+.large-text .difference-meta {
+    font-size: 1.05rem;
+}
+
+.reduce-motion *,
+.reduce-motion *::before,
+.reduce-motion *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+}
+
+.simplified-view .dashboard-card,
+.simplified-view .toggle-btn,
+.simplified-view .translation-tab,
+.simplified-view .comparison-row,
+.simplified-view .selected-verse-card,
+.simplified-view .difference-table,
+.simplified-view .dark-mode-toggle .icon-wrap,
+.simplified-view .acc-gear {
+    box-shadow: none !important;
+}
+
+.simplified-view .dashboard-card:hover,
+.simplified-view .acc-gear:hover,
+.simplified-view .dark-mode-toggle:hover .icon-wrap {
+    transform: none !important;
+}
+
+@media (prefers-contrast: more), (forced-colors: active) {
+    button:focus,
+    input:focus,
+    .list-item:focus {
+        outline: 2px solid CanvasText;
+        outline-offset: 2px;
+    }
+}
+
+@media (max-width: 480px) {
+    #accessibility-menu {
+        min-width: 180px;
+        max-width: calc(100vw - 20px);
+    }
+}

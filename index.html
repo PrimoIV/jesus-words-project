@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +9,78 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/dark-mode.css">
-    <link rel="stylesheet" href="css/accessibility.css">
+    <link rel="stylesheet" href="css/styles.css?v=ui-cards-2">
+    <link rel="stylesheet" href="css/dark-mode.css?v=ui-cards-2">
+    <link rel="stylesheet" href="css/accessibility.css?v=ui-cards-2">
 </head>
-<body>
+
+<body class="home-active">
+    <header class="site-header" id="site-header">
+        <button id="home-link" class="brand-link" type="button">Jesus Words</button>
+        <nav class="site-nav">
+            <button type="button" data-nav-target="browse">Browse</button>
+            <button type="button" data-nav-target="compare">Compare</button>
+            <button type="button" data-nav-target="sources">Sources</button>
+        </nav>
+    </header>
+
+    <main id="home-page" class="home-page">
+        <section id="home-hero" class="home-section hero-section">
+            <h1>Only what Jesus actually said.</h1>
+            <p class="hero-sub">
+                Compare DBH, NRSVUE, and LAMSA side by side, with real differences highlighted.
+            </p>
+            <button id="start-btn" type="button" class="btn-primary">Start Exploring</button>
+            <p class="hero-meta">
+                <strong>DBH</strong> David Bentley Hart, 2023 ·
+                <strong>NRSVUE</strong> 2021 ·
+                <strong>LAMSA</strong> George M. Lamsa, 1957
+            </p>
+        </section>
+
+        <section id="home-featured" class="home-section featured-verse-section">
+            <h2>Featured passage</h2>
+            <div id="demo-verse"></div>
+        </section>
+
+        <section id="home-browse" class="home-section browse-section">
+            <h2>Browse by path</h2>
+            <div class="browse-grid" id="browse-grid"></div>
+        </section>
+
+        <section class="home-section translation-explainer">
+            <h2>Why these translations?</h2>
+            <p>
+This project compares three translations selected for how differently they approach the words of Jesus. Each reflects a distinct translation philosophy, making their differences intentional and meaningful.            </p>
+            <div class="translation-list">
+                <div class="translation-item">
+                    <strong>DBH (David Bentley Hart, 2023)</strong>
+                    <p>
+                        A highly literal and philosophically precise translation from the Greek, preserving structure and nuance often smoothed out in modern versions.
+                    </p>
+                </div>
+                <div class="translation-item">
+                    <strong>NRSVUE (2021)</strong>
+                    <p>
+                        A modern scholarly standard, balancing accuracy and readability while incorporating updated manuscript evidence and translation practices.
+                    </p>
+                </div>
+                <div class="translation-item">
+                    <strong>LAMSA (George M. Lamsa, 1957)</strong>
+                    <p>
+                        Translated from the Aramaic Peshitta tradition, offering a different linguistic and cultural perspective on the text.
+                    </p>
+                </div>
+            </div>
+            <p class="translation-note">
+Seen side by side, they reveal where wording aligns, where it diverges, and how meaning becomes clearer through contrast.            </p>
+        </section>
+    </main>
+
+    <footer class="site-footer" id="site-footer">
+        <p>Jesus Words comparison project</p>
+    </footer>
+
     <div id="app-container">
         <!-- Left panel (Verse Navigator) -->
         <aside id="sidebar">
@@ -22,17 +90,39 @@
                     <button class="toggle-btn active" data-mode="verse">Verse View</button>
                     <button class="toggle-btn" data-mode="study">Study View</button>
                 </div>
+                <div class="reading-mode-control" aria-label="Reading mode">
+                    <button class="reading-mode-btn active" type="button" data-reading-mode="verse">Verse</button>
+                    <button class="reading-mode-btn" type="button" data-reading-mode="speech">Speech Block</button>
+                </div>
+                <label class="context-toggle">
+                    <input type="checkbox" id="show-context-toggle">
+                    <span>Show Context</span>
+                </label>
                 <div class="search-container">
                     <input type="text" id="sidebar-search" placeholder="Search...">
                 </div>
+                <div class="filter-row">
+                    <select id="book-filter" aria-label="Filter by book">
+                        <option value="">All books</option>
+                    </select>
+                    <label class="filter-check">
+                        <input type="checkbox" id="diff-only-filter">
+                        <span>High diff</span>
+                    </label>
+                </div>
             </header>
-            
+
             <div id="sidebar-content" class="sidebar-content-area scroll-container">
                 <!-- Verse View -->
                 <div id="view-verse" class="view-layer active">
                     <ul id="verse-list" class="item-list"></ul>
                 </div>
-                
+
+                <!-- Speech Block View -->
+                <div id="view-speech-blocks" class="view-layer">
+                    <ul id="speech-block-list" class="item-list"></ul>
+                </div>
+
                 <!-- Study View: Empty Sidebar State -->
                 <div id="view-study-empty" class="view-layer placeholder-state">
                     <p>Select a category from the dashboard to explore verses.</p>
@@ -49,24 +139,51 @@
 
         <!-- Main content area -->
         <main id="main-content">
-            <!-- 3-Column Comparison View -->
+            <!-- Focused Comparison Workspace -->
             <div id="comparison-view" class="main-layer active">
-                <div class="column">
-                    <header class="column-header">DBH</header>
-                    <div class="column-content" id="col-dbh">
-                        <div class="placeholder-text">Select a verse to compare.</div>
+                <header class="comparison-toolbar">
+                    <div class="selected-verse-card">
+                        <div id="active-reference" class="active-reference">Select a verse</div>
+                        <div id="active-anchor" class="active-anchor"></div>
+                        <div id="context-label" class="context-label" hidden></div>
                     </div>
-                </div>
-                
-                <div class="column">
-                    <header class="column-header">NRSVUE</header>
-                    <div class="column-content" id="col-nrsvue"></div>
-                </div>
-                
-                <div class="column">
-                    <header class="column-header">LAMSA</header>
-                    <div class="column-content" id="col-lamsa"></div>
-                </div>
+                    <div class="toolbar-actions">
+                        <button id="btn-prev-verse" class="nav-btn" type="button" aria-label="Previous verse">‹</button>
+                        <button id="btn-next-verse" class="nav-btn" type="button" aria-label="Next verse">›</button>
+                    </div>
+                </header>
+
+                <section class="comparison-workspace">
+                    <div class="translation-panel">
+                        <div id="translation-tabs" class="translation-tabs" role="tablist"
+                            aria-label="Translation views">
+                            <button class="translation-tab active" type="button" role="tab" aria-selected="true"
+                                data-translation-tab="DBH">DBH</button>
+                            <button class="translation-tab" type="button" role="tab" aria-selected="false"
+                                data-translation-tab="NRSVUE">NRSVUE</button>
+                            <button class="translation-tab" type="button" role="tab" aria-selected="false"
+                                data-translation-tab="LAMSA">LAMSA</button>
+                            <button class="translation-tab" type="button" role="tab" aria-selected="false"
+                                data-translation-tab="Compare">Compare</button>
+                        </div>
+                        <div id="comparison-table" class="comparison-table"></div>
+                        <details class="phrase-section">
+                            <summary>Advanced Alignment</summary>
+                            <div id="phrase-grid" class="phrase-grid"></div>
+                        </details>
+                    </div>
+
+                    <aside class="inspector-panel">
+                        <section>
+                            <h2>Key Differences</h2>
+                            <div id="difference-summary" class="difference-summary"></div>
+                        </section>
+                        <section>
+                            <h2>Verse Coverage</h2>
+                            <div id="coverage-summary" class="coverage-summary"></div>
+                        </section>
+                    </aside>
+                </section>
             </div>
 
             <!-- Categories Dashboard -->
@@ -107,4 +224,5 @@
     <script src="js/accessibility.js"></script>
     <script src="js/dark-mode.js"></script>
 </body>
+
 </html>

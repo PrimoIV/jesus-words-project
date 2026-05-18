@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const DATA_FILE = path.join(__dirname, '../data/jesus_verses.json');
+const DATA_FILE = path.join(__dirname, '../data/jesus_verses_final.json');
 const REPORT_FILE = path.join(__dirname, '../dev/reports/jesus_dataset_audit.json');
 
 async function auditDataset() {
