@@ -3,7 +3,8 @@
 ## 🔥 Now (High Priority)
 ~~Improve highlight system (less noisy, more meaningful)~~
 ~~Finish English highlight/report system~~.
-Add speech-block mode.
+~~Add speech-block mode.~~
+CLEAN JSON FILE - unwanted commentary, context, non-jesus speaking, etc.
 Add minimal context labels.
 Add a curated source-concept layer for major recurring terms.
 Later, add Greek/Syriac lemma anchoring for high-value passages.
