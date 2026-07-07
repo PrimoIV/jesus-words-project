@@ -5,104 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jesus Words</title>
-    <!-- Use Inter font for clean layout -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css?v=ui-cards-2">
-    <link rel="stylesheet" href="css/dark-mode.css?v=ui-cards-2">
-    <link rel="stylesheet" href="css/accessibility.css?v=ui-cards-2">
+    <link rel="stylesheet" href="css/styles.css?v=workspace-redesign-1">
+    <link rel="stylesheet" href="css/dark-mode.css?v=workspace-redesign-1">
+    <link rel="stylesheet" href="css/accessibility.css?v=workspace-redesign-1">
 </head>
 
-<body class="home-active">
-    <header class="site-header" id="site-header">
-        <button id="home-link" class="brand-link" type="button">Jesus Words</button>
-        <nav class="site-nav">
-            <button type="button" data-nav-target="browse">Browse</button>
-            <button type="button" data-nav-target="compare">Compare</button>
-            <button type="button" data-nav-target="sources">Sources</button>
-        </nav>
-    </header>
-
-    <main id="home-page" class="home-page">
-        <section id="home-hero" class="home-section hero-section">
-            <h1>Only what Jesus actually said.</h1>
-            <p class="hero-sub">
-                The words attributed to Jesus are among the most translated, debated, quoted, loved, rejected, and misused
-                words in history. One translation choice can change the passage meaning entirely.
-            </p>
-            <button id="start-btn" type="button" class="btn-primary">Start Exploring</button>
-            <p class="hero-meta">
-                <strong>DBH</strong> David Bentley Hart, 2023 ·
-                <strong>NRSVUE</strong> 2021 ·
-                <strong>LAMSA</strong> George M. Lamsa, 1957
-            </p>
-        </section>
-
-        <section id="home-featured" class="home-section featured-verse-section">
-            <h2>Featured passage</h2>
-            <div id="demo-verse"></div>
-        </section>
-
-        <section id="home-browse" class="home-section browse-section">
-            <h2>Browse by path</h2>
-            <div class="browse-grid" id="browse-grid"></div>
-        </section>
-
-        <section class="home-section translation-explainer">
-            <h2>Why these translations?</h2>
-            <p>
-This project compares three translations selected for how differently they approach the words of Jesus. Each reflects a distinct translation philosophy, making their differences intentional and meaningful.            </p>
-            <div class="translation-list">
-                <div class="translation-item">
-                    <strong>DBH (David Bentley Hart, 2023)</strong>
-                    <p>
-                        A highly literal and philosophically precise translation from the Greek, preserving structure and nuance often smoothed out in modern versions.
-                    </p>
-                </div>
-                <div class="translation-item">
-                    <strong>NRSVUE (2021)</strong>
-                    <p>
-                        A modern scholarly standard, balancing accuracy and readability while incorporating updated manuscript evidence and translation practices.
-                    </p>
-                </div>
-                <div class="translation-item">
-                    <strong>LAMSA (George M. Lamsa, 1957)</strong>
-                    <p>
-                        Translated from the Aramaic Peshitta tradition, offering a different linguistic and cultural perspective on the text.
-                    </p>
-                </div>
-            </div>
-            <p class="translation-note">
-Seen side by side, they reveal where wording aligns, where it diverges, and how meaning becomes clearer through contrast.            </p>
-        </section>
-    </main>
-
-    <footer class="site-footer" id="site-footer">
-        <p>Jesus Words comparison project</p>
-    </footer>
-
+<body class="app-active">
     <div id="app-container">
-        <!-- Left panel (Verse Navigator) -->
-        <aside id="sidebar">
+        <aside id="sidebar" aria-label="Verse navigator">
             <header class="sidebar-header">
-                <h1>Jesus Words</h1>
-                <div class="mode-toggle">
-                    <button class="toggle-btn active" data-mode="verse">Verse View</button>
-                    <button class="toggle-btn" data-mode="study">Study View</button>
+                <div class="brand-block">
+                    <p class="app-kicker">Jesus Words</p>
+                    <h1>Spoken Words Comparison</h1>
+                    <p>DBH, NRSVUE, and LAMSA compared against a BSB anchor.</p>
                 </div>
+
+                <div class="library-meta" aria-label="Library summary">
+                    <span id="library-stat">Loading verses</span>
+                    <span id="source-stat">3 translations</span>
+                </div>
+
+                <div class="mode-toggle" aria-label="Navigation mode">
+                    <button class="toggle-btn active" type="button" data-mode="verse">Verses</button>
+                    <button class="toggle-btn" type="button" data-mode="study">Study</button>
+                </div>
+
                 <div class="reading-mode-control" aria-label="Reading mode">
                     <button class="reading-mode-btn active" type="button" data-reading-mode="verse">Verse</button>
                     <button class="reading-mode-btn" type="button" data-reading-mode="speech">Speech Block</button>
                 </div>
+
                 <label class="context-toggle">
                     <input type="checkbox" id="show-context-toggle">
-                    <span>Show Context</span>
+                    <span>Show context</span>
                 </label>
+
                 <div class="search-container">
-                    <input type="text" id="sidebar-search" placeholder="Search...">
+                    <label for="sidebar-search" class="sr-only">Search verses</label>
+                    <input type="search" id="sidebar-search" placeholder="Search words or references">
                 </div>
+
                 <div class="filter-row">
+                    <label for="book-filter" class="sr-only">Filter by book</label>
                     <select id="book-filter" aria-label="Filter by book">
                         <option value="">All books</option>
                     </select>
@@ -114,67 +58,63 @@ Seen side by side, they reveal where wording aligns, where it diverges, and how 
             </header>
 
             <div id="sidebar-content" class="sidebar-content-area scroll-container">
-                <!-- Verse View -->
                 <div id="view-verse" class="view-layer active">
                     <ul id="verse-list" class="item-list"></ul>
                 </div>
 
-                <!-- Speech Block View -->
                 <div id="view-speech-blocks" class="view-layer">
                     <ul id="speech-block-list" class="item-list"></ul>
                 </div>
 
-                <!-- Study View: Empty Sidebar State -->
                 <div id="view-study-empty" class="view-layer placeholder-state">
-                    <p>Select a category from the dashboard to explore verses.</p>
+                    <p>Select a study category to gather related sayings.</p>
                 </div>
 
-                <!-- Study View: Category Detail (Verses) -->
                 <div id="view-study-detail" class="view-layer">
-                    <button id="btn-back-categories" class="back-btn">&larr; Categories</button>
-                    <h2 id="study-detail-title" class="study-title">Category Name</h2>
+                    <button id="btn-back-categories" class="back-btn" type="button">Back to Categories</button>
+                    <h2 id="study-detail-title" class="study-title">Category</h2>
                     <ul id="study-verse-list" class="item-list"></ul>
                 </div>
             </div>
         </aside>
 
-        <!-- Main content area -->
         <main id="main-content">
-            <!-- Focused Comparison Workspace -->
             <div id="comparison-view" class="main-layer active">
                 <header class="comparison-toolbar">
-                    <div class="selected-verse-card">
-                        <div id="active-reference" class="active-reference">Select a verse</div>
-                        <div id="active-anchor" class="active-anchor"></div>
-                        <div id="context-label" class="context-label" hidden></div>
-                    </div>
-                    <div class="toolbar-actions">
-                        <button id="btn-prev-verse" class="nav-btn" type="button" aria-label="Previous verse">‹</button>
-                        <button id="btn-next-verse" class="nav-btn" type="button" aria-label="Next verse">›</button>
+                    <section class="selected-verse-card" aria-labelledby="active-reference">
+                        <div class="selected-card-topline">
+                            <span class="anchor-label">BSB anchor</span>
+                            <span id="active-diff-level" class="variance-pill">Loading</span>
+                        </div>
+                        <h2 id="active-reference" class="active-reference">Loading verse</h2>
+                        <p id="active-anchor" class="active-anchor"></p>
+                        <p id="context-label" class="context-label" hidden></p>
+                    </section>
+
+                    <div class="toolbar-actions" aria-label="Verse navigation">
+                        <button id="btn-prev-verse" class="nav-btn" type="button" aria-label="Previous verse">&lsaquo;</button>
+                        <button id="btn-next-verse" class="nav-btn" type="button" aria-label="Next verse">&rsaquo;</button>
                     </div>
                 </header>
 
-                <section class="comparison-workspace">
+                <section class="comparison-workspace" aria-label="Translation comparison">
                     <div class="translation-panel">
-                        <div id="translation-tabs" class="translation-tabs" role="tablist"
-                            aria-label="Translation views">
-                            <button class="translation-tab active" type="button" role="tab" aria-selected="true"
-                                data-translation-tab="DBH">DBH</button>
-                            <button class="translation-tab" type="button" role="tab" aria-selected="false"
-                                data-translation-tab="NRSVUE">NRSVUE</button>
-                            <button class="translation-tab" type="button" role="tab" aria-selected="false"
-                                data-translation-tab="LAMSA">LAMSA</button>
-                            <button class="translation-tab" type="button" role="tab" aria-selected="false"
-                                data-translation-tab="Compare">Compare</button>
+                        <div id="translation-tabs" class="translation-tabs" role="tablist" aria-label="Translation views">
+                            <button class="translation-tab active" type="button" role="tab" aria-selected="true" data-translation-tab="DBH">DBH</button>
+                            <button class="translation-tab" type="button" role="tab" aria-selected="false" data-translation-tab="NRSVUE">NRSVUE</button>
+                            <button class="translation-tab" type="button" role="tab" aria-selected="false" data-translation-tab="LAMSA">LAMSA</button>
+                            <button class="translation-tab" type="button" role="tab" aria-selected="false" data-translation-tab="Compare">Compare</button>
                         </div>
+
                         <div id="comparison-table" class="comparison-table"></div>
+
                         <details class="phrase-section">
                             <summary>Advanced Alignment</summary>
                             <div id="phrase-grid" class="phrase-grid"></div>
                         </details>
                     </div>
 
-                    <aside class="inspector-panel">
+                    <aside class="inspector-panel" aria-label="Comparison details">
                         <section>
                             <h2>Key Differences</h2>
                             <div id="difference-summary" class="difference-summary"></div>
@@ -187,43 +127,35 @@ Seen side by side, they reveal where wording aligns, where it diverges, and how 
                 </section>
             </div>
 
-            <!-- Categories Dashboard -->
             <div id="categories-dashboard" class="main-layer">
                 <div class="dashboard-header">
+                    <p class="app-kicker">Study</p>
                     <h2>Study Categories</h2>
-                    <p>Select a theological theme to view all related spoken verses.</p>
+                    <p>Choose a theme to gather related spoken verses in the navigator.</p>
                 </div>
-                <div id="dashboard-grid">
-                    <!-- Cards injected by JS -->
-                </div>
+                <div id="dashboard-grid"></div>
             </div>
         </main>
-
     </div>
 
-    <!-- Accessibility Menu -->
-    <button id="accessibility-toggle" class="acc-gear" aria-label="Accessibility Options">
-        <img src="assets/icons/accessicon2.svg" alt="accessibility icon" />
+    <button id="accessibility-toggle" class="acc-gear" type="button" aria-label="Accessibility options">
+        <img src="assets/icons/accessicon2.svg" alt="" aria-hidden="true">
     </button>
     <div id="accessibility-menu" hidden>
         <h2>Accessibility Options</h2>
-        <ul>
-            <!-- Options will be injected by JS -->
-        </ul>
+        <ul></ul>
     </div>
 
-    <!-- Dark Mode Toggle -->
-    <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="Toggle dark mode">
+    <button id="dark-mode-toggle" class="dark-mode-toggle" type="button" aria-label="Toggle dark mode">
         <span class="icon-wrap">
-            <img class="icon-sun" src="assets/icons/sun.svg" alt="sun icon" />
-            <img class="icon-moon" src="assets/icons/moon.svg" alt="moon icon" />
+            <img class="icon-sun" src="assets/icons/sun.svg" alt="" aria-hidden="true">
+            <img class="icon-moon" src="assets/icons/moon.svg" alt="" aria-hidden="true">
         </span>
     </button>
 
-    <!-- Scripts -->
-    <script type="module" src="js/main.js"></script>
-    <script src="js/accessibility.js"></script>
-    <script src="js/dark-mode.js"></script>
+    <script type="module" src="js/main.js?v=workspace-redesign-1"></script>
+    <script src="js/accessibility.js?v=workspace-redesign-1"></script>
+    <script src="js/dark-mode.js?v=workspace-redesign-1"></script>
 </body>
 
 </html>

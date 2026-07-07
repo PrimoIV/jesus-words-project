@@ -9,8 +9,7 @@ export async function loadJesusSpeechOverrides(path = 'dev/jesus_speech_override
         const overrides = await response.json();
         setJesusSpeechOverrides(overrides);
         return overrides;
-    } catch (error) {
-        console.info('Jesus speech overrides not loaded; using dataset text.', error);
+    } catch {
         return {};
     }
 }

@@ -209,12 +209,6 @@
       "NRSVUE": "matched",
       "DBH": "matched",
       "LAMSA": "matched"
-    },
-    "speechText": {
-      "LAMSA": "Blessed are they who mourn, for they shall be comforted."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
     }
   },
   "MAT_5_5": {
@@ -238,12 +232,6 @@
       "NRSVUE": "matched",
       "DBH": "matched",
       "LAMSA": "matched"
-    },
-    "speechText": {
-      "LAMSA": "Blessed are the meek, for they shall inherit the earth."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
     }
   },
   "MAT_5_6": {
@@ -342,12 +330,6 @@
       "NRSVUE": "matched",
       "DBH": "matched",
       "LAMSA": "matched"
-    },
-    "speechText": {
-      "LAMSA": "Blessed are the peacemakers, for they shall be called sons of God."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
     }
   },
   "MAT_5_10": {
@@ -371,12 +353,6 @@
       "NRSVUE": "matched",
       "DBH": "matched",
       "LAMSA": "matched"
-    },
-    "speechText": {
-      "LAMSA": "Blessed are those who are persecuted for the sake of justice, for theirs is the kingdom of heaven."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
     }
   },
   "MAT_5_11": {
@@ -430,13 +406,7 @@
       "DBH": "matched",
       "LAMSA": "matched"
     },
-    "dbhSpacingCleaned": true,
-    "speechText": {
-      "LAMSA": "Then be glad and rejoice, for your reward is increased in heaven; for in this very manner they persecuted the prophets who were before you."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
-    }
+    "dbhSpacingCleaned": true
   },
   "MAT_5_13": {
     "id": "MAT_5_13",
@@ -460,13 +430,7 @@
       "DBH": "matched",
       "LAMSA": "matched"
     },
-    "dbhSpacingCleaned": true,
-    "speechText": {
-      "LAMSA": "You are indeed the salt of the earth; but if the salt should lose its savor, with what could it be salted? It would not be worth anything, but to be thrown outside and to be trodden down by men."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
-    }
+    "dbhSpacingCleaned": true
   },
   "MAT_5_14": {
     "id": "MAT_5_14",
@@ -675,12 +639,6 @@
       "NRSVUE": "matched",
       "DBH": "matched",
       "LAMSA": "matched"
-    },
-    "speechText": {
-      "LAMSA": "You have heard that it was said to those who were before you, You shall not kill, and whoever kills is guilty before the court."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
     }
   },
   "MAT_5_22": {
@@ -734,12 +692,6 @@
       "NRSVUE": "matched",
       "DBH": "matched",
       "LAMSA": "matched"
-    },
-    "speechText": {
-      "LAMSA": "If it should happen therefore that while you are presenting your offering upon the altar, and right there you remember that your brother has any grievance against you,"
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
     }
   },
   "MAT_5_24": {
@@ -763,12 +715,6 @@
       "NRSVUE": "matched",
       "DBH": "matched",
       "LAMSA": "matched"
-    },
-    "speechText": {
-      "LAMSA": "Leave your offering there upon the altar, and first go and make peace with your brother, and then come back and present your offering."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
     }
   },
   "MAT_5_25": {
@@ -842,13 +788,7 @@
       "DBH": "matched",
       "LAMSA": "matched"
     },
-    "finalPolishV2": true,
-    "speechText": {
-      "LAMSA": "You have heard that it is said, You shall not commit adultery."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
-    }
+    "finalPolishV2": true
   },
   "MAT_5_28": {
     "id": "MAT_5_28",
@@ -959,13 +899,7 @@
       "DBH": "matched",
       "LAMSA": "matched"
     },
-    "finalPolishV2": true,
-    "speechText": {
-      "LAMSA": "It has been said that whoever divorces his wife, must give her the divorce papers."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
-    }
+    "finalPolishV2": true
   },
   "MAT_5_32": {
     "id": "MAT_5_32",
@@ -989,13 +923,7 @@
       "DBH": "matched",
       "LAMSA": "matched"
     },
-    "dbhSpacingCleaned": true,
-    "speechText": {
-      "LAMSA": "But I say to you, that whoever divorces his wife, except for fornication, causes her to commit adultery; and whoever marries a woman who is separated but not divorced, commits adultery."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
-    }
+    "dbhSpacingCleaned": true
   },
   "MAT_5_33": {
     "id": "MAT_5_33",
@@ -1113,13 +1041,7 @@
       "DBH": "matched",
       "LAMSA": "matched"
     },
-    "dbhSpacingCleaned": true,
-    "speechText": {
-      "LAMSA": "But let your words be yes, yes, and no, no; for anything which adds to these is a deception."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
-    }
+    "dbhSpacingCleaned": true
   },
   "MAT_5_38": {
     "id": "MAT_5_38",
@@ -1143,13 +1065,7 @@
       "DBH": "matched",
       "LAMSA": "matched"
     },
-    "finalPolishV2": true,
-    "speechText": {
-      "LAMSA": "You have heard that it is said, An eye for an eye, and a tooth for a tooth."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
-    }
+    "finalPolishV2": true
   },
   "MAT_5_39": {
     "id": "MAT_5_39",
@@ -1201,12 +1117,6 @@
       "NRSVUE": "matched",
       "DBH": "matched",
       "LAMSA": "matched"
-    },
-    "speechText": {
-      "LAMSA": "And if anyone wishes to sue you at the court and take away your shirt, let him have your robe also."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
     }
   },
   "MAT_5_41": {
@@ -1230,12 +1140,6 @@
       "NRSVUE": "matched",
       "DBH": "matched",
       "LAMSA": "matched"
-    },
-    "speechText": {
-      "LAMSA": "Whoever compels you to carry a burden for a mile, go with him two."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
     }
   },
   "MAT_5_42": {
@@ -1259,12 +1163,6 @@
       "NRSVUE": "matched",
       "DBH": "matched",
       "LAMSA": "matched"
-    },
-    "speechText": {
-      "LAMSA": "Whoever asks from you, give him; and whoever wishes to borrow from you, do not refuse him."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
     }
   },
   "MAT_5_43": {
@@ -1288,12 +1186,6 @@
       "NRSVUE": "matched",
       "DBH": "matched",
       "LAMSA": "matched"
-    },
-    "speechText": {
-      "LAMSA": "You have heard that it is said, Be kind to your friend, and hate your enemy."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
     }
   },
   "MAT_5_44": {
@@ -1455,12 +1347,6 @@
       "NRSVUE": "matched",
       "DBH": "matched",
       "LAMSA": "matched"
-    },
-    "speechText": {
-      "LAMSA": "BE careful concerning your alms, not to do them in the presence of men, merely that they may see them; otherwise you have no reward with your Father in heaven."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
     }
   },
   "MAT_6_2": {
@@ -1539,12 +1425,6 @@
       "NRSVUE": "matched",
       "DBH": "matched",
       "LAMSA": "matched"
-    },
-    "speechText": {
-      "LAMSA": "So that your alms may be done secretly, and your Father who sees in secret, shall himself reward you openly."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
     }
   },
   "MAT_6_5": {
@@ -1568,12 +1448,6 @@
       "NRSVUE": "matched",
       "DBH": "matched",
       "LAMSA": "matched"
-    },
-    "speechText": {
-      "LAMSA": "And when you pray, do not be like the hypocrites, who like to pray, standing in the synagogues and at the street corners, so that they may be seen by men. Truly I say to you, that they have already received their reward."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
     }
   },
   "MAT_6_6": {
@@ -1721,12 +1595,6 @@
       "NRSVUE": "matched",
       "DBH": "matched",
       "LAMSA": "matched"
-    },
-    "speechText": {
-      "LAMSA": "Give us bread for our needs from day to day."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
     }
   },
   "MAT_6_12": {
@@ -1806,13 +1674,7 @@
       "DBH": "matched",
       "LAMSA": "matched"
     },
-    "dbhSpacingCleaned": true,
-    "speechText": {
-      "LAMSA": "For if you forgive men their faults, your Father in heaven will also forgive you."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
-    }
+    "dbhSpacingCleaned": true
   },
   "MAT_6_15": {
     "id": "MAT_6_15",
@@ -1835,12 +1697,6 @@
       "NRSVUE": "matched",
       "DBH": "matched",
       "LAMSA": "matched"
-    },
-    "speechText": {
-      "LAMSA": "But if you do not forgive men, neither will your Father forgive even your faults."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
     }
   },
   "MAT_6_16": {
@@ -2426,13 +2282,7 @@
       "DBH": "matched",
       "LAMSA": "matched"
     },
-    "finalPolishV2": true,
-    "speechText": {
-      "LAMSA": "O hypocrites, first take out the beam from your own eye, and then you will see clearly to get out the splinter from your brother’s eye."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
-    }
+    "finalPolishV2": true
   },
   "MAT_7_6": {
     "id": "MAT_7_6",
@@ -2484,12 +2334,6 @@
       "NRSVUE": "matched",
       "DBH": "matched",
       "LAMSA": "matched"
-    },
-    "speechText": {
-      "LAMSA": "Ask, and it shall be given to you; seek, and you shall find; knock and it shall be opened to you."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
     }
   },
   "MAT_7_8": {
@@ -2514,13 +2358,7 @@
       "DBH": "matched",
       "LAMSA": "matched"
     },
-    "dbhSpacingCleaned": true,
-    "speechText": {
-      "LAMSA": "For whoever asks, receives; and he who seeks, finds; and to him who knocks, the door is opened."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
-    }
+    "dbhSpacingCleaned": true
   },
   "MAT_7_9": {
     "id": "MAT_7_9",
@@ -3305,12 +3143,6 @@
       "NRSVUE": "matched",
       "DBH": "matched",
       "LAMSA": "matched"
-    },
-    "speechText": {
-      "LAMSA": "For which is easier to say, Your sins have been forgiven, or to say, Arise and walk?"
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
     }
   },
   "MAT_9_6": {
@@ -4307,12 +4139,6 @@
       "NRSVUE": "matched",
       "DBH": "matched",
       "LAMSA": "matched"
-    },
-    "speechText": {
-      "LAMSA": "Everyone therefore who will acknowledge me before men, I will also acknowledge him before my Father in heaven."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
     }
   },
   "MAT_10_33": {
@@ -4336,12 +4162,6 @@
       "NRSVUE": "matched",
       "DBH": "matched",
       "LAMSA": "matched"
-    },
-    "speechText": {
-      "LAMSA": "But whoever will deny me before men, I will also deny him before my Father in heaven."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
     }
   },
   "MAT_10_34": {
@@ -4396,13 +4216,7 @@
       "DBH": "matched",
       "LAMSA": "matched"
     },
-    "dbhSpacingCleaned": true,
-    "speechText": {
-      "LAMSA": "For I have come to set a man against his father, and a daughter against her mother, and a daughter-in-law against her mother-in-law."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
-    }
+    "dbhSpacingCleaned": true
   },
   "MAT_10_36": {
     "id": "MAT_10_36",
@@ -4426,13 +4240,7 @@
       "DBH": "matched",
       "LAMSA": "matched"
     },
-    "finalPolishV2": true,
-    "speechText": {
-      "LAMSA": "And a man’s enemies will be the members of his own household."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
-    }
+    "finalPolishV2": true
   },
   "MAT_10_37": {
     "id": "MAT_10_37",
@@ -6328,12 +6136,6 @@
       "NRSVUE": "matched",
       "DBH": "matched",
       "LAMSA": "matched"
-    },
-    "speechText": {
-      "LAMSA": "But as for you, blessed are your eyes for they see; and your ears for they hear."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
     }
   },
   "MAT_13_17": {
@@ -6357,12 +6159,6 @@
       "NRSVUE": "matched",
       "DBH": "matched",
       "LAMSA": "matched"
-    },
-    "speechText": {
-      "LAMSA": "For truly I say to you, a great many prophets and righteous men have longed to see what you see, and did not see it; and to hear what you hear, and did not hear it."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
     }
   },
   "MAT_13_18": {
@@ -7360,12 +7156,6 @@
       "NRSVUE": "matched",
       "DBH": "matched",
       "LAMSA": "matched"
-    },
-    "speechText": {
-      "LAMSA": "For God said, Honor your father and your mother, and whoever curses his father and his mother, let him be put to death."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
     }
   },
   "MAT_15_5": {
@@ -7419,12 +7209,6 @@
       "NRSVUE": "matched",
       "DBH": "matched",
       "LAMSA": "matched"
-    },
-    "speechText": {
-      "LAMSA": "So you have rendered useless the word of God for the sake of your tradition."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
     }
   },
   "MAT_15_7": {
@@ -7477,12 +7261,6 @@
       "NRSVUE": "matched",
       "DBH": "matched",
       "LAMSA": "matched"
-    },
-    "speechText": {
-      "LAMSA": "This people honor me with their lips, but their heart is far away from me."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
     }
   },
   "MAT_15_9": {
@@ -7506,12 +7284,6 @@
       "NRSVUE": "matched",
       "DBH": "matched",
       "LAMSA": "matched"
-    },
-    "speechText": {
-      "LAMSA": "And they worship me in vain, when they teach the doctrines of the commandments of men."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
     }
   },
   "MAT_15_10": {
@@ -8236,12 +8008,6 @@
       "NRSVUE": "matched",
       "DBH": "matched",
       "LAMSA": "matched"
-    },
-    "speechText": {
-      "LAMSA": "For whoever wishes to save his life shall lose it; and whoever loses his life for my sake shall find it."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
     }
   },
   "MAT_16_26": {
@@ -8265,12 +8031,6 @@
       "NRSVUE": "matched",
       "DBH": "matched",
       "LAMSA": "matched"
-    },
-    "speechText": {
-      "LAMSA": "For how will a man be benefited, if he should gain the whole world and lose his own soul? Or what shall a man give in exchange for his soul?"
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
     }
   },
   "MAT_16_27": {
@@ -8690,12 +8450,6 @@
       "NRSVUE": "matched",
       "DBH": "matched",
       "LAMSA": "matched"
-    },
-    "speechText": {
-      "LAMSA": "And whoever misleads one of these little ones who believe in me, it would be better for him that an ass’ millstone were hanged on his neck and he were sunk in the depths of the sea."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
     }
   },
   "MAT_18_7": {
@@ -8720,13 +8474,7 @@
       "DBH": "matched",
       "LAMSA": "matched"
     },
-    "dbhSpacingCleaned": true,
-    "speechText": {
-      "LAMSA": "Woe to the world because of offences! Offences are bound to come; but woe to the man by whose hand the offences come!"
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
-    }
+    "dbhSpacingCleaned": true
   },
   "MAT_18_8": {
     "id": "MAT_18_8",
@@ -8808,13 +8556,7 @@
       "DBH": "matched",
       "LAMSA": "matched"
     },
-    "finalPolished": true,
-    "speechText": {
-      "LAMSA": "See to it that you do not despise one of these little ones; for I say to you, their angels always see the face of my Father in heaven."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
-    }
+    "finalPolished": true
   },
   "MAT_18_12": {
     "id": "MAT_18_12",
@@ -11727,13 +11469,7 @@
       "DBH": "matched",
       "LAMSA": "matched"
     },
-    "finalPolishV2": true,
-    "speechText": {
-      "LAMSA": "I am the God of Abraham, the God of Isaac, the God of Jacob? And yet God is not the God of the dead, but of the living."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
-    }
+    "finalPolishV2": true
   },
   "MAT_22_37": {
     "id": "MAT_22_37",
@@ -11999,13 +11735,7 @@
       "DBH": "matched",
       "LAMSA": "matched"
     },
-    "finalPolishV2": true,
-    "speechText": {
-      "LAMSA": "And they bind heavy burdens, and put them on men’s shoulders, but they themselves are not willing to touch them, even with their finger."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
-    }
+    "finalPolishV2": true
   },
   "MAT_23_5": {
     "id": "MAT_23_5",
@@ -12029,13 +11759,7 @@
       "DBH": "matched",
       "LAMSA": "matched"
     },
-    "dbhReviewStatus": "manual_cleaned",
-    "speechText": {
-      "LAMSA": "And all their works they do, just to be seen by men; for they widen the fringes of their garments, and they lengthen the ends of their robes,"
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
-    }
+    "dbhReviewStatus": "manual_cleaned"
   },
   "MAT_23_6": {
     "id": "MAT_23_6",
@@ -12213,12 +11937,6 @@
       "NRSVUE": "matched",
       "DBH": "matched",
       "LAMSA": "matched"
-    },
-    "speechText": {
-      "LAMSA": "For whoever exalts himself shall be humbled; and whoever humbles himself shall be exalted."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
     }
   },
   "MAT_23_13": {
@@ -13129,13 +12847,7 @@
       "DBH": "matched",
       "LAMSA": "matched"
     },
-    "dbhSpacingCleaned": true,
-    "speechText": {
-      "LAMSA": "But he who has patience to the end, he will be saved."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
-    }
+    "dbhSpacingCleaned": true
   },
   "MAT_24_14": {
     "id": "MAT_24_14",
@@ -13159,13 +12871,7 @@
       "DBH": "matched",
       "LAMSA": "matched"
     },
-    "dbhSpacingCleaned": true,
-    "speechText": {
-      "LAMSA": "And this gospel of the kingdom shall be preached throughout the world as a testimony to all the nations; then the end will come."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
-    }
+    "dbhSpacingCleaned": true
   },
   "MAT_24_15": {
     "id": "MAT_24_15",
@@ -13246,12 +12952,6 @@
       "NRSVUE": "matched",
       "DBH": "matched",
       "LAMSA": "matched"
-    },
-    "speechText": {
-      "LAMSA": "And he who is on the roof, let him not come down to take things out of his house."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
     }
   },
   "MAT_24_18": {
@@ -13275,12 +12975,6 @@
       "NRSVUE": "matched",
       "DBH": "matched",
       "LAMSA": "matched"
-    },
-    "speechText": {
-      "LAMSA": "And he who is in the field, let him not return back to take his clothes."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
     }
   },
   "MAT_24_19": {
@@ -13891,13 +13585,7 @@
       "DBH": "matched",
       "LAMSA": "matched"
     },
-    "dbhReviewStatus": "manual_cleaned",
-    "speechText": {
-      "LAMSA": "But know this much, that if the master of the house knew at what watch of the night the thief comes, he would keep awake and would not let his house be plundered."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
-    }
+    "dbhReviewStatus": "manual_cleaned"
   },
   "MAT_24_44": {
     "id": "MAT_24_44",
@@ -13920,12 +13608,6 @@
       "NRSVUE": "matched",
       "DBH": "matched",
       "LAMSA": "matched"
-    },
-    "speechText": {
-      "LAMSA": "For this reason, you also be ready, for the Son of man will come at an hour when you do not expect him."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
     }
   },
   "MAT_24_45": {
@@ -15903,12 +15585,6 @@
       "NRSVUE": "matched",
       "DBH": "matched",
       "LAMSA": "matched"
-    },
-    "speechText": {
-      "LAMSA": "Awake and pray, that you may not enter into temptation; the spirit indeed is ready, but the body is weak."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
     }
   },
   "MAT_26_42": {
@@ -21541,12 +21217,6 @@
       "NRSVUE": "matched",
       "DBH": "matched",
       "LAMSA": "matched"
-    },
-    "speechText": {
-      "LAMSA": "And take the front seats in the synagogues and the head places at banquets;"
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
     }
   },
   "MRK_12_40": {
@@ -23147,12 +22817,6 @@
       "NRSVUE": "matched",
       "DBH": "matched",
       "LAMSA": "matched"
-    },
-    "speechText": {
-      "LAMSA": "He who believes and is baptized shall be saved; and he who does not believe shall be condemned."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
     }
   },
   "MRK_16_17": {
@@ -23176,12 +22840,6 @@
       "NRSVUE": "matched",
       "DBH": "matched",
       "LAMSA": "matched"
-    },
-    "speechText": {
-      "LAMSA": "And wonders will follow those who believe these things. In my name they will cast out demons; and they will speak with new tongues;"
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
     }
   },
   "MRK_16_18": {
@@ -24474,12 +24132,6 @@
       "NRSVUE": "matched",
       "DBH": "matched",
       "LAMSA": "matched"
-    },
-    "speechText": {
-      "LAMSA": "Be therefore merciful, as your Father also is merciful."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
     }
   },
   "LUK_6_37": {
@@ -24503,12 +24155,6 @@
       "NRSVUE": "matched",
       "DBH": "matched",
       "LAMSA": "matched"
-    },
-    "speechText": {
-      "LAMSA": "Judge not, and you will not be judged; condemn not, and you will not be condemned; forgive, and you will be forgiven."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
     }
   },
   "LUK_6_38": {
@@ -24585,12 +24231,6 @@
       "NRSVUE": "matched",
       "DBH": "matched",
       "LAMSA": "matched"
-    },
-    "speechText": {
-      "LAMSA": "There is no disciple who is more important than his teacher; for every man who is well developed will be like his teacher."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
     }
   },
   "LUK_6_41": {
@@ -27283,12 +26923,6 @@
       "NRSVUE": "matched",
       "DBH": "matched",
       "LAMSA": "matched"
-    },
-    "speechText": {
-      "LAMSA": "Give us bread for our needs every day."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
     }
   },
   "LUK_11_4": {
@@ -27366,12 +27000,6 @@
       "NRSVUE": "matched",
       "DBH": "matched",
       "LAMSA": "matched"
-    },
-    "speechText": {
-      "LAMSA": "For a friend has come to me from a journey and I have nothing to set before him,"
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
     }
   },
   "LUK_11_7": {
@@ -27605,12 +27233,6 @@
       "NRSVUE": "matched",
       "DBH": "matched",
       "LAMSA": "matched"
-    },
-    "speechText": {
-      "LAMSA": "If I cast out devils through Beelzebub, by what do your sons cast them out? Therefore they will be your judges."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
     }
   },
   "LUK_11_20": {
@@ -27634,12 +27256,6 @@
       "NRSVUE": "matched",
       "DBH": "matched",
       "LAMSA": "matched"
-    },
-    "speechText": {
-      "LAMSA": "But if I cast out devils by the finger of God, then the kingdom of God is come near you."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
     }
   },
   "LUK_11_21": {
@@ -27693,12 +27309,6 @@
       "NRSVUE": "matched",
       "DBH": "matched",
       "LAMSA": "matched"
-    },
-    "speechText": {
-      "LAMSA": "But if there should come one who is stronger than he, he will conquer him and take away his armor in which he trusted and divide his spoil."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
     }
   },
   "LUK_11_23": {
@@ -27723,13 +27333,7 @@
       "DBH": "matched",
       "LAMSA": "matched"
     },
-    "dbhReviewStatus": "manual_cleaned",
-    "speechText": {
-      "LAMSA": "He who is not with me is against me; and he who does not gather with me will scatter."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
-    }
+    "dbhReviewStatus": "manual_cleaned"
   },
   "LUK_11_24": {
     "id": "LUK_11_24",
@@ -33854,13 +33458,7 @@
       "DBH": "matched",
       "LAMSA": "matched"
     },
-    "finalPolishV2": true,
-    "speechText": {
-      "LAMSA": "The first one came and said, My lord, your pound has gained ten pounds."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
-    }
+    "finalPolishV2": true
   },
   "LUK_19_17": {
     "id": "LUK_19_17",
@@ -33914,13 +33512,7 @@
       "DBH": "matched",
       "LAMSA": "matched"
     },
-    "finalPolishV2": true,
-    "speechText": {
-      "LAMSA": "And the second came and said, My lord, your pound has gained five pounds."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
-    }
+    "finalPolishV2": true
   },
   "LUK_19_19": {
     "id": "LUK_19_19",
@@ -40153,13 +39745,7 @@
       "DBH": "matched",
       "LAMSA": "matched"
     },
-    "dbhSpacingCleaned": true,
-    "speechText": {
-      "LAMSA": "Moses gave you circumcision, not because it is from Moses, but because it is from the forefathers; and yet you circumcise a man on the sabbath."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
-    }
+    "dbhSpacingCleaned": true
   },
   "JHN_7_23": {
     "id": "JHN_7_23",
@@ -40212,12 +39798,6 @@
       "NRSVUE": "matched",
       "DBH": "matched",
       "LAMSA": "matched"
-    },
-    "speechText": {
-      "LAMSA": "Do not judge by partiality, but judge a just judgment."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
     }
   },
   "JHN_7_28": {
@@ -41583,12 +41163,6 @@
       "NRSVUE": "matched",
       "DBH": "matched",
       "LAMSA": "matched"
-    },
-    "speechText": {
-      "LAMSA": "But he who enters by the door is the shepherd of the sheep."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
     }
   },
   "JHN_10_3": {
@@ -41613,13 +41187,7 @@
       "DBH": "matched",
       "LAMSA": "matched"
     },
-    "dbhSpacingCleaned": true,
-    "speechText": {
-      "LAMSA": "To him the doorkeeper opens the door, and the sheep hear his voice, and he calls his own sheep by their names and brings them out."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
-    }
+    "dbhSpacingCleaned": true
   },
   "JHN_10_4": {
     "id": "JHN_10_4",
@@ -41673,13 +41241,7 @@
       "DBH": "matched",
       "LAMSA": "matched"
     },
-    "dbhSpacingCleaned": true,
-    "speechText": {
-      "LAMSA": "The sheep do not follow a stranger, but they run away from him, because they do not know the voice of a stranger."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
-    }
+    "dbhSpacingCleaned": true
   },
   "JHN_10_7": {
     "id": "JHN_10_7",
@@ -43326,12 +42888,6 @@
       "NRSVUE": "matched",
       "DBH": "matched",
       "LAMSA": "matched"
-    },
-    "speechText": {
-      "LAMSA": "If you know these things, blessed are you if you do them."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
     }
   },
   "JHN_13_18": {
@@ -43356,13 +42912,7 @@
       "DBH": "matched",
       "LAMSA": "matched"
     },
-    "finalPolishV2": true,
-    "speechText": {
-      "LAMSA": "I do not say this concerning all of you, for I know those whom I have chosen; but that the scripture might be fulfilled, He who eats bread with me has lifted up his heel against me."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
-    }
+    "finalPolishV2": true
   },
   "JHN_13_19": {
     "id": "JHN_13_19",
@@ -43414,12 +42964,6 @@
       "NRSVUE": "matched",
       "DBH": "matched",
       "LAMSA": "matched"
-    },
-    "speechText": {
-      "LAMSA": "Truly, truly, I say to you, He who receives him whom I send receives me; and he who receives me receives him who sent me."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
     }
   },
   "JHN_13_21": {
@@ -45400,13 +44944,7 @@
       "DBH": "matched",
       "LAMSA": "matched"
     },
-    "dbhSpacingCleaned": true,
-    "speechText": {
-      "LAMSA": "Truly, truly, I say to you that you will weep and wail, and yet the world will rejoice; and you will be sad, but your sadness will be changed into gladness."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
-    }
+    "dbhSpacingCleaned": true
   },
   "JHN_16_21": {
     "id": "JHN_16_21",
@@ -45460,13 +44998,7 @@
       "DBH": "matched",
       "LAMSA": "matched"
     },
-    "dbhSpacingCleaned": true,
-    "speechText": {
-      "LAMSA": "So you also are depressed; but I will see you again, and your heart will rejoice, and your joy no man will take away from you."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
-    }
+    "dbhSpacingCleaned": true
   },
   "JHN_16_23": {
     "id": "JHN_16_23",
@@ -45489,12 +45021,6 @@
       "NRSVUE": "matched",
       "DBH": "matched",
       "LAMSA": "matched"
-    },
-    "speechText": {
-      "LAMSA": "In that day you will not ask me anything. Truly, truly, I say to you that whatever you ask my Father in my name, he will give it to you."
-    },
-    "speechStatus": {
-      "LAMSA": "verified"
     }
   },
   "JHN_16_24": {

@@ -1,242 +1,199 @@
-/* =========================
-   DARK MODE TOGGLE BUTTON
-   ========================= */
+/* Dark-mode toggle button */
 .dark-mode-toggle {
     position: fixed;
-    bottom: 24px;
     right: 24px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
+    bottom: 24px;
     z-index: 1000;
     width: 48px;
     height: 48px;
-    outline: none;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
 }
 
 .dark-mode-toggle .icon-wrap {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 100%;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    position: relative;
-    overflow: hidden;
+    box-shadow: var(--soft-shadow);
+    transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
 }
 
 .dark-mode-toggle:hover .icon-wrap {
     transform: scale(1.05);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
 
-.icon-sun, .icon-moon {
+.icon-sun,
+.icon-moon {
     position: absolute;
-    width: 24px;
-    height: 24px;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 23px;
+    height: 23px;
+    transition: opacity 0.25s ease, transform 0.25s ease;
 }
 
-/* Base: Sun is showing (ready to click for light mode, default if we start dark)
-   Wait, the JS sets toggle.classList.toggle('active', isDark) */
-
-/* When not dark-mode (light), show moon to indicate "click for dark" */
 .icon-moon {
     opacity: 1;
     transform: translateY(0) rotate(0);
 }
+
 .icon-sun {
     opacity: 0;
-    transform: translateY(20px) rotate(-45deg);
+    transform: translateY(18px) rotate(-35deg);
 }
 
-/* When dark-mode is active, show sun to indicate "click for light" */
 .dark-mode-toggle.active .icon-moon {
     opacity: 0;
-    transform: translateY(-20px) rotate(45deg);
+    transform: translateY(-18px) rotate(35deg);
 }
+
 .dark-mode-toggle.active .icon-sun {
     opacity: 1;
     transform: translateY(0) rotate(0);
 }
 
-/* =========================
-   DARK MODE THEME
-   ========================= */
 body.dark-mode {
-    --bg-color: #111827;
-    --panel-bg: #1f2937;
-    --surface-bg: #172033;
-    --border-color: #374151;
-    --strong-border-color: #4b5563;
-    --text-active: #f9fafb;
-    --text-muted: #9ca3af;
-    --text-main: #d1d5db;
-    --highlight-wording-bg: rgba(148, 163, 184, 0.12);
-    --highlight-wording-border: rgba(148, 163, 184, 0.58);
-    --highlight-meaning-bg: rgba(217, 180, 100, 0.25);
-    --highlight-meaning-border: rgba(217, 180, 100, 0.48);
-    --highlight-interpretive-bg: rgba(129, 140, 248, 0.24);
-    --highlight-interpretive-border: rgba(165, 180, 252, 0.58);
-    --highlight-critical-bg: rgba(225, 145, 115, 0.25);
-    --highlight-critical-border: rgba(251, 146, 60, 0.58);
+    --bg-color: #111613;
+    --panel-bg: #19211d;
+    --surface-bg: #202a25;
+    --surface-warm: #26251f;
+    --border-color: #35443c;
+    --strong-border-color: #587064;
+    --text-active: #f4f1e9;
+    --text-main: #d7ded8;
+    --text-muted: #a2afa7;
+    --accent: #8bc7ad;
+    --accent-strong: #b6decf;
+    --accent-soft: #21392f;
+    --gold-soft: #3a3122;
+    --rose-soft: #3d2a25;
+    --highlight-wording-bg: rgba(139, 199, 173, 0.13);
+    --highlight-wording-border: rgba(139, 199, 173, 0.42);
+    --highlight-meaning-bg: rgba(217, 178, 94, 0.18);
+    --highlight-meaning-border: rgba(217, 178, 94, 0.42);
+    --highlight-interpretive-bg: rgba(139, 156, 217, 0.17);
+    --highlight-interpretive-border: rgba(139, 156, 217, 0.42);
+    --highlight-critical-bg: rgba(226, 132, 101, 0.18);
+    --highlight-critical-border: rgba(226, 132, 101, 0.46);
     --diff-bg: var(--highlight-meaning-bg);
-    --diff-critical-bg: var(--highlight-critical-bg);
     --diff-border: var(--highlight-meaning-border);
+    --diff-critical-bg: var(--highlight-critical-bg);
     --diff-critical-border: var(--highlight-critical-border);
-    --highlight-bg: #374151;
-    --accent: #60a5fa;
-    --card-shadow: 0 16px 34px rgba(0, 0, 0, 0.28);
-    --soft-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
-}
-
-body.dark-mode .sidebar-header,
-body.dark-mode .selected-verse-card {
-    background: var(--panel-bg);
+    --highlight-bg: #24302a;
+    --card-shadow: 0 20px 48px rgba(0, 0, 0, 0.34);
+    --soft-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
 }
 
 body.dark-mode #sidebar {
-    background: #111827;
+    background: rgba(17, 22, 19, 0.9);
+}
+
+body.dark-mode .sidebar-header {
+    background: linear-gradient(180deg, rgba(25, 33, 29, 0.98), rgba(17, 22, 19, 0.92));
 }
 
 body.dark-mode #main-content {
-    background: linear-gradient(180deg, #111827 0%, #0f172a 100%);
+    background:
+        linear-gradient(135deg, rgba(139, 199, 173, 0.08), transparent 38%),
+        linear-gradient(315deg, rgba(217, 178, 94, 0.08), transparent 34%),
+        var(--bg-color);
 }
 
-body.dark-mode .list-item.active {
-    background-color: #263244;
-    border-color: #64748b;
-    color: #ffffff;
-}
-
-body.dark-mode .list-item {
-    background: rgba(31, 41, 55, 0.72);
-}
-
-body.dark-mode .list-item:hover {
-    background: var(--panel-bg);
-}
-
+body.dark-mode .selected-verse-card,
+body.dark-mode .comparison-row,
+body.dark-mode .phrase-section,
+body.dark-mode .inspector-panel section,
+body.dark-mode .dashboard-card,
+body.dark-mode .list-item,
+body.dark-mode .nav-btn,
 body.dark-mode .search-container input,
 body.dark-mode .filter-row select,
-body.dark-mode .filter-check {
-    background: var(--bg-color);
-    border-color: #6b7280;
-    color: var(--text-active);
-}
-
-body.dark-mode .search-container input:focus,
-body.dark-mode .filter-row select:focus {
-    border-color: #9ca3af;
-}
-
-
-
 body.dark-mode .filter-check,
-body.dark-mode .nav-btn,
-body.dark-mode .translation-label,
-body.dark-mode .phrase-chip,
-body.dark-mode .phrase-section,
-body.dark-mode .reading-mode-control,
-body.dark-mode .translation-tabs {
-    background: var(--surface-bg);
-}
-
-body.dark-mode .translation-tab.active,
-body.dark-mode .reading-mode-btn.active,
-body.dark-mode .comparison-row,
-body.dark-mode .selected-verse-card,
-body.dark-mode .coverage-item,
-body.dark-mode .dashboard-card {
+body.dark-mode .library-meta span,
+body.dark-mode .key-difference-item,
+body.dark-mode .coverage-item {
     background: var(--panel-bg);
     border-color: var(--border-color);
 }
 
-body.dark-mode .translation-tabs {
-    background: #111827;
+body.dark-mode .selected-verse-card {
+    background: linear-gradient(180deg, rgba(25, 33, 29, 0.98), rgba(22, 29, 25, 0.96));
 }
 
-body.dark-mode .translation-tab {
-    color: #7f8da3;
+body.dark-mode .translation-tabs,
+body.dark-mode .mode-toggle,
+body.dark-mode .reading-mode-control,
+body.dark-mode .translation-label,
+body.dark-mode .phrase-chip {
+    background: var(--surface-bg);
+    border-color: var(--border-color);
 }
 
-body.dark-mode .reading-mode-btn {
-    color: #7f8da3;
-}
-
-body.dark-mode .translation-tab.active {
-    background: #263244;
-    border-color: #64748b;
-    color: var(--text-active);
-    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.34), 0 1px 2px rgba(0, 0, 0, 0.28);
-}
-
-body.dark-mode .reading-mode-btn.active {
-    background: #263244;
-    border-color: #64748b;
-    color: var(--text-active);
-}
-
-body.dark-mode .inspector-panel section {
-    background: rgba(23, 32, 51, 0.62);
-    border-color: rgba(75, 85, 99, 0.62);
-    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.12);
-}
-
-body.dark-mode .difference-table {
-    background: transparent;
-}
-
-body.dark-mode .key-difference-item {
-    background: rgba(31, 41, 55, 0.42);
-    border-color: rgba(75, 85, 99, 0.58);
-}
-
+body.dark-mode .toggle-btn:hover,
+body.dark-mode .reading-mode-btn:hover,
 body.dark-mode .translation-tab:hover {
-    background: rgba(38, 50, 68, 0.68);
+    background: rgba(255, 255, 255, 0.06);
+}
+
+body.dark-mode .toggle-btn.active,
+body.dark-mode .reading-mode-btn.active,
+body.dark-mode .translation-tab.active,
+body.dark-mode .list-item.active {
+    background: #24302a;
+    border-color: var(--strong-border-color);
     color: var(--text-active);
 }
 
-body.dark-mode .phrase-chip.diff {
-    background: rgba(217, 178, 94, 0.1);
-    border-color: rgba(217, 178, 94, 0.28);
-    color: var(--text-active);
+body.dark-mode .list-item.active {
+    box-shadow: inset 3px 0 0 var(--accent), 0 10px 24px rgba(0, 0, 0, 0.26);
 }
 
-body.dark-mode .key-difference-item.critical {
-    background: rgba(244, 143, 143, 0.09);
-    border-color: rgba(244, 143, 143, 0.38);
+body.dark-mode .list-item:hover,
+body.dark-mode .dashboard-card:hover {
+    border-color: var(--accent);
 }
 
 body.dark-mode .diff-badge,
+body.dark-mode .variance-pill,
 body.dark-mode .card-count {
-    background: #374151;
-    color: #d1d5db;
-}
-
-body.dark-mode .dashboard-card:hover {
-    border-color: var(--text-muted);
-    box-shadow: 0 12px 24px rgba(0,0,0,0.2);
-}
-
-
-/* --- Homepage Layout Styles --- */
-body.dark-mode .btn-primary {
-    background: #ffffff;
-    color: #000000;
-}
-
-body.dark-mode .btn-primary:hover {
-    background: #e2e8f0;
-}
-
-body.dark-mode .browse-card {
-    background: var(--panel-bg);
-}
-
-body.dark-mode .feature-card {
     background: var(--surface-bg);
+    border-color: var(--border-color);
+    color: var(--text-muted);
+}
+
+body.dark-mode .diff-badge.medium,
+body.dark-mode .variance-pill.medium {
+    color: #f0d49a;
+}
+
+body.dark-mode .diff-badge.high,
+body.dark-mode .variance-pill.high {
+    color: #efb19d;
+}
+
+body.dark-mode .diff-badge.low,
+body.dark-mode .variance-pill.low {
+    color: var(--accent);
+}
+
+body.dark-mode .key-difference-item.critical {
+    background: var(--diff-critical-bg);
+}
+
+body.dark-mode .dark-mode-toggle .icon-wrap,
+body.dark-mode .acc-gear {
+    background: var(--panel-bg);
+    border-color: var(--border-color);
+}
+
+body.dark-mode .icon-sun,
+body.dark-mode .icon-moon,
+body.dark-mode .acc-gear img {
+    filter: invert(1) brightness(1.8);
 }

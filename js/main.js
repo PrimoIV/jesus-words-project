@@ -2,7 +2,6 @@ import {
     analyzeVerseHighlights,
     buildHighlightSpans,
     formatDisplayText,
-    processWords,
     renderHighlightedText,
     setHighlightReviewLayer,
     tokenizeText
@@ -10,44 +9,34 @@ import {
 import { getDisplayJesusText, loadJesusSpeechOverrides } from './jesusSpeechText.js';
 import { SPEECH_BLOCKS } from './speechBlocks.js';
 
-const DEV_MODE = new URLSearchParams(window.location.search).has('dev');
 const TRANSLATIONS = ['DBH', 'NRSVUE', 'LAMSA'];
+const FEATURED_VERSE_ID = 'MAT_5_3';
 
-const HOME_CONFIG = {
-    featuredVerseId: "MAT_5_3",
-    browsePaths: [
-        { label: "Sermon on the Mount", verseId: "MAT_5_3" },
-        { label: "John’s Discourses", verseId: "JHN_8_12" },
-        { label: "Parables", verseId: "LUK_15_4" },
-        { label: "Revelation", verseId: "REV_2_1" }
-    ]
+const categoryRules = {
+    'Kingdom of God': ['kingdom', 'heaven', 'kingdom of heaven'],
+    Parables: ['parable', 'likened', 'like unto'],
+    'Discipleship / Cost of Following': ['follow me', 'take up your cross', 'deny yourself', 'disciple'],
+    'Love / Forgiveness': ['forgive', 'love', 'mercy', 'enemy'],
+    'Prayer / Spiritual Practice': ['pray', 'prayer', 'fasting', 'hallowed be'],
+    'Wealth / Money': ['rich', 'money', 'treasure', 'wealth', 'mammon', 'camel'],
+    'Judgment / Warnings': ['judge', 'condemn', 'hell', 'weeping', 'gnashing'],
+    'Identity ("I am")': ['i am', 'bread of life', 'light of the world', 'good shepherd'],
+    'Faith / Healing': ['faith', 'believe', 'healed', 'made whole', 'cured', 'physician']
 };
 
 let dataset = {};
 let allVerseIds = [];
 let activeVerseId = null;
+let activeSpeechBlockId = null;
+let activeCategory = null;
 let currentMode = 'verse';
 let readingMode = 'verse';
-let activeCategory = null;
-let activeSpeechBlockId = null;
-let categoryMap = {};
-let currentHighlightMode = 'meaning';
 let activeTranslationTab = 'DBH';
 let showContext = false;
-let appInitialized = false;
-let differenceBadgeJobId = 0;
-let highDiffIndexReady = false;
-let highDiffIndexStarted = false;
-let pendingHighDiffRender = false;
-let lastHighDiffRenderAt = 0;
+let categoryMap = {};
+let books = [];
+
 const differenceScoreCache = new Map();
-const highDiffIds = new Set();
-const requestIdleWork = window.requestIdleCallback || ((callback) => {
-    return window.setTimeout(() => callback({
-        didTimeout: true,
-        timeRemaining: () => 0
-    }), 1);
-});
 
 const sidebarSearch = document.getElementById('sidebar-search');
 const bookFilter = document.getElementById('book-filter');
@@ -55,6 +44,8 @@ const diffOnlyFilter = document.getElementById('diff-only-filter');
 const toggleBtns = document.querySelectorAll('.toggle-btn[data-mode]');
 const readingModeBtns = document.querySelectorAll('.reading-mode-btn[data-reading-mode]');
 const showContextToggle = document.getElementById('show-context-toggle');
+const libraryStat = document.getElementById('library-stat');
+const sourceStat = document.getElementById('source-stat');
 
 const viewVerse = document.getElementById('view-verse');
 const viewSpeechBlocks = document.getElementById('view-speech-blocks');
@@ -71,6 +62,8 @@ const categoriesDashboard = document.getElementById('categories-dashboard');
 
 const activeReference = document.getElementById('active-reference');
 const activeAnchor = document.getElementById('active-anchor');
+const activeDiffLevel = document.getElementById('active-diff-level');
+const contextLabelEl = document.getElementById('context-label');
 const btnPrevVerse = document.getElementById('btn-prev-verse');
 const btnNextVerse = document.getElementById('btn-next-verse');
 const translationTabs = document.getElementById('translation-tabs');
@@ -78,228 +71,155 @@ const comparisonTable = document.getElementById('comparison-table');
 const phraseGrid = document.getElementById('phrase-grid');
 const differenceSummary = document.getElementById('difference-summary');
 const coverageSummary = document.getElementById('coverage-summary');
-const contextLabelEl = document.getElementById('context-label');
+const sidebarContent = document.getElementById('sidebar-content');
 
-const categoryRules = {
-    "Kingdom of God": ["kingdom", "heaven", "kingdom of heaven"],
-    "Parables": ["parable", "likened", "like unto"],
-    "Discipleship / Cost of Following": ["follow me", "take up your cross", "deny yourself", "disciple"],
-    "Love / Forgiveness": ["forgive", "love", "mercy", "enemy"],
-    "Prayer / Spiritual Practice": ["pray", "prayer", "fasting", "hallowed be"],
-    "Wealth / Money": ["rich", "money", "treasure", "wealth", "mammon", "camel"],
-    "Judgment / Warnings": ["judge", "condemn", "hell", "weeping", "gnashing"],
-    "Identity (\"I am\")": ["i am", "bread of life", "light of the world", "good shepherd"],
-    "Faith / Healing": ["faith", "believe", "healed", "made whole", "cured", "physician"]
-};
+document.addEventListener('DOMContentLoaded', init);
 
-document.addEventListener('DOMContentLoaded', async () => {
+async function init() {
     try {
         const [response] = await Promise.all([
             fetch('data/jesus_verses_final.json'),
             loadJesusSpeechOverrides()
         ]);
+
+        if (!response.ok) throw new Error(`Dataset request failed: ${response.status}`);
+
         dataset = await response.json();
         allVerseIds = Object.keys(dataset);
 
+        await loadHighlightReviewLayer();
+        books = getBooks();
         buildBookFilter();
         buildCategoryMap();
-        renderHomePage();
+        bindEvents();
+        updateStats();
+        renderCategories();
 
-        requestIdleWork(() => initializeAppShell({ renderComparison: false }));
-        requestIdleWork(() => ensureHighDiffIndex());
-        loadHighlightReviewLayer().then(() => {
-            differenceScoreCache.clear();
-            highDiffIds.clear();
-            highDiffIndexReady = false;
-            highDiffIndexStarted = false;
-            requestIdleWork(() => ensureHighDiffIndex());
-            if (document.body.classList.contains('home-active')) renderHomePage();
-            if (appInitialized) {
-                handleSearch(sidebarSearch.value.toLowerCase().trim());
-                if (readingMode === 'speech' && activeSpeechBlockId) {
-                    renderSpeechBlockComparison(activeSpeechBlockId);
-                } else if (activeVerseId) {
-                    renderComparison(activeVerseId);
-                }
-            }
-        });
-
-        if (DEV_MODE) {
-            const { runHighlightStressTest } = await import('./dev/stressTest.js');
-            await runHighlightStressTest({
-                dataset,
-                allVerseIds,
-                getDisplayText: getTranslationText,
-                processWords,
-                generateHighlightedNodes: (words, setA, setB) => htmlToNodes(renderHighlightedText(
-                    words.join(' '),
-                    buildHighlightSpans(words.join(' '), [Array.from(setA).join(' '), Array.from(setB).join(' ')], 'meaning'),
-                    'meaning'
-                ))
-            });
-        }
-    } catch (e) {
-        console.error("Failed to load dataset", e);
-        const errorItem = document.createElement('li');
-        errorItem.className = 'load-error';
-        errorItem.textContent = 'Failed to load data';
-        verseListEl.replaceChildren(errorItem);
+        activeVerseId = dataset[FEATURED_VERSE_ID] ? FEATURED_VERSE_ID : allVerseIds[0];
+        updateViewLayer();
+        if (activeVerseId) setActiveVerse(activeVerseId);
+    } catch (error) {
+        console.error('Failed to load Jesus Words dataset', error);
+        renderLoadError();
     }
-});
-
-function initializeAppShell({ renderComparison: shouldRenderComparison = true } = {}) {
-    if (appInitialized || allVerseIds.length === 0) return;
-    appInitialized = true;
-
-    renderVerses(getVisibleVerseIds(), verseListEl);
-    renderSpeechBlockList();
-    renderCategories();
-
-    if (!activeVerseId && dataset[HOME_CONFIG.featuredVerseId]) {
-        activeVerseId = HOME_CONFIG.featuredVerseId;
-        document.querySelectorAll(`.list-item[data-id="${cssEscape(activeVerseId)}"]`).forEach(el => el.classList.add('active'));
-    }
-
-    if (shouldRenderComparison && activeVerseId) renderComparison(activeVerseId);
 }
 
 async function loadHighlightReviewLayer() {
     try {
         const response = await fetch('dev/highlight_review_overrides.json');
-        if (!response.ok) return;
-        setHighlightReviewLayer(await response.json());
-    } catch (error) {
-        console.info('Highlight review layer not loaded; using default rules.', error);
+        if (response.ok) setHighlightReviewLayer(await response.json());
+    } catch {
+        setHighlightReviewLayer({ overrides: [] });
     }
 }
 
-function buildBookFilter() {
-    const books = [];
-    allVerseIds.forEach(id => {
-        const book = dataset[id]?.book;
-        if (book && !books.includes(book)) books.push(book);
+function bindEvents() {
+    toggleBtns.forEach(btn => {
+        btn.addEventListener('click', () => setMode(btn.dataset.mode));
     });
 
-    books.forEach(book => {
-        const option = document.createElement('option');
-        option.value = book;
-        option.textContent = book;
-        bookFilter.appendChild(option);
+    readingModeBtns.forEach(btn => {
+        btn.addEventListener('click', () => setReadingMode(btn.dataset.readingMode));
     });
-}
 
-function buildCategoryMap() {
-    for (const cat in categoryRules) categoryMap[cat] = [];
-
-    allVerseIds.forEach(id => {
-        const v = dataset[id];
-        if (!v?.translations) return;
-
-        const combinedText = TRANSLATIONS.map(name => getTranslationText(id, v, name)).join(" ").toLowerCase();
-        for (const [category, keywords] of Object.entries(categoryRules)) {
-            const matched = keywords.some(kw => new RegExp(`\\b${escapeRegExp(kw)}\\b`, 'i').test(combinedText));
-            if (matched) categoryMap[category].push(id);
-        }
+    showContextToggle.addEventListener('change', () => {
+        showContext = showContextToggle.checked;
+        rerenderActiveComparison();
     });
-}
 
-toggleBtns.forEach(btn => {
-    btn.addEventListener('click', (e) => {
-        toggleBtns.forEach(b => b.classList.remove('active'));
-        e.target.classList.add('active');
-        currentMode = e.target.dataset.mode;
-        if (currentMode === 'study') setReadingMode('verse');
-        sidebarSearch.value = "";
+    btnBackCategories.addEventListener('click', () => {
+        activeCategory = null;
+        sidebarSearch.value = '';
         updateViewLayer();
-        handleSearch("");
+        handleSearch('');
     });
-});
 
-readingModeBtns.forEach(btn => {
-    btn.addEventListener('click', () => setReadingMode(btn.dataset.readingMode));
-});
+    sidebarSearch.addEventListener('input', () => handleSearch(currentQuery()));
+    bookFilter.addEventListener('change', () => handleSearch(currentQuery()));
+    diffOnlyFilter.addEventListener('change', () => handleSearch(currentQuery()));
+    btnPrevVerse.addEventListener('click', () => moveActiveItem(-1));
+    btnNextVerse.addEventListener('click', () => moveActiveItem(1));
 
-showContextToggle.addEventListener('change', () => {
-    showContext = showContextToggle.checked;
-    if (readingMode === 'speech' && activeSpeechBlockId) {
-        renderSpeechBlockComparison(activeSpeechBlockId);
-    } else if (activeVerseId) {
-        renderComparison(activeVerseId);
-    }
-});
-
-btnBackCategories.addEventListener('click', () => {
-    activeCategory = null;
-    sidebarSearch.value = "";
-    handleSearch("");
-    updateViewLayer();
-});
-
-bookFilter.addEventListener('change', () => handleSearch(sidebarSearch.value.toLowerCase().trim()));
-diffOnlyFilter.addEventListener('change', () => {
-    window.requestAnimationFrame(() => {
-        if (diffOnlyFilter.checked) ensureHighDiffIndex();
-        handleSearch(sidebarSearch.value.toLowerCase().trim());
+    translationTabs.addEventListener('click', event => {
+        const btn = event.target.closest('[data-translation-tab]');
+        if (!btn) return;
+        activeTranslationTab = btn.dataset.translationTab;
+        translationTabs.querySelectorAll('.translation-tab').forEach(tab => {
+            const isActive = tab === btn;
+            tab.classList.toggle('active', isActive);
+            tab.setAttribute('aria-selected', String(isActive));
+        });
+        rerenderActiveComparison();
     });
-});
-sidebarSearch.addEventListener('input', (e) => handleSearch(e.target.value.toLowerCase().trim()));
 
-document.addEventListener('click', (e) => {
-    const navBtn = e.target.closest('[data-nav-target]');
-    if (navBtn) {
-        const target = navBtn.dataset.navTarget;
-        if (target === 'browse') {
-            if (document.body.classList.contains('app-active')) {
-                showHomePage();
-            }
-            const browseSection = document.getElementById('home-browse');
-            if (browseSection) browseSection.scrollIntoView({ behavior: 'smooth' });
-        } else if (target === 'compare') {
-            switchToAppMode('verse');
-            if (!activeVerseId) setActiveVerse(HOME_CONFIG.featuredVerseId);
-        } else if (target === 'sources') {
-            if (document.body.classList.contains('app-active')) {
-                showHomePage();
-            }
-            const sourcesSection = document.getElementById('home-sources');
-            if (sourcesSection) sourcesSection.scrollIntoView({ behavior: 'smooth' });
+    sidebarContent.addEventListener('click', event => {
+        const item = event.target.closest('.list-item');
+        if (!item) return;
+        if (item.dataset.type === 'speech-block') {
+            setActiveSpeechBlock(item.dataset.id);
+            return;
         }
+        setActiveVerse(item.dataset.id);
+    });
+
+    sidebarContent.addEventListener('keydown', event => {
+        if (event.key !== 'Enter' && event.key !== ' ') return;
+        const item = event.target.closest('.list-item');
+        if (!item) return;
+        event.preventDefault();
+        item.click();
+    });
+
+    dashboardGrid.addEventListener('click', event => {
+        const card = event.target.closest('.dashboard-card');
+        if (!card) return;
+        activeCategory = card.dataset.category;
+        setMode('study', { preserveCategory: true });
+        const visibleIds = getVisibleVerseIds(categoryMap[activeCategory] || []);
+        if (visibleIds.length > 0) setActiveVerse(visibleIds[0]);
+    });
+}
+
+function setMode(mode, options = {}) {
+    currentMode = mode === 'study' ? 'study' : 'verse';
+    if (currentMode === 'study') readingMode = 'verse';
+    if (!options.preserveCategory && currentMode === 'verse') activeCategory = null;
+
+    toggleBtns.forEach(btn => btn.classList.toggle('active', btn.dataset.mode === currentMode));
+    readingModeBtns.forEach(btn => {
+        const isActive = btn.dataset.readingMode === readingMode;
+        btn.classList.toggle('active', isActive);
+        btn.setAttribute('aria-pressed', String(isActive));
+    });
+
+    updateViewLayer();
+    handleSearch(currentQuery());
+}
+
+function setReadingMode(mode) {
+    readingMode = mode === 'speech' ? 'speech' : 'verse';
+    if (readingMode === 'speech') {
+        currentMode = 'verse';
+        activeCategory = null;
     }
-});
 
-const homeLink = document.querySelector("#home-link");
-if (homeLink) {
-    homeLink.addEventListener("click", () => {
-        showHomePage();
+    toggleBtns.forEach(btn => btn.classList.toggle('active', btn.dataset.mode === currentMode));
+    readingModeBtns.forEach(btn => {
+        const isActive = btn.dataset.readingMode === readingMode;
+        btn.classList.toggle('active', isActive);
+        btn.setAttribute('aria-pressed', String(isActive));
     });
-}
 
-const startBtn = document.getElementById('start-btn');
-if (startBtn) {
-    startBtn.addEventListener('click', () => {
-        switchToAppMode('verse');
-        setActiveVerse(HOME_CONFIG.featuredVerseId);
-    });
-}
+    updateViewLayer();
+    handleSearch(currentQuery());
 
-btnPrevVerse.addEventListener('click', () => moveActiveVerse(-1));
-btnNextVerse.addEventListener('click', () => moveActiveVerse(1));
-
-translationTabs.addEventListener('click', (e) => {
-    const btn = e.target.closest('[data-translation-tab]');
-    if (!btn) return;
-    activeTranslationTab = btn.dataset.translationTab;
-    translationTabs.querySelectorAll('.translation-tab').forEach(item => {
-        const isActive = item === btn;
-        item.classList.toggle('active', isActive);
-        item.setAttribute('aria-selected', String(isActive));
-    });
-    if (readingMode === 'speech' && activeSpeechBlockId) {
-        renderSpeechBlockComparison(activeSpeechBlockId);
+    if (readingMode === 'speech') {
+        const visibleBlocks = getVisibleSpeechBlocks();
+        setActiveSpeechBlock(activeSpeechBlockId || visibleBlocks[0]?.id);
     } else if (activeVerseId) {
-        renderComparison(activeVerseId);
+        setActiveVerse(activeVerseId);
     }
-});
+}
 
 function updateViewLayer() {
     [viewVerse, viewSpeechBlocks, viewStudyEmpty, viewStudyDetail].forEach(el => el.classList.remove('active'));
@@ -309,122 +229,99 @@ function updateViewLayer() {
         viewSpeechBlocks.classList.add('active');
         comparisonView.classList.add('active');
         renderSpeechBlockList();
-        if (!activeSpeechBlockId && getVisibleSpeechBlocks().length > 0) {
-            setActiveSpeechBlock(getVisibleSpeechBlocks()[0].id);
-        } else if (activeSpeechBlockId) {
-            renderSpeechBlockComparison(activeSpeechBlockId);
-        }
-    } else if (currentMode === 'verse') {
-        viewVerse.classList.add('active');
-        comparisonView.classList.add('active');
-        renderVerses(getVisibleVerseIds(), verseListEl);
-    } else if (activeCategory) {
-        viewStudyDetail.classList.add('active');
-        studyDetailTitle.textContent = activeCategory;
-        renderVerses(getVisibleVerseIds(categoryMap[activeCategory]), studyVerseListEl);
-        comparisonView.classList.add('active');
-    } else {
+        return;
+    }
+
+    if (currentMode === 'study' && !activeCategory) {
         viewStudyEmpty.classList.add('active');
         categoriesDashboard.classList.add('active');
+        renderCategories(currentQuery());
+        return;
     }
+
+    if (currentMode === 'study' && activeCategory) {
+        viewStudyDetail.classList.add('active');
+        comparisonView.classList.add('active');
+        studyDetailTitle.textContent = activeCategory;
+        renderVerses(getVisibleVerseIds(categoryMap[activeCategory] || []), studyVerseListEl);
+        return;
+    }
+
+    viewVerse.classList.add('active');
+    comparisonView.classList.add('active');
+    renderVerses(getVisibleVerseIds(), verseListEl);
 }
 
-function setReadingMode(mode) {
-    readingMode = mode === 'speech' ? 'speech' : 'verse';
+function handleSearch(query) {
     if (readingMode === 'speech') {
-        currentMode = 'verse';
-        toggleBtns.forEach(btn => btn.classList.toggle('active', btn.dataset.mode === 'verse'));
+        renderSpeechBlockList(query);
+        updateNavButtons();
+        return;
     }
-    readingModeBtns.forEach(btn => {
-        const isActive = btn.dataset.readingMode === readingMode;
-        btn.classList.toggle('active', isActive);
-        btn.setAttribute('aria-pressed', String(isActive));
-    });
-    sidebarSearch.value = "";
-    updateViewLayer();
-    handleSearch("");
+
+    if (currentMode === 'study' && !activeCategory) {
+        renderCategories(query);
+        return;
+    }
+
+    if (currentMode === 'study' && activeCategory) {
+        renderVerses(getVisibleVerseIds(categoryMap[activeCategory] || [], query), studyVerseListEl);
+        updateNavButtons();
+        return;
+    }
+
+    renderVerses(getVisibleVerseIds(allVerseIds, query), verseListEl);
+    updateNavButtons();
 }
 
-function renderVerses(ids, containerDOM) {
-    const frag = document.createDocumentFragment();
+function renderVerses(ids, container) {
+    const fragment = document.createDocumentFragment();
+
+    if (ids.length === 0) {
+        fragment.appendChild(createEmptyListItem('No matching verses'));
+        container.replaceChildren(fragment);
+        return;
+    }
 
     ids.forEach(id => {
-        const v = dataset[id];
-        if (!v) return;
+        const verse = dataset[id];
+        if (!verse) return;
 
-        const li = document.createElement('li');
-        li.className = 'list-item';
-        if (id === activeVerseId) li.classList.add('active');
-        li.dataset.id = id;
-        li.dataset.type = 'verse';
+        const item = document.createElement('li');
+        item.className = 'list-item';
+        item.tabIndex = 0;
+        item.dataset.id = id;
+        item.dataset.type = 'verse';
+        item.classList.toggle('active', id === activeVerseId);
 
         const ref = document.createElement('span');
         ref.className = 'verse-ref';
-        ref.textContent = `${v.book} ${v.chapter}:${v.verse} `;
-
-        li.append(ref);
-
-        if (differenceScoreCache.has(id)) {
-            li.appendChild(createDifferenceBadge(differenceScoreCache.get(id)));
-        }
-        frag.appendChild(li);
+        ref.textContent = getReference(verse);
+        item.appendChild(ref);
+        item.appendChild(createDifferenceBadge(getDifferenceScoreCached(id)));
+        fragment.appendChild(item);
     });
 
-    containerDOM.replaceChildren(frag);
-    scheduleDifferenceBadgeHydration(ids, containerDOM);
+    container.replaceChildren(fragment);
 }
 
-function createDifferenceBadge(score) {
-    const badge = document.createElement('span');
-    badge.className = `diff-badge ${score >= 10 ? 'high' : score >= 5 ? 'medium' : 'low'}`;
-    badge.textContent = score >= 10 ? 'high' : score >= 5 ? 'med' : 'low';
-    return badge;
-}
+function renderSpeechBlockList(query = currentQuery()) {
+    const fragment = document.createDocumentFragment();
+    const blocks = getVisibleSpeechBlocks(query);
 
-function scheduleDifferenceBadgeHydration(ids, containerDOM) {
-    const jobId = ++differenceBadgeJobId;
-    const pending = ids.filter(id => !differenceScoreCache.has(id));
-    if (pending.length === 0) return;
-    const itemById = new Map(Array.from(containerDOM.querySelectorAll('.list-item')).map(item => [item.dataset.id, item]));
+    if (blocks.length === 0) {
+        fragment.appendChild(createEmptyListItem('No matching speech blocks'));
+        speechBlockListEl.replaceChildren(fragment);
+        return;
+    }
 
-    const hydrateChunk = (deadline) => {
-        let processedCount = 0;
-        while (
-            pending.length > 0 &&
-            jobId === differenceBadgeJobId &&
-            (deadline.timeRemaining() > 4 || deadline.didTimeout || processedCount < 4) &&
-            processedCount < 12
-        ) {
-            const id = pending.shift();
-            const verse = dataset[id];
-            if (verse) {
-                const score = getDifferenceScoreCached(verse, id);
-                updateHighDiffIndex(id, score);
-                const item = itemById.get(id);
-                if (item && !item.querySelector('.diff-badge')) {
-                    item.appendChild(createDifferenceBadge(score));
-                }
-            }
-            processedCount += 1;
-        }
-
-        if (pending.length > 0 && jobId === differenceBadgeJobId) {
-            requestIdleWork(hydrateChunk, { timeout: 700 });
-        }
-    };
-
-    requestIdleWork(hydrateChunk, { timeout: 700 });
-}
-
-function renderSpeechBlockList() {
-    const frag = document.createDocumentFragment();
-
-    getVisibleSpeechBlocks().forEach(block => {
-        const li = document.createElement('li');
-        li.className = 'list-item speech-block-item';
-        if (block.id === activeSpeechBlockId) li.classList.add('active');
-        li.dataset.id = block.id;
-        li.dataset.type = 'speech-block';
+    blocks.forEach(block => {
+        const item = document.createElement('li');
+        item.className = 'list-item speech-block-item';
+        item.tabIndex = 0;
+        item.dataset.id = block.id;
+        item.dataset.type = 'speech-block';
+        item.classList.toggle('active', block.id === activeSpeechBlockId);
 
         const title = document.createElement('span');
         title.className = 'verse-ref';
@@ -432,207 +329,82 @@ function renderSpeechBlockList() {
 
         const range = document.createElement('span');
         range.className = 'speech-block-range';
-        range.textContent = block.startRef === block.endRef ? block.startRef : `${block.startRef}-${block.endRef.replace(`${block.book} `, '')}`;
+        range.textContent = getBlockRange(block);
 
-        li.append(title, range);
-        frag.appendChild(li);
+        item.append(title, range);
+        fragment.appendChild(item);
     });
 
-    speechBlockListEl.replaceChildren(frag);
+    speechBlockListEl.replaceChildren(fragment);
 }
 
-function renderCategories(filterQuery = "") {
-    const frag = document.createDocumentFragment();
+function renderCategories(query = '') {
+    const fragment = document.createDocumentFragment();
+    const normalizedQuery = query.toLowerCase();
 
-    for (const [category, vIds] of Object.entries(categoryMap)) {
-        if (filterQuery && !category.toLowerCase().includes(filterQuery)) continue;
-        const count = vIds.length;
-        if (count === 0 && !filterQuery) continue;
+    Object.entries(categoryMap).forEach(([category, ids]) => {
+        if (normalizedQuery && !category.toLowerCase().includes(normalizedQuery)) return;
+        if (ids.length === 0 && !normalizedQuery) return;
 
-        const card = document.createElement('div');
+        const card = document.createElement('button');
         card.className = 'dashboard-card';
+        card.type = 'button';
         card.dataset.category = category;
-        card.dataset.type = 'category';
 
         const title = document.createElement('h3');
         title.textContent = category;
-        const countLabel = document.createElement('span');
-        countLabel.className = 'card-count';
-        countLabel.textContent = `${count} Verses`;
-        card.append(title, countLabel);
-        frag.appendChild(card);
-    }
 
-    dashboardGrid.replaceChildren(frag);
-}
+        const count = document.createElement('span');
+        count.className = 'card-count';
+        count.textContent = `${ids.length} verses`;
 
-function renderHomePage() {
-    const demoVerseEl = document.getElementById('demo-verse');
-    const verse = dataset[HOME_CONFIG.featuredVerseId];
-    if (verse && demoVerseEl) {
-        const processed = buildProcessedTranslations(verse, HOME_CONFIG.featuredVerseId);
-        const compContainer = document.createElement('div');
-        compContainer.className = 'comparison-table';
-
-        compContainer.appendChild(createTranslationCard('DBH', processed, true));
-        compContainer.appendChild(createTranslationCard('NRSVUE', processed, true));
-        compContainer.appendChild(createTranslationCard('LAMSA', processed, true));
-
-        demoVerseEl.replaceChildren(compContainer);
-    }
-
-    const browseGrid = document.getElementById('browse-grid');
-    if (browseGrid) {
-        const frag = document.createDocumentFragment();
-        HOME_CONFIG.browsePaths.forEach(path => {
-            const card = document.createElement('button');
-            card.className = 'browse-card';
-            card.type = 'button';
-            card.textContent = path.label;
-            card.addEventListener('click', () => {
-                switchToAppMode('verse');
-                setActiveVerse(path.verseId);
-            });
-            frag.appendChild(card);
-        });
-        browseGrid.replaceChildren(frag);
-    }
-}
-
-function switchToAppMode(mode) {
-    initializeAppShell();
-    document.body.classList.remove('home-active');
-    document.body.classList.add('app-active');
-
-    if (mode === 'verse' && readingMode !== 'verse') setReadingMode('verse');
-
-    const targetBtn = document.querySelector(`.toggle-btn[data-mode="${mode}"]`);
-    if (targetBtn && !targetBtn.classList.contains('active')) {
-        targetBtn.click();
-    }
-
-    if (activeVerseId && !comparisonTable.hasChildNodes()) {
-        renderComparison(activeVerseId);
-    }
-}
-
-function showHomePage() {
-    document.body.classList.add("home-active");
-    document.body.classList.remove("app-active");
-    window.scrollTo({ top: 0, behavior: "smooth" });
-}
-
-document.getElementById('sidebar-content').addEventListener('click', (e) => {
-    const li = e.target.closest('.list-item');
-    if (!li) return;
-    if (li.dataset.type === 'speech-block') {
-        setActiveSpeechBlock(li.dataset.id);
-        return;
-    }
-    if (li.dataset.type === 'verse') setActiveVerse(li.dataset.id);
-});
-
-dashboardGrid.addEventListener('click', (e) => {
-    const card = e.target.closest('.dashboard-card');
-    if (!card) return;
-    activeCategory = card.dataset.category;
-    sidebarSearch.value = "";
-    updateViewLayer();
-});
-
-function handleSearch(query) {
-    if (readingMode === 'speech') {
-        renderSpeechBlockList();
-    } else if (currentMode === 'verse') {
-        renderVerses(getVisibleVerseIds(allVerseIds, query), verseListEl);
-    } else if (currentMode === 'study') {
-        if (activeCategory) {
-            renderVerses(getVisibleVerseIds(categoryMap[activeCategory], query), studyVerseListEl);
-        } else {
-            renderCategories(query);
-        }
-    }
-}
-
-function getVisibleSpeechBlocks(query = sidebarSearch.value.toLowerCase().trim()) {
-    const selectedBook = bookFilter.value;
-    return SPEECH_BLOCKS.filter(block => {
-        if (selectedBook && block.book !== selectedBook) return false;
-        if (!query) return true;
-        return `${block.title} ${block.startRef} ${block.endRef} ${block.contextLabel}`.toLowerCase().includes(query);
+        card.append(title, count);
+        fragment.appendChild(card);
     });
-}
 
-function getVisibleVerseIds(sourceIds = allVerseIds, query = sidebarSearch.value.toLowerCase().trim()) {
-    const selectedBook = bookFilter.value;
-    return sourceIds.filter(id => {
-        const v = dataset[id];
-        if (!v) return false;
-        if (selectedBook && v.book !== selectedBook) return false;
-        if (diffOnlyFilter.checked && !highDiffIds.has(id)) return false;
-        if (!query) return true;
-
-        const ref = `${v.book} ${v.chapter}:${v.verse}`.toLowerCase();
-        if (ref.includes(query)) return true;
-        return TRANSLATIONS.some(name => getTranslationText(id, v, name).toLowerCase().includes(query));
-    });
+    if (!fragment.childNodes.length) fragment.appendChild(createEmptyCategoryCard());
+    dashboardGrid.replaceChildren(fragment);
 }
 
 function setActiveVerse(id) {
-    initializeAppShell({ renderComparison: false });
-    if (!dataset[id]) return;
+    if (!id || !dataset[id]) return;
     readingMode = 'verse';
+    activeVerseId = id;
+
     readingModeBtns.forEach(btn => {
         const isActive = btn.dataset.readingMode === 'verse';
         btn.classList.toggle('active', isActive);
         btn.setAttribute('aria-pressed', String(isActive));
     });
-    activeVerseId = id;
-    document.querySelectorAll('.list-item.active').forEach(el => el.classList.remove('active'));
-    document.querySelectorAll(`.list-item[data-id="${cssEscape(id)}"]`).forEach(el => el.classList.add('active'));
+
     renderComparison(id);
+    updateActiveListItems(id);
 }
 
 function setActiveSpeechBlock(blockId) {
     const block = SPEECH_BLOCKS.find(item => item.id === blockId);
     if (!block) return;
     readingMode = 'speech';
+    activeSpeechBlockId = blockId;
+
     readingModeBtns.forEach(btn => {
         const isActive = btn.dataset.readingMode === 'speech';
         btn.classList.toggle('active', isActive);
         btn.setAttribute('aria-pressed', String(isActive));
     });
-    activeSpeechBlockId = blockId;
-    document.querySelectorAll('.list-item.active').forEach(el => el.classList.remove('active'));
-    document.querySelectorAll(`.list-item[data-id="${cssEscape(blockId)}"]`).forEach(el => el.classList.add('active'));
+
     renderSpeechBlockComparison(blockId);
-}
-
-function moveActiveVerse(direction) {
-    if (readingMode === 'speech') {
-        const visibleBlocks = getVisibleSpeechBlocks();
-        const currentIndex = visibleBlocks.findIndex(block => block.id === activeSpeechBlockId);
-        if (currentIndex === -1 || visibleBlocks.length === 0) return;
-        const nextIndex = Math.max(0, Math.min(visibleBlocks.length - 1, currentIndex + direction));
-        setActiveSpeechBlock(visibleBlocks[nextIndex].id);
-        return;
-    }
-
-    const source = currentMode === 'study' && activeCategory ? categoryMap[activeCategory] : allVerseIds;
-    const visible = getVisibleVerseIds(source);
-    const currentIndex = visible.indexOf(activeVerseId);
-    if (currentIndex === -1 || visible.length === 0) return;
-    const nextIndex = Math.max(0, Math.min(visible.length - 1, currentIndex + direction));
-    setActiveVerse(visible[nextIndex]);
+    updateActiveListItems(blockId);
 }
 
 function renderComparison(id) {
     const verse = dataset[id];
     if (!verse) return;
 
-    activeReference.textContent = verse.reference;
-    activeAnchor.textContent = verse.anchor?.BSB ? verse.anchor.BSB : '';
+    activeReference.textContent = getReference(verse);
+    activeAnchor.textContent = verse.anchor?.BSB ? formatDisplayText(verse.anchor.BSB) : '';
     renderContextLabel(showContext ? getSmallestBlockForVerseId(id)?.contextLabel : '');
+    updateVariancePill(getDifferenceScoreCached(id));
 
     const processed = buildProcessedTranslations(verse, id);
     renderComparisonRows(processed);
@@ -647,8 +419,9 @@ function renderSpeechBlockComparison(blockId) {
     if (!block) return;
 
     activeReference.textContent = block.title;
-    activeAnchor.textContent = block.startRef === block.endRef ? block.startRef : `${block.startRef}-${block.endRef.replace(`${block.book} `, '')}`;
+    activeAnchor.textContent = getBlockRange(block);
     renderContextLabel(showContext ? block.contextLabel : '');
+    updateVariancePill(getSpeechBlockDifferenceScore(block));
 
     const processed = buildProcessedSpeechBlock(block);
     renderSpeechBlockRows(block, processed);
@@ -660,27 +433,21 @@ function renderSpeechBlockComparison(blockId) {
 
 function renderComparisonRows(processed) {
     const rows = document.createDocumentFragment();
-
     if (activeTranslationTab === 'Compare') {
-        TRANSLATIONS.forEach(name => {
-            rows.appendChild(createTranslationCard(name, processed, true));
-        });
+        TRANSLATIONS.forEach(name => rows.appendChild(createTranslationCard(name, processed, true)));
     } else {
         rows.appendChild(createTranslationCard(activeTranslationTab, processed, false));
     }
-
     comparisonTable.replaceChildren(rows);
 }
 
 function renderSpeechBlockRows(block, processed) {
     const rows = document.createDocumentFragment();
-
     if (activeTranslationTab === 'Compare') {
-        TRANSLATIONS.forEach(name => rows.appendChild(createSpeechBlockTranslationCard(name, block, processed, true)));
+        TRANSLATIONS.forEach(name => rows.appendChild(createSpeechBlockTranslationCard(name, block, true)));
     } else {
-        rows.appendChild(createSpeechBlockTranslationCard(activeTranslationTab, block, processed, false));
+        rows.appendChild(createSpeechBlockTranslationCard(activeTranslationTab, block, false));
     }
-
     comparisonTable.replaceChildren(rows);
 }
 
@@ -694,15 +461,13 @@ function createTranslationCard(name, processed, compact) {
 
     const text = document.createElement('div');
     text.className = 'translation-text';
-    const currentText = processed[name].text;
-    const spans = processed[name].highlights || [];
-    text.innerHTML = renderHighlightedText(currentText, spans, currentHighlightMode);
+    text.innerHTML = renderHighlightedText(processed[name].text, processed[name].highlights, 'meaning');
 
     row.append(label, text);
     return row;
 }
 
-function createSpeechBlockTranslationCard(name, block, processed, compact) {
+function createSpeechBlockTranslationCard(name, block, compact) {
     const row = document.createElement('article');
     row.className = compact ? 'comparison-row compare-card speech-block-card' : 'comparison-row selected-translation speech-block-card';
 
@@ -716,7 +481,8 @@ function createSpeechBlockTranslationCard(name, block, processed, compact) {
     block.verseIds.forEach(verseId => {
         const verse = dataset[verseId];
         if (!verse) return;
-        const verseText = formatDisplayText(getTranslationText(verseId, verse, name));
+
+        const verseText = getFormattedTranslation(verseId, verse, name);
         if (!verseText) return;
 
         const segment = document.createElement('span');
@@ -724,15 +490,18 @@ function createSpeechBlockTranslationCard(name, block, processed, compact) {
 
         const ref = document.createElement('span');
         ref.className = 'inline-verse-ref';
-        ref.textContent = verse.reference || `${verse.book} ${verse.chapter}:${verse.verse}`;
+        ref.textContent = getReference(verse);
 
         const words = document.createElement('span');
         words.className = 'speech-verse-text';
         const otherTexts = TRANSLATIONS
             .filter(item => item !== name)
-            .map(item => formatDisplayText(getTranslationText(verseId, verse, item)));
-        const spans = buildHighlightSpans(verseText, otherTexts, currentHighlightMode, name);
-        words.innerHTML = renderHighlightedText(verseText, spans, currentHighlightMode);
+            .map(item => getFormattedTranslation(verseId, verse, item));
+        words.innerHTML = renderHighlightedText(
+            verseText,
+            buildHighlightSpans(verseText, otherTexts, 'meaning', name),
+            'meaning'
+        );
 
         segment.append(ref, document.createTextNode(' '), words, document.createTextNode(' '));
         text.appendChild(segment);
@@ -742,8 +511,57 @@ function createSpeechBlockTranslationCard(name, block, processed, compact) {
     return row;
 }
 
+function buildProcessedTranslations(verse, verseId) {
+    const processed = {};
+    TRANSLATIONS.forEach(name => {
+        const text = getFormattedTranslation(verseId, verse, name);
+        processed[name] = {
+            text,
+            tokens: tokenizeText(text).map(token => token.normalized),
+            highlights: []
+        };
+    });
+
+    TRANSLATIONS.forEach(name => {
+        const otherTexts = TRANSLATIONS
+            .filter(item => item !== name)
+            .map(item => processed[item].text);
+        processed[name].highlights = buildHighlightSpans(processed[name].text, otherTexts, 'meaning', name);
+    });
+
+    return processed;
+}
+
+function buildProcessedSpeechBlock(block) {
+    const processed = {};
+
+    TRANSLATIONS.forEach(name => {
+        const text = block.verseIds
+            .map(verseId => {
+                const verse = dataset[verseId];
+                return verse ? getFormattedTranslation(verseId, verse, name) : '';
+            })
+            .filter(Boolean)
+            .join(' ');
+        processed[name] = {
+            text,
+            tokens: tokenizeText(text).map(token => token.normalized),
+            highlights: []
+        };
+    });
+
+    TRANSLATIONS.forEach(name => {
+        const otherTexts = TRANSLATIONS
+            .filter(item => item !== name)
+            .map(item => processed[item].text);
+        processed[name].highlights = buildHighlightSpans(processed[name].text, otherTexts, 'meaning', name);
+    });
+
+    return processed;
+}
+
 function renderPhraseGrid(processed) {
-    const frag = document.createDocumentFragment();
+    const fragment = document.createDocumentFragment();
     TRANSLATIONS.forEach(name => {
         const row = document.createElement('div');
         row.className = 'phrase-row';
@@ -762,9 +580,9 @@ function renderPhraseGrid(processed) {
         });
 
         row.append(label, phrases);
-        frag.appendChild(row);
+        fragment.appendChild(row);
     });
-    phraseGrid.replaceChildren(frag);
+    phraseGrid.replaceChildren(fragment);
 }
 
 function renderDifferenceSummary(processed) {
@@ -772,7 +590,7 @@ function renderDifferenceSummary(processed) {
     if (groups.length === 0) {
         const empty = document.createElement('p');
         empty.className = 'muted';
-        empty.textContent = 'No major word-level differences detected.';
+        empty.textContent = 'No major meaning-level differences detected.';
         differenceSummary.replaceChildren(empty);
         return;
     }
@@ -780,38 +598,114 @@ function renderDifferenceSummary(processed) {
     const table = document.createElement('div');
     table.className = 'difference-table';
 
-    groups.slice(0, 12).forEach(group => {
+    groups.slice(0, 10).forEach(group => {
         const item = document.createElement('div');
         item.className = group.critical ? 'key-difference-item critical' : 'key-difference-item';
 
-        const word = document.createElement('div');
-        word.className = group.critical ? 'difference-phrase critical' : 'difference-phrase';
-        word.textContent = group.term;
+        const phrase = document.createElement('span');
+        phrase.className = 'difference-phrase';
+        phrase.textContent = group.term;
 
-        const meta = document.createElement('div');
+        const meta = document.createElement('span');
         meta.className = 'difference-meta';
         meta.textContent = `Unique to ${group.translations.join(', ')}`;
 
-        item.append(word, meta);
+        item.append(phrase, meta);
         table.appendChild(item);
     });
+
     differenceSummary.replaceChildren(table);
 }
 
 function renderCoverage(processed) {
-    const frag = document.createDocumentFragment();
+    const fragment = document.createDocumentFragment();
     TRANSLATIONS.forEach(name => {
         const item = document.createElement('div');
         item.className = 'coverage-item';
-        const status = processed[name].text ? 'Present' : 'Missing';
+
         const label = document.createElement('span');
         label.textContent = name;
+
         const value = document.createElement('strong');
-        value.textContent = status;
+        value.textContent = processed[name].text ? 'Present' : 'Missing';
+
         item.append(label, value);
-        frag.appendChild(item);
+        fragment.appendChild(item);
     });
-    coverageSummary.replaceChildren(frag);
+    coverageSummary.replaceChildren(fragment);
+}
+
+function buildDifferenceGroups(processed) {
+    const groups = new Map();
+
+    TRANSLATIONS.forEach(name => {
+        processed[name].highlights.forEach(span => {
+            const key = `${span.type}:${span.normalized}`;
+            if (!groups.has(key)) {
+                groups.set(key, {
+                    term: span.text,
+                    translations: [],
+                    critical: span.type === 'critical',
+                    type: span.type
+                });
+            }
+            groups.get(key).translations.push(name);
+        });
+    });
+
+    return Array.from(groups.values()).sort((a, b) => {
+        if (a.critical !== b.critical) return a.critical ? -1 : 1;
+        return a.term.localeCompare(b.term);
+    });
+}
+
+function getVisibleVerseIds(sourceIds = allVerseIds, query = currentQuery()) {
+    const selectedBook = bookFilter.value;
+    return sourceIds.filter(id => {
+        const verse = dataset[id];
+        if (!verse) return false;
+        if (selectedBook && verse.book !== selectedBook) return false;
+        if (diffOnlyFilter.checked && getDifferenceLevel(getDifferenceScoreCached(id)) !== 'high') return false;
+        if (!query) return true;
+
+        const haystack = [
+            getReference(verse),
+            verse.anchor?.BSB || '',
+            ...TRANSLATIONS.map(name => getTranslationText(id, verse, name))
+        ].join(' ').toLowerCase();
+        return haystack.includes(query);
+    });
+}
+
+function getVisibleSpeechBlocks(query = currentQuery()) {
+    const selectedBook = bookFilter.value;
+    return SPEECH_BLOCKS.filter(block => {
+        if (selectedBook && block.book !== selectedBook) return false;
+        if (!query) return true;
+        return [
+            block.title,
+            block.startRef,
+            block.endRef,
+            block.contextLabel,
+            block.category
+        ].join(' ').toLowerCase().includes(query);
+    });
+}
+
+function moveActiveItem(direction) {
+    if (readingMode === 'speech') {
+        const visibleBlocks = getVisibleSpeechBlocks();
+        const index = visibleBlocks.findIndex(block => block.id === activeSpeechBlockId);
+        const next = visibleBlocks[Math.max(0, Math.min(visibleBlocks.length - 1, index + direction))];
+        if (next) setActiveSpeechBlock(next.id);
+        return;
+    }
+
+    const source = currentMode === 'study' && activeCategory ? categoryMap[activeCategory] : allVerseIds;
+    const visibleIds = getVisibleVerseIds(source);
+    const index = visibleIds.indexOf(activeVerseId);
+    const nextId = visibleIds[Math.max(0, Math.min(visibleIds.length - 1, index + direction))];
+    if (nextId) setActiveVerse(nextId);
 }
 
 function updateNavButtons() {
@@ -824,92 +718,68 @@ function updateNavButtons() {
     }
 
     const source = currentMode === 'study' && activeCategory ? categoryMap[activeCategory] : allVerseIds;
-    const visible = getVisibleVerseIds(source);
-    const index = visible.indexOf(activeVerseId);
+    const visibleIds = getVisibleVerseIds(source);
+    const index = visibleIds.indexOf(activeVerseId);
     btnPrevVerse.disabled = index <= 0;
-    btnNextVerse.disabled = index === -1 || index >= visible.length - 1;
+    btnNextVerse.disabled = index === -1 || index >= visibleIds.length - 1;
 }
 
-function buildProcessedTranslations(verse, verseId = '') {
-    const processed = {};
-    TRANSLATIONS.forEach(name => {
-        const text = formatDisplayText(getTranslationText(verseId, verse, name));
-        const tokens = tokenizeText(text).map(token => token.normalized);
-        processed[name] = {
-            text,
-            tokens,
-            tokenSet: new Set(tokens),
-            highlights: []
-        };
-    });
-
-    TRANSLATIONS.forEach(name => {
-        const otherTranslationTexts = TRANSLATIONS
-            .filter(item => item !== name)
-            .map(item => processed[item].text);
-        processed[name].highlights = buildHighlightSpans(processed[name].text, otherTranslationTexts, currentHighlightMode, name);
-    });
-
-    return processed;
+function getDifferenceScoreCached(id) {
+    if (differenceScoreCache.has(id)) return differenceScoreCache.get(id);
+    const verse = dataset[id];
+    if (!verse) return 0;
+    const displayVerse = {
+        ...verse,
+        translations: Object.fromEntries(TRANSLATIONS.map(name => [
+            name,
+            getFormattedTranslation(id, verse, name)
+        ]))
+    };
+    const highlights = analyzeVerseHighlights(displayVerse, TRANSLATIONS, 'meaning');
+    const score = TRANSLATIONS.reduce((total, name) => total + highlights[name].reduce((sum, span) => {
+        if (span.type === 'critical') return sum + 3;
+        if (span.type === 'interpretive') return sum + 2;
+        return sum + 1;
+    }, 0), 0);
+    differenceScoreCache.set(id, score);
+    return score;
 }
 
-function buildProcessedSpeechBlock(block) {
-    const processed = {};
-
-    TRANSLATIONS.forEach(name => {
-        const text = block.verseIds
-            .map(verseId => formatDisplayText(getTranslationText(verseId, dataset[verseId], name)))
-            .filter(Boolean)
-            .join(' ');
-        const tokens = tokenizeText(text).map(token => token.normalized);
-        processed[name] = {
-            text,
-            tokens,
-            tokenSet: new Set(tokens),
-            highlights: []
-        };
-    });
-
-    TRANSLATIONS.forEach(name => {
-        const otherTranslationTexts = TRANSLATIONS
-            .filter(item => item !== name)
-            .map(item => processed[item].text);
-        processed[name].highlights = buildHighlightSpans(processed[name].text, otherTranslationTexts, currentHighlightMode, name);
-    });
-
-    return processed;
+function getSpeechBlockDifferenceScore(block) {
+    return block.verseIds.reduce((total, id) => total + getDifferenceScoreCached(id), 0);
 }
 
-function buildDifferenceGroups(processed) {
-    const map = new Map();
-    TRANSLATIONS.forEach(name => {
-        processed[name].highlights.forEach(span => {
-            const key = `${span.normalized}:${span.type}`;
-            if (!map.has(key)) {
-                map.set(key, {
-                    term: span.text,
-                    translations: [],
-                    critical: span.type === 'critical',
-                    type: span.type
-                });
-            }
-            map.get(key).translations.push(name);
-        });
-    });
+function createDifferenceBadge(score) {
+    const level = getDifferenceLevel(score);
+    const badge = document.createElement('span');
+    badge.className = `diff-badge ${level}`;
+    badge.textContent = level === 'high' ? 'High' : level === 'medium' ? 'Med' : 'Low';
+    return badge;
+}
 
-    return Array.from(map.values()).sort((a, b) => {
-        if (a.critical !== b.critical) return a.critical ? -1 : 1;
-        return a.term.localeCompare(b.term);
-    });
+function updateVariancePill(score) {
+    const level = getDifferenceLevel(score);
+    activeDiffLevel.className = `variance-pill ${level}`;
+    activeDiffLevel.textContent = level === 'high'
+        ? 'Strong variation'
+        : level === 'medium'
+            ? 'Moderate variation'
+            : 'Close alignment';
+}
+
+function getDifferenceLevel(score) {
+    if (score >= 10) return 'high';
+    if (score >= 5) return 'medium';
+    return 'low';
 }
 
 function splitPhrases(text) {
     if (!text) return ['Missing translation'];
     return text
-        .split(/(?<=[.;:!?])\s+|,\s+|—/)
+        .split(/(?<=[.;:!?])\s+|,\s+|\u2014/)
         .map(part => part.trim())
         .filter(Boolean)
-        .slice(0, 12);
+        .slice(0, 14);
 }
 
 function phraseHasHighlights(phrase, highlights) {
@@ -917,76 +787,62 @@ function phraseHasHighlights(phrase, highlights) {
     return highlights.some(span => span.normalized.split(/\s+/).some(token => phraseTokens.has(token)));
 }
 
-function getDifferenceScore(verse, verseId = '') {
-    const displayVerse = {
-        ...verse,
-        translations: Object.fromEntries(TRANSLATIONS.map(name => [
-            name,
-            getTranslationText(verseId, verse, name)
-        ]))
-    };
-    const highlights = analyzeVerseHighlights(displayVerse, TRANSLATIONS, 'meaning');
-    return TRANSLATIONS.reduce((score, name) => score + highlights[name].reduce((total, span) => {
-        if (span.type === 'critical') return total + 3;
-        if (span.type === 'interpretive') return total + 2;
-        return total + 1;
-    }, 0), 0);
+function buildBookFilter() {
+    books.forEach(book => {
+        const option = document.createElement('option');
+        option.value = book;
+        option.textContent = book;
+        bookFilter.appendChild(option);
+    });
 }
 
-function getDifferenceScoreCached(verse, verseId = '') {
-    if (differenceScoreCache.has(verseId)) return differenceScoreCache.get(verseId);
-    const score = getDifferenceScore(verse, verseId);
-    differenceScoreCache.set(verseId, score);
-    updateHighDiffIndex(verseId, score);
-    return score;
+function buildCategoryMap() {
+    categoryMap = Object.fromEntries(Object.keys(categoryRules).map(category => [category, []]));
+
+    allVerseIds.forEach(id => {
+        const verse = dataset[id];
+        if (!verse?.translations) return;
+        const combinedText = TRANSLATIONS
+            .map(name => getTranslationText(id, verse, name))
+            .join(' ')
+            .toLowerCase();
+
+        Object.entries(categoryRules).forEach(([category, keywords]) => {
+            const matched = keywords.some(keyword => new RegExp(`\\b${escapeRegExp(keyword)}\\b`, 'i').test(combinedText));
+            if (matched) categoryMap[category].push(id);
+        });
+    });
 }
 
-function updateHighDiffIndex(verseId, score) {
-    if (score >= 10) {
-        highDiffIds.add(verseId);
-    } else {
-        highDiffIds.delete(verseId);
-    }
+function getBooks() {
+    const seen = new Set();
+    allVerseIds.forEach(id => {
+        const book = dataset[id]?.book;
+        if (book) seen.add(book);
+    });
+    return Array.from(seen);
 }
 
-function ensureHighDiffIndex() {
-    if (highDiffIndexReady || highDiffIndexStarted || allVerseIds.length === 0) return;
-    highDiffIndexStarted = true;
-    const pending = allVerseIds.filter(id => !differenceScoreCache.has(id));
+function updateStats() {
+    libraryStat.textContent = `${allVerseIds.length} verses`;
+    sourceStat.textContent = `${books.length} books`;
+}
 
-    const buildChunk = (deadline) => {
-        let processedCount = 0;
-        while (
-            pending.length > 0 &&
-            (deadline.timeRemaining() > 5 || deadline.didTimeout || processedCount < 8) &&
-            processedCount < 20
-        ) {
-            const id = pending.shift();
-            const verse = dataset[id];
-            if (verse) getDifferenceScoreCached(verse, id);
-            processedCount += 1;
-        }
+function getFormattedTranslation(id, verse, name) {
+    return formatDisplayText(getTranslationText(id, verse, name));
+}
 
-        const now = Date.now();
-        if (diffOnlyFilter.checked && !pendingHighDiffRender && now - lastHighDiffRenderAt > 120) {
-            pendingHighDiffRender = true;
-            lastHighDiffRenderAt = now;
-            window.requestAnimationFrame(() => {
-                pendingHighDiffRender = false;
-                handleSearch(sidebarSearch.value.toLowerCase().trim());
-            });
-        }
+function getTranslationText(id, verse, name) {
+    return getDisplayJesusText(id, verse, name);
+}
 
-        if (pending.length > 0) {
-            requestIdleWork(buildChunk, { timeout: 250 });
-            return;
-        }
+function getReference(verse) {
+    return verse.reference || `${verse.book} ${verse.chapter}:${verse.verse}`;
+}
 
-        highDiffIndexReady = true;
-        if (diffOnlyFilter.checked) handleSearch(sidebarSearch.value.toLowerCase().trim());
-    };
-
-    requestIdleWork(buildChunk, { timeout: 250 });
+function getBlockRange(block) {
+    if (block.startRef === block.endRef) return block.startRef;
+    return `${block.startRef}-${block.endRef.replace(`${block.book} `, '')}`;
 }
 
 function getBlocksForVerseId(verseId) {
@@ -995,11 +851,6 @@ function getBlocksForVerseId(verseId) {
 
 function getSmallestBlockForVerseId(verseId) {
     return getBlocksForVerseId(verseId).sort((a, b) => a.verseIds.length - b.verseIds.length)[0] || null;
-}
-
-function getVersesForBlock(blockId) {
-    const block = SPEECH_BLOCKS.find(item => item.id === blockId);
-    return block ? block.verseIds.map(verseId => dataset[verseId]).filter(Boolean) : [];
 }
 
 function renderContextLabel(label) {
@@ -1012,8 +863,47 @@ function renderContextLabel(label) {
     contextLabelEl.textContent = label;
 }
 
-function getTranslationText(verseId, verse, translationName) {
-    return getDisplayJesusText(verseId, verse, translationName);
+function rerenderActiveComparison() {
+    if (readingMode === 'speech' && activeSpeechBlockId) {
+        renderSpeechBlockComparison(activeSpeechBlockId);
+        return;
+    }
+    if (activeVerseId) renderComparison(activeVerseId);
+}
+
+function updateActiveListItems(id) {
+    document.querySelectorAll('.list-item.active').forEach(item => item.classList.remove('active'));
+    document.querySelectorAll(`.list-item[data-id="${cssEscape(id)}"]`).forEach(item => item.classList.add('active'));
+}
+
+function createEmptyListItem(message) {
+    const item = document.createElement('li');
+    item.className = 'placeholder-state';
+    item.textContent = message;
+    return item;
+}
+
+function createEmptyCategoryCard() {
+    const card = document.createElement('div');
+    card.className = 'dashboard-card';
+    const title = document.createElement('h3');
+    title.textContent = 'No matching categories';
+    const note = document.createElement('span');
+    note.className = 'card-count';
+    note.textContent = 'Try another search';
+    card.append(title, note);
+    return card;
+}
+
+function renderLoadError() {
+    activeReference.textContent = 'Unable to load data';
+    activeAnchor.textContent = 'Start a local server from the project folder and reload the page.';
+    activeDiffLevel.textContent = 'Offline';
+    verseListEl.replaceChildren(createEmptyListItem('Dataset failed to load'));
+}
+
+function currentQuery() {
+    return sidebarSearch.value.toLowerCase().trim();
 }
 
 function escapeRegExp(value) {
@@ -1022,11 +912,5 @@ function escapeRegExp(value) {
 
 function cssEscape(value) {
     if (window.CSS?.escape) return CSS.escape(value);
-    return value.replace(/"/g, '\\"');
-}
-
-function htmlToNodes(html) {
-    const template = document.createElement('template');
-    template.innerHTML = html;
-    return Array.from(template.content.childNodes);
+    return String(value).replace(/"/g, '\\"');
 }

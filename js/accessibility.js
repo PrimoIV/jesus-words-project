@@ -63,10 +63,10 @@
     });
 
     const accOptions = [
-      { id: 'high-contrast', label: 'High Contrast Mode', icon: '🔆' },
-      { id: 'large-text', label: 'Increase Font Size', icon: '🔤' },
-      { id: 'reduce-motion', label: 'Reduce Motion', icon: '⏸️' },
-      { id: 'simplified-view', label: 'Simplified View', icon: '📄' }
+      { id: 'high-contrast', label: 'High Contrast Mode' },
+      { id: 'large-text', label: 'Increase Font Size' },
+      { id: 'reduce-motion', label: 'Reduce Motion' },
+      { id: 'simplified-view', label: 'Simplified View' }
     ];
 
     function renderAccessibilityOptions() {
@@ -76,7 +76,7 @@
       accOptions.forEach(opt => {
         const li = document.createElement('li');
         const button = document.createElement('button');
-        button.innerHTML = `${opt.icon} ${opt.label}`;
+        button.textContent = opt.label;
         button.setAttribute('data-option', opt.id);
         button.addEventListener('click', (e) => {
           e.stopPropagation();
@@ -91,8 +91,6 @@
 
     function toggleAccessibility(optionId) {
       document.body.classList.toggle(optionId);
-      console.log('Toggled accessibility:', optionId);
-      
       // Save accessibility preferences
       let preferences = {};
       try {

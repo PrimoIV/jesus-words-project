@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "blocks": [
+    {
+      "range": "MAT_13_3-MAT_13_9",
+      "type": "parable",
+      "title": "Parable of the Sower",
+      "speaker": "Jesus",
+      "includeInternalDialogue": true,
+      "removeOnlyNarratorSetup": true,
+      "reviewLevel": "review_required"
+    },
+    {
+      "range": "MAT_13_18-MAT_13_23",
+      "type": "parable",
+      "title": "Explanation of the Sower",
+      "speaker": "Jesus",
+      "includeInternalDialogue": true,
+      "removeOnlyNarratorSetup": true,
+      "reviewLevel": "review_required"
+    },
+    {
+      "range": "MAT_13_24-MAT_13_30",
+      "type": "parable",
+      "title": "Parable of the Weeds Among the Wheat",
+      "speaker": "Jesus",
+      "includeInternalDialogue": true,
+      "removeOnlyNarratorSetup": true,
+      "reviewLevel": "review_required"
+    },
+    {
+      "range": "MAT_13_31-MAT_13_32",
+      "type": "parable",
+      "title": "Parable of the Mustard Seed",
+      "speaker": "Jesus",
+      "includeInternalDialogue": true,
+      "removeOnlyNarratorSetup": true,
+      "reviewLevel": "review_required"
+    },
+    {
+      "range": "MAT_13_33-MAT_13_33",
+      "type": "parable",
+      "title": "Parable of the Yeast",
+      "speaker": "Jesus",
+      "includeInternalDialogue": true,
+      "removeOnlyNarratorSetup": true,
+      "reviewLevel": "review_required"
+    },
+    {
+      "range": "MAT_13_37-MAT_13_43",
+      "type": "parable",
+      "title": "Explanation of the Weeds",
+      "speaker": "Jesus",
+      "includeInternalDialogue": true,
+      "removeOnlyNarratorSetup": true,
+      "reviewLevel": "review_required"
+    },
+    {
+      "range": "MAT_13_44-MAT_13_44",
+      "type": "parable",
+      "title": "Hidden Treasure",
+      "speaker": "Jesus",
+      "includeInternalDialogue": true,
+      "removeOnlyNarratorSetup": true,
+      "reviewLevel": "review_required"
+    },
+    {
+      "range": "MAT_13_45-MAT_13_46",
+      "type": "parable",
+      "title": "Pearl of Great Value",
+      "speaker": "Jesus",
+      "includeInternalDialogue": true,
+      "removeOnlyNarratorSetup": true,
+      "reviewLevel": "review_required"
+    },
+    {
+      "range": "MAT_13_47-MAT_13_50",
+      "type": "parable",
+      "title": "Net",
+      "speaker": "Jesus",
+      "includeInternalDialogue": true,
+      "removeOnlyNarratorSetup": true,
+      "reviewLevel": "review_required"
+    },
+    {
+      "range": "MAT_18_23-MAT_18_35",
+      "type": "parable",
+      "title": "Unforgiving Servant",
+      "speaker": "Jesus",
+      "includeInternalDialogue": true,
+      "removeOnlyNarratorSetup": true,
+      "reviewLevel": "review_required"
+    },
+    {
+      "range": "MAT_20_1-MAT_20_16",
+      "type": "parable",
+      "title": "Laborers in the Vineyard",
+      "speaker": "Jesus",
+      "includeInternalDialogue": true,
+      "removeOnlyNarratorSetup": true,
+      "reviewLevel": "review_required"
+    },
+    {
+      "range": "MAT_21_28-MAT_21_32",
+      "type": "parable",
+      "title": "Two Sons",
+      "speaker": "Jesus",
+      "includeInternalDialogue": true,
+      "removeOnlyNarratorSetup": true,
+      "reviewLevel": "review_required"
+    },
+    {
+      "range": "MAT_21_33-MAT_21_44",
+      "type": "parable",
+      "title": "Wicked Tenants",
+      "speaker": "Jesus",
+      "includeInternalDialogue": true,
+      "removeOnlyNarratorSetup": true,
+      "reviewLevel": "review_required"
+    },
+    {
+      "range": "MAT_22_2-MAT_22_14",
+      "type": "parable",
+      "title": "Wedding Banquet",
+      "speaker": "Jesus",
+      "includeInternalDialogue": true,
+      "removeOnlyNarratorSetup": true,
+      "reviewLevel": "review_required"
+    },
+    {
+      "range": "MAT_24_45-MAT_24_51",
+      "type": "parable",
+      "title": "Faithful and Wicked Servant",
+      "speaker": "Jesus",
+      "includeInternalDialogue": true,
+      "removeOnlyNarratorSetup": true,
+      "reviewLevel": "review_required"
+    },
+    {
+      "range": "MAT_25_1-MAT_25_13",
+      "type": "parable",
+      "title": "Ten Virgins",
+      "speaker": "Jesus",
+      "includeInternalDialogue": true,
+      "removeOnlyNarratorSetup": true,
+      "reviewLevel": "review_required"
+    },
+    {
+      "range": "MAT_25_14-MAT_25_30",
+      "type": "parable",
+      "title": "Talents",
+      "speaker": "Jesus",
+      "includeInternalDialogue": true,
+      "removeOnlyNarratorSetup": true,
+      "reviewLevel": "review_required"
+    },
+    {
+      "range": "MAT_25_31-MAT_25_46",
+      "type": "parable",
+      "title": "Sheep and Goats",
+      "speaker": "Jesus",
+      "includeInternalDialogue": true,
+      "removeOnlyNarratorSetup": true,
+      "reviewLevel": "review_required"
+    }
+  ]
+}
