@@ -20,6 +20,10 @@ export function setJesusSpeechOverrides(overrides = {}) {
 
 export function getDisplayJesusText(verseId, verse, translationName) {
     const override = JESUS_SPEECH_OVERRIDES?.[verseId]?.[translationName];
-    if (typeof override === 'string') return override;
+    if (typeof override === 'string' && override.trim()) return override;
+
+    const speechText = verse?.speechText?.[translationName];
+    if (typeof speechText === 'string' && speechText.trim()) return speechText;
+
     return verse?.translations?.[translationName] || '';
 }

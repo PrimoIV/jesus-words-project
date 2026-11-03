@@ -37,6 +37,7 @@ let categoryMap = {};
 let books = [];
 
 const differenceScoreCache = new Map();
+let searchDebounceTimer = null;
 
 const sidebarSearch = document.getElementById('sidebar-search');
 const bookFilter = document.getElementById('book-filter');
@@ -98,8 +99,11 @@ async function init() {
         activeVerseId = dataset[FEATURED_VERSE_ID] ? FEATURED_VERSE_ID : allVerseIds[0];
         updateViewLayer();
         if (activeVerseId) setActiveVerse(activeVerseId);
+
+        document.body.classList.add('app-ready');
     } catch (error) {
         console.error('Failed to load Jesus Words dataset', error);
+        document.body.classList.add('app-ready');
         renderLoadError();
     }
 }
@@ -134,7 +138,11 @@ function bindEvents() {
         handleSearch('');
     });
 
-    sidebarSearch.addEventListener('input', () => handleSearch(currentQuery()));
+    sidebarSearch.addEventListener('input', () => {
+        clearTimeout(searchDebounceTimer);
+        searchDebounceTimer = setTimeout(() => handleSearch(currentQuery()), 150);
+    });
+
     bookFilter.addEventListener('change', () => handleSearch(currentQuery()));
     diffOnlyFilter.addEventListener('change', () => handleSearch(currentQuery()));
     btnPrevVerse.addEventListener('click', () => moveActiveItem(-1));
@@ -298,7 +306,11 @@ function renderVerses(ids, container) {
         ref.className = 'verse-ref';
         ref.textContent = getReference(verse);
         item.appendChild(ref);
-        item.appendChild(createDifferenceBadge(getDifferenceScoreCached(id)));
+
+        if (diffOnlyFilter.checked) {
+            item.appendChild(createDifferenceBadge(getDifferenceScoreCached(id)));
+        }
+
         fragment.appendChild(item);
     });
 

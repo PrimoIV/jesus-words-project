@@ -21,7 +21,7 @@
                 </div>
 
                 <div class="library-meta" aria-label="Library summary">
-                    <span id="library-stat">Loading verses</span>
+                    <span id="library-stat"></span>
                     <span id="source-stat">3 translations</span>
                 </div>
 
@@ -84,9 +84,11 @@
                     <section class="selected-verse-card" aria-labelledby="active-reference">
                         <div class="selected-card-topline">
                             <span class="anchor-label">BSB anchor</span>
-                            <span id="active-diff-level" class="variance-pill">Loading</span>
+                            <span id="active-diff-level" class="variance-pill"></span>
                         </div>
-                        <h2 id="active-reference" class="active-reference">Loading verse</h2>
+                        <h2 id="active-reference" class="active-reference" aria-live="polite">
+                            <span class="sr-only">Loading verse</span>
+                        </h2>
                         <p id="active-anchor" class="active-anchor"></p>
                         <p id="context-label" class="context-label" hidden></p>
                     </section>
